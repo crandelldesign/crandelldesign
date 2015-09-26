@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace crandelldesign\Events;
 
 abstract class Event
 {

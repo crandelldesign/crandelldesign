@@ -3,3 +3,12 @@
 Homestead.yaml
 Homestead.json
 .env
+.DS_Store
+Thumbs.db
+sftp-config.json
+/public/sass/.sass-cache
+**/.sass-cache/*
+**.sass-cache**
+.sass-cache
+.sass-cache/*
+/public/config.codekit

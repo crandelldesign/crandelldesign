@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e7322305fb1f62df68d0d8cd9670c9cb",
+    "hash": "4ff63e094c31b06e8e45e3b47f71f48a",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -256,16 +256,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "dev-master",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "768b4c0e3e0712a53eb35eaf3ba0d96910225389"
+                "reference": "66fd14b4d0b8f2389eaf37c5458608c7cb793a81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/768b4c0e3e0712a53eb35eaf3ba0d96910225389",
-                "reference": "768b4c0e3e0712a53eb35eaf3ba0d96910225389",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/66fd14b4d0b8f2389eaf37c5458608c7cb793a81",
+                "reference": "66fd14b4d0b8f2389eaf37c5458608c7cb793a81",
                 "shasum": ""
             },
             "require": {
@@ -314,7 +314,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-09-16 17:16:54"
+            "time": "2015-09-08 17:36:26"
         },
         {
             "name": "guzzlehttp/promises",
@@ -572,16 +572,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.1.17",
+            "version": "v5.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "415b5d824e15ee7cd18b8b23f96ae32b0b51d6a0"
+                "reference": "2703f4b395631fd3a2165ad74074d3531acfeccf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/415b5d824e15ee7cd18b8b23f96ae32b0b51d6a0",
-                "reference": "415b5d824e15ee7cd18b8b23f96ae32b0b51d6a0",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/2703f4b395631fd3a2165ad74074d3531acfeccf",
+                "reference": "2703f4b395631fd3a2165ad74074d3531acfeccf",
                 "shasum": ""
             },
             "require": {
@@ -696,7 +696,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-09-16 16:57:12"
+            "time": "2015-09-30 20:42:12"
         },
         {
             "name": "league/flysystem",
@@ -3226,13 +3226,13 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "guzzlehttp/guzzle": 20,
         "watson/rememberable": 20,
         "dg/twitter-php": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.5.9"

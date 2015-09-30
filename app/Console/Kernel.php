@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \crandelldesign\Console\Commands\Inspire::class,
+        'crandelldesign\Console\Commands\Clients'
     ];
 
     /**

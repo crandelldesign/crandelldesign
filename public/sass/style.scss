@@ -294,10 +294,11 @@ a {
     padding-top: 76px;
     background: #4cb848 url(../img/home-container-bg.jpg) no-repeat center center; 
     @include mobile-bg();
-	min-height: 100vh;
+	min-height: 550px;
     @media (min-width: $screen-sm-min) {
 	    background: url(../img/home-container-bg.jpg) no-repeat center center fixed; 
 		@include desktop-bg();
+		min-height: 100vh;
 	}
     .page {
 	    padding-top: 15px;

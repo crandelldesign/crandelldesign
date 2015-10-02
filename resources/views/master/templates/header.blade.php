@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="csrf-token" content="{{csrf_token()}}" />
 
-<?php $cache = 4; ?>
+<?php $cache = 1; ?>
 <link href="{{url('/')}}/css/style.css?version={{$cache}}" rel="stylesheet" type="text/css" media="all" />
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,5 +27,5 @@
 	</style>
 <![endif]-->
 
-<link rel="shortcut icon" href="{{url('/')}}/favicon.ico?v=2" type="image/x-icon">
-<link rel="icon" href="{{url('/')}}/favicon.ico?v=2" type="image/x-icon">
+<link rel="shortcut icon" href="{{url('/')}}/favicon.ico" type="image/x-icon">
+<link rel="icon" href="{{url('/')}}/favicon.ico" type="image/x-icon">

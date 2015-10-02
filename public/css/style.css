@@ -8033,7 +8033,9 @@ a {
       padding-left: 25px;
       padding-right: 25px; } }
   .navbar.navbar-fixed-top .navbar-brand {
-    height: auto; }
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px; }
     @media (min-width: 768px) {
       .navbar.navbar-fixed-top .navbar-brand {
         padding: 10px 15px;

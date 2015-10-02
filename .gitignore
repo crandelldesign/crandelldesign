@@ -3,13 +3,28 @@
 Homestead.yaml
 Homestead.json
 .env
-.DS_Store
-Thumbs.db
 sftp-config.json
+
+# Sass #
+###########
 /public/sass/.sass-cache
 **/.sass-cache/*
 **.sass-cache**
 .sass-cache
 .sass-cache/*
-/public/config.codekit
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+ 
+# codekit #
+###########
+.sass-cache/
+.codekit-config.json
 config.codekit

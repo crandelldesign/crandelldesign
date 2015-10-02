@@ -237,7 +237,7 @@
 			</div>
 			<div class="col-sm-5">
 				<p>Phone: <a class="phone" href="tel:+12483835376">248-383-5376</a><br>
-  				Email: <a href="mailto:matt@Crandell Design.com">matt@Crandell Design.com</a></p>
+  				Email: <a href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
   				<h2>Matt Crandell's R&eacute;sum&eacute;</h2>
   				<p><a href="{{url('/')}}/img/resume.pdf" target="_blank" class="btn btn-blue" title="Download Matt Crandell's R&eacute;sum&eacute; as PDF"><span class="glyphicon glyphicon-file"></span> Download My R&eacute;sum&eacute;</a></p>
 			</div>

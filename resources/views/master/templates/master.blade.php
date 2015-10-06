@@ -13,10 +13,6 @@
         <script src="{{url('/')}}/js/bootstrap.min.js"></script>
         <script src="{{url('/')}}/js/imagesloaded.pkgd.min.js"></script>
         <script src="{{url('/')}}/js/masonry.pkgd.min.js"></script>
-        <script src="{{url('/')}}/js/modernizr-custom.js"></script>
-        <script src="{{url('/')}}/js/move-top.js"></script>
-        <script src="{{url('/')}}/js/easing.min.js"></script>
-        <!--<script src="{{url('/')}}/js/retina.min.js"></script>-->
 
         <!-- PHP to JS Variables -->
         <script>

@@ -25,6 +25,9 @@ body {
     font-weight: $light;
     min-height: 100%;
     height: 100%;
+    @media (min-width: $screen-md-min) {
+    	font-size: 16px;
+    }
 }
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Aileron','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -48,6 +51,7 @@ a {
 	}
 }
 .btn {
+	border-radius: 2px;
 	&:hover, &:focus {
 		color: $darkblue;
 		text-decoration: none;
@@ -93,7 +97,6 @@ a {
 	}
 }
 #toTop {
-	display: none;
 	text-decoration: none;
 	position: fixed;
 	bottom: 10px;
@@ -106,7 +109,11 @@ a {
 	background-color: $green;
 	border: 2px solid #FFF;
 	color: #FFF;
-	opacity: .75;
+	@include hover-transition();
+	opacity: 0;
+	&.visible {
+		opacity: .75;
+	}
 	.fa {
 		font-weight: 300;
 		font-size: 35px;
@@ -115,8 +122,8 @@ a {
 	&:hover, &:focus {
 		background-color: $lightgreen;
 		color: #FFF;
-		@include hover-transition();
 		opacity: 1;
+		outline: none;
 	}
 }
 
@@ -143,7 +150,9 @@ a {
     	}
 		img {
 			max-height: 30px;
-			@media (min-width: $screen-sm-min) {
+			margin-top: 10px;
+			@media (min-width: $screen-md-min) {
+				margin-top: 0;
 				max-height: 50px;
 				@include size-transition();
 			}
@@ -200,6 +209,7 @@ a {
 		.navbar-brand {
 		    height: 50px;
 			    img {
+				margin-top: 0;
 			    max-height: 30px;
 			}
 		}
@@ -390,6 +400,13 @@ a {
     	background: url(../img/contact-container-bg.jpg) no-repeat center center fixed;
     	@include desktop-bg();
     }
+    .btn {
+    	@media (min-width: $screen-md-min) {
+    	    padding: 10px 16px;
+    		font-size: 18px;
+    		line-height: 1.3333333;
+    	}
+    }
     .form {
 	    margin: 0 auto 10px auto;
 	    .form-control {
@@ -417,7 +434,10 @@ a {
 	}
 	.col-sm-5{
 		p {
-	    	font-size: 18px;
+			font-size: 18px;
+			@media (min-width: $screen-md-min) {
+	    		font-size: 20px;
+	    	}
 	    }
 	    a:not(.btn) {
 		    text-decoration: none;

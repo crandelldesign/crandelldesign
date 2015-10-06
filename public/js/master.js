@@ -2,12 +2,6 @@
 /* global requestURL */
 /* global URLtitle */
 /* global domainURL */
-/* global Modernizr */
-
-/* Check Logo Support */
-if (!Modernizr.svg) {
-    $('.logo').attr('src', domainURL+'/img/crandell-design-wordmark.png');
-}
 
 // init Masonry
 var $grid = $('#portfolio-grid').masonry({
@@ -20,7 +14,11 @@ $grid.imagesLoaded().progress( function() {
 
 /* To Top Button */
 $(document).ready(function() {
-    $().UItoTop({ easingType: 'easeOutQuart' });
+    $('.scroll-top-button').click(function()
+    {
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
 });
 
 //jQuery to shrink the navbar on scroll
@@ -30,8 +28,10 @@ if ($(".navbar").offset().top > 250) {
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 250) {
         $(".navbar-fixed-top").addClass("nav-shrink");
+        $('.scroll-top-button').addClass('visible');
     } else {
         $(".navbar-fixed-top").removeClass("nav-shrink");
+        $('.scroll-top-button').removeClass('invisible');
     }
 });
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
         $('#topNav-collapse.in').collapse('hide');
         setTimeout( function () {
         $('.modal.in .modal-backdrop').height($('.modal.in .modal-content').height() + 51);
-        } , 750 );
+        }, 750 );
     });
 });
 

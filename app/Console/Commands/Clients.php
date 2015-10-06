@@ -53,7 +53,10 @@ class Clients extends Command
                 $this->testimonials();
                 break;
             default:
-                $this->info('Possible --type= values: clients, assets');
+                $this->clients();
+                $this->assets();
+                $this->testimonials();
+                //$this->info('Possible --type= values: clients, assets');
                 break;
         }
     }
@@ -124,6 +127,7 @@ class Clients extends Command
             }
             fclose($handle);
         }
+        \DB::table('cache')->truncate();
         $this->info("Loaded $counter Clients\n");
     }
 
@@ -193,6 +197,7 @@ class Clients extends Command
             }
         fclose($handle);
         }
+        \DB::table('cache')->truncate();
         $this->info("Loaded $counter Assets\n");
     }
 
@@ -245,6 +250,7 @@ class Clients extends Command
             }
         fclose($handle);
         }
+        \DB::table('cache')->truncate();
         $this->info("Loaded $counter Testimonials\n");
     }
 

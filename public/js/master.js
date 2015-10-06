@@ -56,7 +56,7 @@ $('.portfolio-link').click(function(event)
         var url = $(this).attr("href");
         portfolioSlug = $(this).data('portfolio');
         var stateObject = {};
-        var title = $(this).data('portfolio')+" | 5inallDesign by Matt Crandell";
+        var title = $(this).data('portfolio')+" | Crandell Design by Matt Crandell";
         history.pushState(stateObject,title,url);
         $('#'+portfolioSlug+'Modal').modal('show');
         $('#'+portfolioSlug+'-carousel').carousel(0);

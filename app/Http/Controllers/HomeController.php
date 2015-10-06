@@ -58,7 +58,7 @@ class HomeController extends Controller
                 $client->testimonials = $testimonials;
 
                 $vw = view('home.portfolio-item');
-                $vw->title = $client->name." | 5inallDesign by Matt Crandell";
+                $vw->title = $client->name." | Crandell Design by Matt Crandell";
                 $vw->description = $client->name;
                 $vw->client = $client;
                 $vw->fullPage = true;
@@ -68,7 +68,7 @@ class HomeController extends Controller
             }
         }
         $vw = view('home.portfolio');
-        $vw->title = "My Portfolio | 5inallDesign by Matt Crandell";
+        $vw->title = "My Portfolio | Crandell Design by Matt Crandell";
         $vw->description = "See Matt Crandell's past projects including web design and logo design.";
 
         $vw->clients = $this->clients('all');

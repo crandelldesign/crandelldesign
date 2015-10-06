@@ -197,9 +197,9 @@
 			</div>
 			<div class="col-sm-9 col-xs-12">
 				<h2>Hi, I'm Matt Crandell.</h2>
-				<p>In 2009, I established Crandell Design. Since then, I have graduated Ferris State University with degrees in both Graphic Design and Computer Information Systems. I launched my first website in 2001 while in middle school and have had a great passion for web design ever since.</p>
+				<p>In 2009, I established Crandell Design. Prior to Crandell Design, I launched my first website in 2001 and have had a great passion for web design ever since. Currently, I am also a full time employee for a marketing company where I handle various projects to satisfy their web development and design needs. I hold degrees in Graphic Design and Computer Information Systems from Ferris State University.</p>
 				<h2>A little about Crandell Design</h2>
-				<p>Crandell Design was created to give people a personal touch for their web and graphic design needs. I believe that all businesses not only deserve a website that is unique to their brand, but also access to all of their graphic design and online business needs. <!--For web design, Crandell Design does not use cookie cutter templates and will create everything from scratch.--> I believe in creating truly unique websites for all.</p>
+				<p>Crandell Design was created to give people a personal touch for their web and graphic design needs. I believe that all businesses deserve a website that is unique to their brand, as well as access to all online business needs.</p>
 			</div>
 		</div>
 		

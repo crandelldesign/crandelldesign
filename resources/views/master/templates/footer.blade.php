@@ -29,6 +29,6 @@
         <p>All graphics are created by me, Matt Crandell.</p>
     </div>
     <!-- scroll_top_btn -->
-    <a href="#" id="toTop" class="scroll-top-button img-circle"><i class="fa fa-angle-up"></i></a>
+    <button id="toTop" class="scroll-top-button img-circle pointer"><i class="fa fa-angle-up"></i></button>
     <!--end scroll_top_btn -->
 </footer>

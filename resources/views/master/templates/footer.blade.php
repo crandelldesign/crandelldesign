@@ -26,7 +26,7 @@
     <div class="footer-bottom">
         <p>Copyright &copy; {{date("Y")}} Crandell Design. All Rights Reserved.</p>
         <p>Designated trademarks and brands are the property of their respective owners.</p>
-        <p>All graphics are created by me, Matt Crandell.</p>
+        <p>All graphics are created by Matt Crandell.</p>
     </div>
     <!-- scroll_top_btn -->
     <button id="toTop" class="scroll-top-button img-circle pointer"><i class="fa fa-angle-up"></i></button>

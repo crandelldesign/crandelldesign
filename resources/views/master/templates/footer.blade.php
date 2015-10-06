@@ -7,7 +7,7 @@
                     <ul class="list-inline">
                         <li><a href="http://facebook.com/crandelldesign" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
                         <li><a href="http://twitter.com/crandelldesign" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/crandelldesign" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/crandell-design" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
                         <li><a href="https://plus.google.com/100599816596951419097" target="_blank" rel="publisher"><i class="fa fa-google-plus-square"></i></a></li>
                     </ul>
                 </div>

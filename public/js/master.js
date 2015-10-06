@@ -31,7 +31,7 @@ $(window).scroll(function() {
         $('.scroll-top-button').addClass('visible');
     } else {
         $(".navbar-fixed-top").removeClass("nav-shrink");
-        $('.scroll-top-button').removeClass('invisible');
+        $('.scroll-top-button').removeClass('visible');
     }
 });
 

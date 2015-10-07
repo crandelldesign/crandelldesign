@@ -50,44 +50,35 @@ $(document).ready(function() {
 var portfolioSlug = '';
 $('.portfolio-link').click(function(event)
 {
-    if($('html').hasClass('history'))
-    {
-        event.preventDefault();
-        var url = $(this).attr("href");
-        portfolioSlug = $(this).data('portfolio');
-        var stateObject = {};
-        var title = $(this).data('portfolio')+" | Crandell Design by Matt Crandell";
-        history.pushState(stateObject,title,url);
-        $('#'+portfolioSlug+'Modal').modal('show');
-        $('#'+portfolioSlug+'-carousel').carousel(0);
-    }
+    event.preventDefault();
+    var url = $(this).attr("href");
+    portfolioSlug = $(this).data('portfolio');
+    var stateObject = {};
+    var title = $(this).data('portfolio')+" | Crandell Design by Matt Crandell";
+    history.pushState(stateObject,title,url);
+    $('#'+portfolioSlug+'Modal').modal('show');
+    $('#'+portfolioSlug+'-carousel').carousel(0);
 });
 window.onpopstate = function()
 {
-    if($('html').hasClass('history'))
+    if ((window.location.pathname === requestURL) && (portfolioSlug !== ''))
     {
-        if ((window.location.pathname === requestURL) && (portfolioSlug !== ''))
-        {
-            $('#'+portfolioSlug+'Modal').modal('hide');
-        }
-        else if ((window.location.pathname === requestURL) && (portfolioSlug === ''))
-        {
-            var stateObject = {};
-            var title = URLtitle;
-            history.pushState(stateObject,title,requestURL);
-        }
-        else if ((window.location.pathname !== '/') && (portfolioSlug !== ''))
-        {
-            $('#'+portfolioSlug+'Modal').modal('show');
-        }
+        $('#'+portfolioSlug+'Modal').modal('hide');
+    }
+    else if ((window.location.pathname === requestURL) && (portfolioSlug === ''))
+    {
+        var stateObject = {};
+        var title = URLtitle;
+        history.pushState(stateObject,title,requestURL);
+    }
+    else if ((window.location.pathname !== '/') && (portfolioSlug !== ''))
+    {
+        $('#'+portfolioSlug+'Modal').modal('show');
     }
 };
 $('.modal').on('hidden.bs.modal', function ()
 {
-    if($('html').hasClass('history'))
-    {
-        var stateObject = {};
-        var title = URLtitle;
-        history.replaceState(stateObject,title,requestURL);
-    }
+    var stateObject = {};
+    var title = URLtitle;
+    history.replaceState(stateObject,title,requestURL);
 });

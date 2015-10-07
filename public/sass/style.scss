@@ -150,7 +150,9 @@ a {
     	}
 		img {
 			max-height: 30px;
-			margin-top: 10px;
+			@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+				margin-top: 10px;
+			}
 			@media (min-width: $screen-md-min) {
 				margin-top: 0;
 				max-height: 50px;
@@ -192,6 +194,7 @@ a {
 		}
 	}
 	.navbar-toggle {
+		border-radius: 2px;
 		border-color: $blue;
 		.icon-bar {
 			background-color: $black;

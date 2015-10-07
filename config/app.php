@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://www.crandelldesign.com',
+    'url' => env('APP_URL', 'http://www.crandelldesign.com'),
 
     /*
     |--------------------------------------------------------------------------

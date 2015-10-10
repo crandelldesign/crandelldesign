@@ -1,16 +1,16 @@
 /* Mixins */
 
 @mixin hover-transition() {
-	-webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 @mixin size-transition() {
-	-webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+	-webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
 }
 @mixin mobile-bg() {
 	-o-background-size: auto 100%, auto;
@@ -23,4 +23,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+@mixin shadow-1(){
+    -webkit-box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
+    box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
 }

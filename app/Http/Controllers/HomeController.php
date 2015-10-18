@@ -83,9 +83,17 @@ class HomeController extends Controller
             \Input::all(),
             array(
                 'name' => 'required',
-                'email' => 'required|email'
+                'email' => 'required|email',
+                'message' => 'required'
             )
         );
+        if ($validator->fails())
+        {
+            return \Response::json(array(
+                'success' => false,
+                'errors' => $validator->messages()->toArray()
+            ), 400); // 400 being the HTTP code for an invalid request.
+        }
         if((\Input::get('url') != '') || ($validator->fails()))
         {
             echo 'Sorry, we don\'t like spammers here!';

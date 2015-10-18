@@ -214,12 +214,12 @@
 				<form class="form" role="form" action="{{url('/')}}/submit-contact" method="post" autocomplete="off">
 				  	<div class="form-group">
 				    	<label for="name" class="sr-only">Name</label>
-					    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required">
+					    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
 					    <label class="control-label error-label" for="name">Please Enter Your Name</label>
 				  	</div>
 					<div class="form-group">
 					    <label for="email" class="sr-only">Email</label>
-					    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required">
+					    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
 					    <label class="control-label error-label" for="email">Please Enter A Valid Email Address</label>
 					</div>
 					<div class="form-group">

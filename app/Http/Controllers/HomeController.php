@@ -6,6 +6,7 @@ use crandelldesign\Http\Controllers\Controller;
 use crandelldesign\Client;
 use crandelldesign\Asset;
 use crandelldesign\Testimonial;
+use crandelldesign\Prospect;
 
 class HomeController extends Controller
 {
@@ -117,5 +118,86 @@ class HomeController extends Controller
     public function getSubmitContact()
     {
         return \Redirect::to('/#contact', 301);
+    }
+
+    public function getBestofthebest()
+    {
+        $vw = view('home.prospects');
+        $vw->title = "Best of the Best Expo | Crandell Design by Matt Crandell";
+        $vw->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
+
+        $vw->special_wallpaper = url('/').'/img/wallpapers/rockstar1.jpg';
+        $vw->special_wallpaper1 = url('/').'/img/wallpapers/rockstar1.jpg';
+        $vw->special_wallpaper2 = url('/').'/img/wallpapers/rockstar2.jpg';
+        $vw->special_wallpaper3 = url('/').'/img/wallpapers/rockstar3.jpg';
+
+        return $vw;
+
+    }
+
+    public function postSubmitProspect()
+    {
+        $validator = \Validator::make(
+            \Input::all(),
+            array(
+                'name' => 'required',
+                'email' => 'required|email',
+            )
+        );
+        if ($validator->fails())
+        {
+            return \Response::json(array(
+                'success' => false,
+                'errors' => $validator->messages()->toArray()
+            ), 400); // 400 being the HTTP code for an invalid request.
+        }
+        if((\Input::get('url') != '') || ($validator->fails()))
+        {
+            echo 'Sorry, we don\'t like spammers here!';
+        } else {
+            $prospect = new Prospect;
+            $prospect->name = \Input::get('name');
+            $prospect->business_name = \Input::get('business_name');
+            $prospect->email = \Input::get('email');
+            $prospect->phone = \Input::get('phone');
+            $prospect->is_web_design = (\Input::exists('is_web_design'))?1:0;
+            $prospect->is_web_hosting = (\Input::exists('is_web_hosting'))?1:0;
+            $prospect->is_social_media = (\Input::exists('is_social_media'))?1:0;
+            $prospect->is_logo_design = (\Input::exists('is_logo_design'))?1:0;
+            $prospect->is_seo = (\Input::exists('is_seo'))?1:0;
+            $prospect->message = \Input::get('message');
+            $prospect->save();
+            /*$data = array(
+                'email' => \Input::get('email'),
+                'name' => \Input::get('name'),
+                'text' => \Input::get('message')
+            );
+            \Mail::send('emails.contact', $data, function($message)
+            {
+                $message->from(\Input::get('email'), \Input::get('name'));
+                $message->to('matt@crandelldesign.com', 'Matt Crandell');
+                $message->replyTo(\Input::get('email'), \Input::get('name'));
+                $message->subject('You\'ve Been Contacted from Crandell Design by '.\Input::get('name').'!');
+            });*/
+            return $prospect;
+        }
+    }
+
+    public function getPresentation()
+    {
+        $vw = view('home.presentation');
+        $vw->title = "Presentation | Crandell Design by Matt Crandell";
+        $vw->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
+
+        $assets = Asset::orderBy(\DB::raw('RAND()'))->where('display_order','<',999)->get();
+        $vw->assets = $assets;
+
+        $vw->special_wallpaper = url('/').'/img/wallpapers/rockstar1.jpg';
+        $vw->special_wallpaper1 = url('/').'/img/wallpapers/rockstar1.jpg';
+        $vw->special_wallpaper2 = url('/').'/img/wallpapers/rockstar2.jpg';
+        $vw->special_wallpaper3 = url('/').'/img/wallpapers/rockstar3.jpg';
+
+        return $vw;
+
     }
 }

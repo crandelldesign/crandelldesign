@@ -693,6 +693,7 @@ body.simple {
 		min-height: 0;
 		.contact-container {
 			z-index: 1000;
+			position: relative;
 			background: none;
 			font-size: 20px;
 			.col-sm-4 {
@@ -714,9 +715,16 @@ body.simple {
 	}
 	.footer .footer-bottom {
 		color: #FFF;
+		z-index: 1000;
+		position: relative;
 	}
 	.presentation-container {
 	    z-index: 1000;
+		position: relative;
+		.carousel {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
 		img {
 			width: 1000px;
 			height: 600px;

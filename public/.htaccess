@@ -10,8 +10,7 @@
     #RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
 
     RewriteCond %{HTTPS} on
-    RewriteCond %{HTTP_HOST} !localhost
-    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
+    RewriteCond %{HTTP_HOST} !^www\.
     RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
     # Handle Front Controller...

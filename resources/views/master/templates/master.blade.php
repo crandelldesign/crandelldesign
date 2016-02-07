@@ -9,10 +9,10 @@
         @yield('body')
         @include('master.templates.footer')
 
-        <script src="{{url('/')}}/js/jquery-2.1.4.min.js"></script>
+        <!--<script src="{{url('/')}}/js/jquery-2.1.4.min.js"></script>
         <script src="{{url('/')}}/js/bootstrap.min.js"></script>
         <script src="{{url('/')}}/js/imagesloaded.pkgd.min.js"></script>
-        <script src="{{url('/')}}/js/masonry.pkgd.min.js"></script>
+        <script src="{{url('/')}}/js/masonry.pkgd.min.js"></script>-->
 
         <!-- PHP to JS Variables -->
         <script>
@@ -21,7 +21,7 @@
             domainURL = "{{url('/')}}";
             URLtitle = '{{$title}}';
         </script>
-        <script src="{{url('/')}}/js/master.min.js"></script>
+        <script type="text/javascript" src="{{ elixir('js/master.js') }}"></script>
 
         @yield('footercode')
 

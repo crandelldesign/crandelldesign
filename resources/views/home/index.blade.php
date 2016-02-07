@@ -262,5 +262,5 @@
 @stop
 
 @section('footercode')
-<script src="{{url('/')}}/js/index.min.js"></script>
+<script type="text/javascript" src="{{ elixir('js/index.js') }}"></script>
 @stop

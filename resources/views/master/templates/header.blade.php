@@ -5,7 +5,7 @@
 <meta name="csrf-token" content="{{csrf_token()}}" />
 
 <?php $cache = 1; ?>
-<link href="{{url('/')}}/css/style.css?version={{$cache}}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="{{ elixir('css/style.css') }}" />
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

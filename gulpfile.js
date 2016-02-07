@@ -24,6 +24,12 @@ elixir(function(mix) {
 		],
 		'public/js/master.js'
     );
+    mix.scripts(
+		[
+	        'index.js'
+		],
+		'public/js/index.js'
+    );
     mix.version(['css/style.css', 'js/master.js', 'js/index.js']);
     mix.copy('resources/assets/fonts', 'public/build/fonts');
     mix.copy('public/img', 'public/build/img');

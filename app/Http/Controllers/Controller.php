@@ -55,7 +55,7 @@ abstract class Controller extends BaseController
 
     protected function clients($all = null)
     {
-        $clients = Client::orderBy('display_order');
+        $clients = Client::where('is_active',1)->orderBy('display_order');
         if (!$all)
             $clients = $clients->take(8);
         $clients = $clients->with('assets')->with('testimonials')->remember(30*24*60)->get();

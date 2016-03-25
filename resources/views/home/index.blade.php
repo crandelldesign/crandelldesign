@@ -42,31 +42,31 @@
 		<div class="row">
 			<div class="col-md-1 hidden-sm hidden-xs"></div>
 			<div class="col-md-2 col-sm-4 col-xs-6 margin-bottom-15">
-				<div class="btn btn-block btn-translucent-blue"  data-toggle="modal" data-target="#webDesignModal">
+				<div class="btn btn-block btn-translucent-green"  data-toggle="modal" data-target="#webDesignModal">
 					<img srcset="{{url('/')}}/img/icon-web-design.svg 2x" src="{{url('/')}}/img/icon-web-design.png" alt="Web Design and Development" class="img-responsive center-block" data-no-retina>
 					<h2>Web Design and Development</h2>
 				</div>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 margin-bottom-15">
-				<div class="btn btn-block btn-translucent-blue"  data-toggle="modal" data-target="#webHostingModal">
+				<div class="btn btn-block btn-translucent-green"  data-toggle="modal" data-target="#webHostingModal">
 					<img srcset="{{url('/')}}/img/icon-web-hosting.svg 2x" src="{{url('/')}}/img/icon-web-hosting.png" alt="Web Hosting" class="img-responsive center-block" data-no-retina>
 					<h2>Web Hosting</h2>
 				</div>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 margin-bottom-15">
-				<div class="btn btn-block btn-translucent-blue"  data-toggle="modal" data-target="#socialMediaModal">
+				<div class="btn btn-block btn-translucent-green"  data-toggle="modal" data-target="#socialMediaModal">
 					<img srcset="{{url('/')}}/img/icon-social-media.svg 2x" src="{{url('/')}}/img/icon-social-media.png" alt="Social Media Advising Services" class="img-responsive center-block" data-no-retina>
 					<h2>Social Media Advising Services</h2>
 				</div>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 col-sm-offset-2 col-md-offset-0 margin-bottom-15">
-				<div class="btn btn-block btn-translucent-blue"  data-toggle="modal" data-target="#logoDesignModal">
+				<div class="btn btn-block btn-translucent-green"  data-toggle="modal" data-target="#logoDesignModal">
 					<img srcset="{{url('/')}}/img/icon-logo-design.svg 2x" src="{{url('/')}}/img/icon-logo-design.png" alt="Logo Design" class="img-responsive center-block" data-no-retina>
 					<h2>Logo Design</h2>
 				</div>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0 margin-bottom-15">
-				<div class="btn btn-block btn-translucent-blue"  data-toggle="modal" data-target="#seoModal">
+				<div class="btn btn-block btn-translucent-green"  data-toggle="modal" data-target="#seoModal">
 					<img srcset="{{url('/')}}/img/icon-seo.svg 2x" src="{{url('/')}}/img/icon-seo.png" alt="Search Engine Optimization" class="img-responsive center-block" data-no-retina>
 					<h2>Search Engine Optimization</h2>
 				</div>
@@ -197,7 +197,7 @@
 			</div>
 			<div class="col-sm-9 col-xs-12">
 				<h2>Hi, I'm Matt Crandell.</h2>
-				<p>In 2009, I established Crandell Design. Prior to Crandell Design, I launched my first website in 2001 and have had a great passion for web design ever since. Currently, I am also a full time employee for a marketing company where I handle various projects to satisfy their web development and design needs. I hold degrees in Graphic Design and Computer Information Systems from Ferris State University.</p>
+				<p>In 2009, I established Crandell Design. Prior to Crandell Design, I launched my first website in 2001 and have had a great passion for web design ever since. Currently, I am also a full-time employee for a marketing company where I handle various projects to satisfy their web development and design needs. I hold degrees in Graphic Design and Computer Information Systems from Ferris State University.</p>
 				<h2>A little about Crandell Design</h2>
 				<p>Crandell Design was created to give people a personal touch for their web and graphic design needs. I believe that all businesses deserve a website that is unique to their brand, as well as access to all online business needs.</p>
 			</div>
@@ -230,16 +230,16 @@
 					<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 					<input class="url" type="text" id="url" name="url" value="" />
 				  	<div class="form-group">
-				      	<button type="submit" class="btn btn-submit pull-right btn-blue" data-loading-text="Sending...">Send</button>
+				      	<button type="submit" class="btn btn-submit pull-right btn-green" data-loading-text="Sending...">Send</button>
 						<div class="clearfix"></div>
 				  	</div>
 				</form>
 			</div>
 			<div class="col-sm-5">
-				<p>Phone: <a class="phone" href="tel:+12483835376">248-383-5376</a><br>
-  				Email: <a href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
+				<p>Phone:&nbsp;&nbsp;<a class="phone" href="tel:+12483835376">248&ndash;383&ndash;5376</a><br>
+  				Email:&nbsp;&nbsp;<a href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
   				<h2>Matt Crandell's R&eacute;sum&eacute;</h2>
-  				<p><a href="{{url('/')}}/img/resume.pdf" target="_blank" class="btn btn-blue" title="Download Matt Crandell's R&eacute;sum&eacute; as PDF"><span class="glyphicon glyphicon-file"></span> Download My R&eacute;sum&eacute;</a></p>
+  				<p><a href="{{url('/')}}/img/resume.pdf" target="_blank" class="btn btn-green" title="Download Matt Crandell's R&eacute;sum&eacute; as PDF"><span class="glyphicon glyphicon-file"></span> Download My R&eacute;sum&eacute;</a></p>
 			</div>
 		</div>
 	</div>

@@ -25,9 +25,11 @@
 
                 <div class="row margin-bottom-20">
                     <div class="col-sm-7 col-lg-8">
-                        <p>For the Clarkston Area Chamber of Commerce, I created not only a new logo, but also a full brand package for them. I featured the clock from the old logo: a landmark located downtown, updated the design with cleaner lines and an overall more modern look. I chose a new typeface to be used across the board. I used blue because it conveys reliability, while the orange is inviting and energetic. After discovering a multicolored wall in the chamber office, I used the tones from the wall to create all colors used in the logos.</p>
+                        <p class="testimonial"><strong>&ldquo;</strong> The Chamber worked with Crandell Design to do a complete logo redesign. We were looking for a more up-to-date look and were able to achieve just that by working with Matt. Matt also worked to update and create an umbrella look for several of the Chamber event logos. He was so easy to work with and was extremely responsive and receptive during the entire development process. Due to Matt’s attentiveness and persistence we were able to complete the entire project in just a few short months. He also went above and beyond to make sure that we had all of the standard logo sizing for social media. The service provided by Crandell Design was exceptional, and it was a pleasure working with Matt throughout the process. <strong>&rdquo;</strong></p>
+                        <p class="testimonial-author text-right">&mdash; Janelle Best, Director</p>
+                        <!--<p>For the Clarkston Area Chamber of Commerce, I created not only a new logo, but also a full brand package for them. I featured the clock from the old logo: a landmark located downtown, updated the design with cleaner lines and an overall more modern look. I chose a new typeface to be used across the board. I used blue because it conveys reliability, while the orange is inviting and energetic. After discovering a multicolored wall in the chamber office, I used the tones from the wall to create all colors used in the logos.</p>
                         <p>All the logos keep a similar motif with varying levels in the words with the image of the logo on the left. This consistent look makes the logos instantly recognizable as a chamber event or activity.</p>
-                        <p class="hidden-xs">Check out the additional logos below.</p>
+                        <p class="hidden-xs">Check out the additional logos below.</p>-->
                     </div>
                     <div class="col-sm-5 col-lg-4">
                         <p class="text-center"><img srcset="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-mockup1@2x.jpg 2x" src="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-mockup1.jpg" alt="Logo for Clarkston Area Chamber of Commerce" class="img-responsive center-block" /></p>
@@ -43,16 +45,12 @@
                     </div>
                 </div>
 
-                @if($client->Testimonial)
-                @foreach($client->Testimonial as $testimonial)
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-md-7 col-lg-8 col-lg-offset-2">
-                        <p class="testimonial"><strong>&ldquo;</strong> {{$testimonial->testimonial}} <strong>&rdquo;</strong></p>
-                        <p class="testimonial-author text-right">&mdash; {{$testimonial->author}}</p>
+                        <p class="testimonial"><strong>&ldquo;</strong> The Chamber worked with Crandell Design to do a complete logo redesign. We were looking for a more up-to-date look and were able to achieve just that by working with Matt. Matt also worked to update and create an umbrella look for several of the Chamber event logos. He was so easy to work with and was extremely responsive and receptive during the entire development process. Due to Matt’s attentiveness and persistence we were able to complete the entire project in just a few short months. He also went above and beyond to make sure that we had all of the standard logo sizing for social media. The service provided by Crandell Design was exceptional, and it was a pleasure working with Matt throughout the process. <strong>&rdquo;</strong></p>
+                        <p class="testimonial-author text-right">&mdash; Janelle Best, Director</p>
                     </div>
-                </div>
-                @endforeach
-                @endif
+                </div>-->
             </div>
         </div><!-- /.modal-content -->
     <!--</div>--><!-- /.modal-dialog -->

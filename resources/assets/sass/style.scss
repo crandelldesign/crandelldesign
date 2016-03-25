@@ -79,12 +79,20 @@ a {
 		color: $black;
 	}
 }
+.btn-translucent-green {
+    border: 2px solid #FFF;
+    background: none;
+    &:hover, &:focus {
+        background: $green;
+        background: rgba($green, 0.5);
+    }
+}
 .btn-translucent-blue {
 	border: 2px solid #FFF;
 	background: none;
 	&:hover, &:focus {
 		background: $blue;
-		background: rgba(71, 89, 167, 0.5);
+		background: rgba($blue, 0.5);
 	}
 }
 .btn-blue {
@@ -346,15 +354,16 @@ a {
 /* Services */
 .services-container {
     color: #FFF;
-    background: #4759a7 url(../img/services-container-bg-mobile.jpg) no-repeat center center; 
+    //background: #4759a7 url(../img/services-container-bg-mobile.jpg) no-repeat center center; 
+    background: url(../img/services-container-bg.jpg) no-repeat center center fixed;
     @include mobile-bg();
     @media (min-width: $screen-sm-min) {
-    	background: url(../img/services-container-bg.jpg) no-repeat center center fixed;
+    	
     	@include desktop-bg();
     	min-height: 600px;
     }
     h2 {
-	    color: $lightgreen;
+	    color: #FFF;
 	}
 	.btn {
 	    display: block;
@@ -443,13 +452,17 @@ a {
 			@media (min-width: $screen-md-min) {
 	    		font-size: 20px;
 	    	}
+            @media (min-width: $screen-lg-min) {
+                font-size: 25px;
+            }
 	    }
 	    a:not(.btn) {
 		    text-decoration: none;
-		    color: $lightgreen;
-		    text-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
+		    color: #FFF;
+            font-weight: $regular;
+		    //text-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
 		    &:hover {
-			    color: $green;
+			    color: $lightgreen;
 			}
 			.phone {
 			    color: #FFF;
@@ -735,6 +748,7 @@ body.simple {
 /* General Styles */
 .section-description {
     max-width: 700px;
+    font-size: 16px;
 }
 .margin-top-10 {
     margin-top: 10px;

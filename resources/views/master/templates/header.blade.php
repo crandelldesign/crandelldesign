@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="s33Ag1ZT0fIKIzFz0MRCzPDlDqNLPM60ZsTDKNgeRNs" />
 <title>{{isset($title) ? $title : ''}}</title>
 <meta name="description" content="{{isset($description) ? $description : ''}}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

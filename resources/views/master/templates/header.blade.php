@@ -1,6 +1,7 @@
 <meta name="google-site-verification" content="s33Ag1ZT0fIKIzFz0MRCzPDlDqNLPM60ZsTDKNgeRNs" />
 <title>{{isset($title) ? $title : ''}}</title>
 <meta name="description" content="{{isset($description) ? $description : ''}}">
+<link rel="alternate" href="{{url('/')}}" hreflang="en-us" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="csrf-token" content="{{csrf_token()}}" />

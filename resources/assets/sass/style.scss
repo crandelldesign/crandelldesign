@@ -864,3 +864,11 @@ body.simple {
     19% { opacity: 0 }
     100% { opacity: 0 }
 }
+
+/* Portfolio Item */
+.portfolio-img {
+    @include shadow-2();
+    &.portfolio-browser {
+        border-radius: 5px;
+    }
+}

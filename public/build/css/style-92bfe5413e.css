@@ -7971,7 +7971,7 @@ a {
   background-color: #FFF;
   border-color: #4759A7;
   z-index: 1060;
-  box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25); }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
   @media (min-width: 768px) {
     .navbar.navbar-fixed-top .container-fluid {
       max-width: 1360px;
@@ -8068,7 +8068,7 @@ a {
   margin: 10px 1%;
   float: left;
   background-color: #FFFFFF;
-  box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
   overflow: hidden;
   display: block; }
@@ -8434,7 +8434,7 @@ body.simple {
     body.simple .content label {
       font-weight: 300; }
     body.simple .content input, body.simple .content .btn {
-      box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25); }
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
     body.simple .content .checkbox-inline {
       font-size: 16px; }
     body.simple .content .checkbox-inline + .checkbox-inline {
@@ -8483,7 +8483,7 @@ body.simple {
   padding: 10px 16px;
   background-color: #FFF;
   color: #252525;
-  box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25); }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 /* Animation for the slideshow images */
 
@@ -8514,5 +8514,9 @@ body.simple {
     opacity: 0; }
   100% {
     opacity: 0; } }
+
+/* Portfolio Item */
+.portfolio-img {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 /*# sourceMappingURL=style.css.map */

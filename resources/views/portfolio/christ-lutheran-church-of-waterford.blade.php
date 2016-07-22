@@ -21,14 +21,14 @@
             </div>
             <div class="modal-body">
 
-                <div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/christwaterford-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-responsive-banner.jpg')}}" alt="Responsive Display of the Christ Lutheran Church of Waterford Website" class="img-responsive center-block" /></div>
+                <div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/christwaterford-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-responsive-banner.jpg')}}" alt="Responsive Display of the Christ Lutheran Church of Waterford Website" class="img-responsive center-block portfolio-img" /></div>
 
                 <!--<p>For the Christ Lutheran Church of Waterford website, I designed the layout to be welcoming for the congregation and those who are searching for a new church to call home. The site features a full admin interface that give office personal at the church the power to log in and keep church events up to date.</p>-->
 
                 <h2>Mobile Friendly</h2>
                 <div class="row margin-bottom-20">
                     <div class="col-sm-3 text-center margin-bottom-20">
-                        <img src="http://placehold.it/595x750.jpg&text=Mobile with menu open" class="img-responsive center-block">
+                        <img src="http://placehold.it/595x750.jpg&text=Mobile with menu open"  alt="The Christ Lutheran Church of Waterford Website with the mobile menu open" class="img-responsive center-block portfolio-img portfolio-browser">
                     </div>
                     <div class="col-sm-3 margin-bottom-20">
                         <ul>
@@ -38,7 +38,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-6 text-center margin-bottom-20">
-                        <img srcset="{{url('/img/samples/christwaterford-mockup-phone@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-mockup-phone.jpg')}}" alt="The Christ Lutheran Church of Waterford Website on a Mobile Device" class="img-responsive center-block" />
+                        <img srcset="{{url('/img/samples/christwaterford-mockup-phone@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-mockup-phone.jpg')}}" alt="The Christ Lutheran Church of Waterford Website on a Mobile Device" class="img-responsive center-block portfolio-img" />
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
 
                 <div class="row">
                     <div class="col-sm-8 text-center margin-bottom-20">
-                        <img srcset="{{url('/img/samples/christwaterford-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-browser-homepage.jpg')}}" alt="Homepage of the Christ Lutheran Church of Waterford Website" class="img-responsive center-block" />
+                        <img srcset="{{url('/img/samples/christwaterford-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-browser-homepage.jpg')}}" alt="Homepage of the Christ Lutheran Church of Waterford Website" class="img-responsive center-block portfolio-img portfolio-browser" />
                     </div>
                     <div class="col-sm-4">
                         <ul>
@@ -68,20 +68,20 @@
                         </ul>
                     </div>
                     <div class="col-sm-4 text-center margin-bottom-20">
-                        <img src="http://placehold.it/1518x972.jpg&text=Screenshot of Calendar" class="img-responsive center-block">
+                        <img src="http://placehold.it/1518x972.jpg&text=Screenshot of Calendar" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford event calendar">
                     </div>
                     <div class="col-sm-4 text-center margin-bottom-20">
-                        <img src="http://placehold.it/1518x972.jpg&text=Screenshot of Calendar with Event Popup Open" class="img-responsive center-block">
+                        <img src="http://placehold.it/1518x972.jpg&text=Screenshot of Calendar with Event Popup Open" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford event calendar with event description open">
                     </div>
                 </div>
 
                 <h2>Admin Interface</h2>
                 <div class="row">
                     <div class="col-sm-4 text-center margin-bottom-20">
-                        <img src="http://placehold.it/1518x972.jpg&text=Screenshot of Event List" class="img-responsive center-block">
+                        <img src="http://placehold.it/1518x972.jpg&text=Screenshot of Event List" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford admin event list">
                     </div>
                     <div class="col-sm-4 text-center margin-bottom-20">
-                        <img src="http://placehold.it/1518x972.jpg&text=Screenshot of Event Edit Page" class="img-responsive center-block">
+                        <img src="http://placehold.it/1518x972.jpg&text=Screenshot of Event Edit Page" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford admin event editing interface">
                     </div>
                     <div class="col-sm-4">
                         <ul>

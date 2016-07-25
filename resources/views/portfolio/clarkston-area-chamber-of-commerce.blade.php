@@ -18,6 +18,7 @@
                 @else
                     </h3>
                 @endif
+                Clarkston, MI | <a href="http://www.christwaterford.org" target="_blank">View Website <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       		</div>
       		<div class="modal-body">
 

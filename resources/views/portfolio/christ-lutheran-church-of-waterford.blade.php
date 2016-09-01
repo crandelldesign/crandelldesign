@@ -39,6 +39,54 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Style Guide</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="color-swatch swatch1">
+                                    Midnight Blue<br>
+                                    #003366
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="color-swatch swatch2">
+                                    Persian Green<br>
+                                    #00a99d
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="color-swatch swatch3">
+                                    Gray<br>
+                                    #8b8c84
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="color-swatch swatch4">
+                                    Pine Green<br>
+                                    #00746b
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="color-swatch swatch5">
+                                    Light Sea Green<br>
+                                    #1cbbb4
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="color-swatch swatch6">
+                                    Black<br>
+                                    #252525
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>Typography</h2>
+                        <img src="{{url('/img/samples/christwaterford-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Christ Lutheran Church of Waterford Typography">
+                    </div>
+                </div>
+
                 <h2>Event Calendar</h2>
 
                 <div class="row">

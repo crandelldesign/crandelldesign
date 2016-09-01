@@ -26,7 +26,7 @@
 
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="lead"> Since 2009, the Christ Lutheran Church website has seen numerous improvements and redesigns including a new admin interface to keep events up to date.</p>
+                        <p class="lead">Since 2009, the Christ Lutheran Church website has seen numerous improvements and redesigns including a new admin interface to keep events up to date.</p>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@
 
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2>Style Guide</h2>
+                        <h2>Color Scheme</h2>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="color-swatch swatch1">

@@ -1,6 +1,4 @@
-const elixir = require('laravel-elixir');
-
-require('laravel-elixir-vue');
+var elixir = require('laravel-elixir');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,15 +11,39 @@ require('laravel-elixir-vue');
  |
  */
 
-var options = {
-    includePaths: [
-    'node_modules/bootstrap-sass/assets/stylesheets/',
-    'node_modules/font-awesome/scss/',
-    'node_modules/slick-carousel/slick/'
-    ] 
-};
+elixir(function(mix) {
+    // Build Stylesheet
+    mix.sass(
+        'stylesheet.scss',
+        'public/css/stylesheet.css',
+        {
+            includePaths: [
+                'node_modules/bootstrap-sass/assets/stylesheets/',
+                'node_modules/font-awesome/scss/',
+                'node_modules/slick-carousel/slick/'
+            ]
+        }
+    );
+    // Copy Jquery's JS
+    mix.copy('node_modules/jquery/dist/jquery.min.js', 'resources/assets/js/jquery');
+    // Copy Bootstrap's JS
+    mix.copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'resources/assets/js/bootstrap');
+    // Copy Slick's JS
+    mix.copy('node_modules/slick-carousel/slick/slick.js', 'resources/assets/js/slick');
+    // Build JS
+    mix.scripts(
+        [
+            'jquery/jquery.min.js',
+            'bootstrap/bootstrap.js',
+            'slick/slick.js',
+            'default.js'
+        ],
+        'public/js/default.js'
+    );
+    // Copy Fonts
+    mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/bootstrap');
+    mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 
-elixir(mix => {
-    mix.sass('stylesheet.scss', null, options);
-    mix.webpack('defaultlaravel 5.4.js');
+    // Create Build Numbers
+    mix.version(['css/stylesheet.css', 'js/default.js']);
 });

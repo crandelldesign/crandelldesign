@@ -913,3 +913,27 @@ body.simple {
         }
     }
 }
+
+/* Portfolio - Facials by Jude */
+#facials-by-judeModal {
+    .color-swatch {
+        &.swatch1 {
+            background-color: #8a175a;
+        }
+        &.swatch2 {
+            background-color: #ffccff;
+        }
+        &.swatch3 {
+            background-color: #4f7e12;
+        }
+        &.swatch4 {
+            background-color: #990033;
+        }
+        &.swatch5 {
+            background-color: #5e3e4a;
+        }
+        &.swatch6 {
+            background-color: #252525;
+        }
+    }
+}

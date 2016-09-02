@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 margin-bottom-20">
                         <h2>Color Scheme</h2>
                         <div class="row">
                             <div class="col-md-4">
@@ -67,48 +67,48 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 margin-bottom-20">
                         <h2>Typography</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 margin-bottom-20">
                         <h2>Business Over Breakfast</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 margin-bottom-20">
                         <h2>WeBiz</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 margin-bottom-20">
                         <h2>Annual Golf Classic</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 margin-bottom-20">
                         <h2>Best of the Best Expo</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 margin-bottom-20">
                         <h2>Concerts in the Park</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 margin-bottom-20">
                         <h2>Body Mind Green Expo</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-4 col-sm-offset-2">
+                    <div class="col-sm-4 col-sm-offset-2 margin-bottom-20">
                         <h2>Luncheon Mixer</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 margin-bottom-20">
                         <h2>Annual Meeting</h2>
                         <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
                     </div>

@@ -21,7 +21,13 @@
             </div>
             <div class="modal-body">
 
-            <div class="text-center margin-bottom-20"><img srcset="{{url('/')}}/img/samples/facialsbyjude-banner@2x.jpg 2x" src="{{url('/')}}/img/samples/facialsbyjude-banner.jpg" alt="Website for Facials By Jude" class="img-responsive center-block" /></div>
+                <div class="text-center margin-bottom-20"><img srcset="{{url('/')}}/img/samples/facialsbyjude-banner@2x.jpg 2x" src="{{url('/')}}/img/samples/facialsbyjude-banner.jpg" alt="Website for Facials By Jude" class="img-responsive center-block portfolio-img" /></div>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="lead">Crandell Design redsigned the website for Facials by Jude, located in Oxford, MI. It now worked on multiple devces and features Jude's personal style.</p>
+                    </div>
+                </div>
 
                 <div class="row margin-bottom-20">
                     <div class="col-sm-7 col-lg-8">
@@ -34,16 +40,16 @@
                         <p class="hidden-xs">Check out the additional logos below.</p>-->
                     </div>
                     <div class="col-sm-5 col-lg-4">
-                        <p class="text-center"><img srcset="{{url('/')}}/img/samples/facialsbyjude-mockup@2x.jpg 2x" src="{{url('/')}}/img/samples/facialsbyjude-mockup.jpg" alt="Website for Facials By Jude" class="img-responsive center-block" /></p>
+                        <p class="text-center"><img srcset="{{url('/')}}/img/samples/facialsbyjude-mockup@2x.jpg 2x" src="{{url('/')}}/img/samples/facialsbyjude-mockup.jpg" alt="Website for Facials By Jude" class="img-responsive center-block portfolio-img" /></p>
                     </div>
                 </div>
 
                 <div class="row margin-bottom-20">
                     <div class="col-sm-6">
-                        <p class="text-center"><img src="{{url('/')}}/img/samples/facialsbyjude1.jpg" alt="Website for Facials By Jude" class="img-responsive center-block" /></p>
+                        <p class="text-center"><img src="{{url('/')}}/img/samples/facialsbyjude1.jpg" alt="Website for Facials By Jude" class="img-responsive center-block portfolio-img portfolio-browser" /></p>
                     </div>
                     <div class="col-sm-6">
-                        <p class="text-center"><img src="{{url('/')}}/img/samples/facialsbyjude2.jpg" alt="Website for Facials By Jude" class="img-responsive center-block" /></p>
+                        <p class="text-center"><img src="{{url('/')}}/img/samples/facialsbyjude2.jpg" alt="Website for Facials By Jude" class="img-responsive center-block portfolio-img portfolio-browser" /></p>
                     </div>
                 </div>
             </div>

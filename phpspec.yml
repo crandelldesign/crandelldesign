@@ -1,5 +1,0 @@
-suites:
-    main:
-        namespace: crandelldesign
-        psr4_prefix: crandelldesign
-        src_path: app

@@ -1,4 +1,6 @@
-var elixir = require('laravel-elixir');
+const elixir = require('laravel-elixir');
+
+require('laravel-elixir-vue');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,26 +13,15 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.sass('style.scss');
+var options = {
+    includePaths: [
+    'node_modules/bootstrap-sass/assets/stylesheets/',
+    'node_modules/font-awesome/scss/',
+    'node_modules/slick-carousel/slick/'
+    ] 
+};
 
-    mix.scripts(
-		[
-	        'jquery-2.2.0.min.js',
-	        'bootstrap.min.js',
-	        'imagesloaded.pkgd.min.js',
-	        'masonry.pkgd.min.js',
-	        'master.js'
-		],
-		'public/js/master.js'
-    );
-    mix.scripts(
-		[
-	        'index.js'
-		],
-		'public/js/index.js'
-    );
-    mix.version(['css/style.css', 'js/master.js', 'js/index.js']);
-    mix.copy('resources/assets/fonts', 'public/build/fonts');
-    mix.copy('public/img', 'public/build/img');
+elixir(mix => {
+    mix.sass('stylesheet.scss', null, options);
+    mix.webpack('defaultlaravel 5.4.js');
 });

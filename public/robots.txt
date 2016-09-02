@@ -1,9 +1,2 @@
 User-agent: *
-Disallow: /testbox/
-Disallow: /clcw/
-Disallow: /blog/
-Disallow: /greggs/
-Disallow: /nuview/
-Disallow: /sageorthodontics/
-Disallow: /axp/
-Disallow: /heatherpines/
+Disallow:

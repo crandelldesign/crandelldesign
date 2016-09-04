@@ -22,7 +22,7 @@
       		</div>
       		<div class="modal-body">
 
-                <div class="text-center margin-bottom-20"><img srcset="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-banner1@2x.jpg 2x" src="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-banner1.jpg" alt="Logo for Clarkston Area Chamber of Commerce" class="img-responsive center-block portfolio-img" /></div>
+                <div class="text-center margin-bottom-20"><img src="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-banner.jpg" alt="Logo for Clarkston Area Chamber of Commerce" class="img-responsive center-block portfolio-img" /></div>
 
                 <div class="row">
                     <div class="col-lg-8">
@@ -49,68 +49,68 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="color-swatch swatch1">
-                                    Blue<br>
-                                    #
+                                    Endeavour<br>
+                                    #00529e
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="color-swatch swatch2">
-                                    Orange<br>
-                                    #
+                                    Red Damask<br>
+                                    #d46e2f
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="color-swatch swatch3">
-                                    Black<br>
-                                    #
+                                    Cod Gray<br>
+                                    #111111
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 margin-bottom-20">
                         <h2>Typography</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Clarkston Area Chamber of Commerce Typography">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-4 margin-bottom-20">
                         <h2>Business Over Breakfast</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-business-over-breakfast.jpg')}}" class="img-responsive center-block portfolio-img" alt="Business Over Breakfast">
                     </div>
                     <div class="col-sm-4 margin-bottom-20">
                         <h2>WeBiz</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-webiz.jpg')}}" class="img-responsive center-block portfolio-img" alt="WeBiz">
                     </div>
                     <div class="col-sm-4 margin-bottom-20">
                         <h2>Annual Golf Classic</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-annual-meeting.jpg')}}" class="img-responsive center-block portfolio-img" alt="Annual Golf Classic">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-4 margin-bottom-20">
                         <h2>Best of the Best Expo</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-best-of-the-best-expo.jpg')}}" class="img-responsive center-block portfolio-img" alt="Best of the Best Expo">
                     </div>
                     <div class="col-sm-4 margin-bottom-20">
                         <h2>Concerts in the Park</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-concerts-in-the-park.jpg')}}" class="img-responsive center-block portfolio-img" alt="Concerts in the Park">
                     </div>
                     <div class="col-sm-4 margin-bottom-20">
                         <h2>Body Mind Green Expo</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-body-mind-green.jpg')}}" class="img-responsive center-block portfolio-img" alt="Body Mind Green Expo">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-2 margin-bottom-20">
                         <h2>Luncheon Mixer</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-luncheon-mixer.jpg')}}" class="img-responsive center-block portfolio-img" alt="Luncheon Mixer">
                     </div>
                     <div class="col-sm-4 margin-bottom-20">
                         <h2>Annual Meeting</h2>
-                        <img src="http://placehold.it/2000x1281" class="img-responsive center-block portfolio-img">
+                        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-annual-meeting.jpg')}}" class="img-responsive center-block portfolio-img" alt="Annual Meeting">
                     </div>
                 </div>
 

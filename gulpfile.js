@@ -15,14 +15,14 @@ elixir(function(mix) {
     // Build Stylesheet
     mix.sass(
         'stylesheet.scss',
-        'public/css/stylesheet.css',
-        {
+        'public/css/stylesheet.css'
+        /*{
             includePaths: [
                 'node_modules/bootstrap-sass/assets/stylesheets/',
                 'node_modules/font-awesome/scss/',
                 'node_modules/slick-carousel/slick/'
             ]
-        }
+        }*/
     );
     // Copy Jquery's JS
     mix.copy('node_modules/jquery/dist/jquery.min.js', 'resources/assets/js/jquery');

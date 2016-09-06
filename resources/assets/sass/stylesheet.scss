@@ -1,5 +1,5 @@
 @import 'mixins';
 @import 'variables';
-@import 'bootstrap';
-@import 'font-awesome';
-@import 'slick.scss';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'node_modules/font-awesome/scss/font-awesome';
+@import 'node_modules/slick-carousel/slick/slick.scss';

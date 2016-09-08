@@ -172,11 +172,13 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        CrandellDesign\Providers\AppServiceProvider::class,
+        CrandellDesign\Providers\AuthServiceProvider::class,
+        // CrandellDesign\Providers\BroadcastServiceProvider::class,
+        CrandellDesign\Providers\EventServiceProvider::class,
+        CrandellDesign\Providers\RouteServiceProvider::class,
+
+        Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
 
     ],
 
@@ -225,6 +227,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Analytics' => Ipunkt\LaravelAnalytics\AnalyticsFacade::class,
     ],
 
 ];

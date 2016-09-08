@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController@getIndex');
+Route::get('/portfolio', 'HomeController@getPortfolio');
+Route::get('/style', function () {
+    return view('style');
 });

@@ -24,18 +24,25 @@ elixir(function(mix) {
             ]
         }*/
     );
+    mix.styles([
+        'node_modules/animsition/dist/css/animsition.css',
+        'public/css/stylesheet.css'
+    ], 'public/css/stylesheet.css', './');
     // Copy Jquery's JS
     mix.copy('node_modules/jquery/dist/jquery.min.js', 'resources/assets/js/jquery');
     // Copy Bootstrap's JS
     mix.copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'resources/assets/js/bootstrap');
     // Copy Slick's JS
     mix.copy('node_modules/slick-carousel/slick/slick.js', 'resources/assets/js/slick');
+    // Copy Animsition's JS
+    mix.copy('node_modules/animsition/src/js/animsition.js', 'resources/assets/js/animsition');
     // Build JS
     mix.scripts(
         [
             'jquery/jquery.min.js',
             'bootstrap/bootstrap.js',
             'slick/slick.js',
+            'animsition/animsition.js',
             'default.js'
         ],
         'public/js/default.js'

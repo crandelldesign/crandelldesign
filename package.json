@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "animsition": "^4.0.2",
+    "bootstrap-autohidingnavbar": "git+https://github.com/istvan-ujjmeszaros/bootstrap-autohidingnavbar.git",
     "bootstrap-sass": "^3.3.7",
     "font-awesome": "^4.6.0",
     "gulp": "^3.9.1",

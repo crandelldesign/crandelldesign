@@ -36,6 +36,8 @@ elixir(function(mix) {
     mix.copy('node_modules/slick-carousel/slick/slick.js', 'resources/assets/js/slick');
     // Copy Animsition's JS
     mix.copy('node_modules/animsition/src/js/animsition.js', 'resources/assets/js/animsition');
+    // Copy Bootstrap Autohiding Navbar's JS
+    mix.copy('node_modules/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar.js', 'resources/assets/js/bootstrap-autohidingnavbar');
     // Build JS
     mix.scripts(
         [
@@ -43,6 +45,7 @@ elixir(function(mix) {
             'bootstrap/bootstrap.js',
             'slick/slick.js',
             'animsition/animsition.js',
+            'bootstrap-autohidingnavbar/jquery.bootstrap-autohidingnavbar.js',
             'default.js'
         ],
         'public/js/default.js'

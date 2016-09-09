@@ -7,6 +7,7 @@
     </head>
     <body>
         <div class="animsition">
+            @include('layouts.nav')
             <div class="container-fluid page">
                 <div class="content">
                     @yield('content')

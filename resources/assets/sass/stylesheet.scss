@@ -25,6 +25,8 @@ body {
 
 /* Navbar */
 nav.navbar {
+    border-color: $sanmarino;
+    background-color: #FFF;
     .navbar-brand img {
         max-width: 212px;
     }

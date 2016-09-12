@@ -13,7 +13,7 @@ class HomeController extends Controller
         $view->title = "Crandell Design by Matt Crandell | Web Design and Development";
         $view->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
 
-        $portfolio = $this->portfolio(8);
+        $portfolio = $this->portfolio();
 
         //print_r($portfolio->where('name','Christ Lutheran Church of Waterford'));
 

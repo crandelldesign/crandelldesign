@@ -212,9 +212,15 @@ $headings-font-weight: $bold;
 
 /* Bootstrap Colors and Variables */
 $brand-primary: $apple;
-$link-color: $deyork;
-$link-hover-color: $apple;
+$link-color: $apple;
+$link-hover-color: $deyork;
 $link-hover-decoration: none;
+
+$hr-border: $sanmarino;
+
+$border-radius-base: 2px;
+$border-radius-large: 3px;
+$border-radius-small: 1px;
 
 /* Navbar Variables */
 $navbar-margin-bottom: 0;
@@ -227,3 +233,5 @@ $navbar-padding-horizontal: 15px;
 /* Modal Variables */
 $modal-content-border-color: transparent;
 $modal-content-fallback-border-color: transparent;
+
+/* Buttons */

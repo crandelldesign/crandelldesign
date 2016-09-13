@@ -43,12 +43,19 @@ elixir(function(mix) {
         [
             'jquery/jquery.min.js',
             'bootstrap/bootstrap.js',
-            'slick/slick.js',
             'animsition/animsition.js',
             'bootstrap-autohidingnavbar/jquery.bootstrap-autohidingnavbar.js',
             'default.js'
         ],
         'public/js/default.js'
+    );
+    // Build Slideshow JS
+    mix.scripts(
+        [
+            'slick/slick.js',
+            'slideshow.js'
+        ],
+        'public/js/slideshow.js'
     );
     // Copy Fonts
     mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/fonts/bootstrap');

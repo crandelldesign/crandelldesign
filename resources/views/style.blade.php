@@ -61,11 +61,11 @@
                         <hr>
                         <h1>Buttons</h1>
 
-                        <button class="btn btn-lg btn-primary">This is a large button</button>&nbsp;
+                        <button class="btn btn-lg btn-apple">This is a large button</button>&nbsp;
 
                         <div class="visible-xs-block margin-bottom-10"></div>
 
-                        <button class="btn btn-lynch">This is another smaller button</button>
+                        <button class="btn btn-sanmarino">This is another smaller button</button>
 
                         <hr class="visible-xs-block">
 
@@ -74,17 +74,17 @@
                         <h1>Typography</h1>
 
                         <h1>Heading 1</h1>
-                        <p class="details">Font: Carto / Camarone #005a2c</p>
+                        <p class="details">Font: Aileron / Black #252525</p>
 
                         <hr>
 
                         <h2>Heading 2</h2>
-                        <p class="details">Font: Carto / Pirate Gold #b89100</p>
+                        <p class="details">Font: Aileron / Goblin #358132</p>
 
                         <hr>
 
                         <h3>Heading 3</h3>
-                        <p class="details">Font: Carto / Holly #000e07</p>
+                        <p class="details">Font: Aileron / Black #252525</p>
 
                         <hr>
 
@@ -94,7 +94,7 @@
 
                         <p><a href="#">This is a link</a> - <a href="#" class="hover">This is a hover link</a></p>
 
-                        <p class="details">Font: Lato #252525</p>
+                        <p class="details">Font: Aileron / Black #252525</p>
                     </div>
                 </div>
 

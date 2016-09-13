@@ -22,6 +22,52 @@ body {
     height: 100%;
     padding-top: $navbar-height;
 }
+.h2, h2 {
+    font-weight: $regular;
+    color: $goblin;
+}
+.h3, h3 {
+    font-weight: $regular;
+}
+.btn {
+    border: 0;
+}
+.btn-apple {
+    background-color: $apple;
+    color: #FFF;
+    @include shadow-1();
+    &:hover, &:focus {
+        background-color: $goblin;
+        color: #FFF;
+    }
+}
+.btn-sanmarino {
+    background-color: $sanmarino;
+    color: #FFF;
+    border-color: #FFF;
+    @include shadow-1();
+    &:hover, &:focus {
+        background-color: $rhino;
+        color: #FFF;
+    }
+}
+/* Spacing Elements */
+@mixin generate-spacing-classes(
+    $default-space-amounts-with-direction: (0 left left, 5 left left, 10 left left, 15 left left, 20 left left, 25 left left, 30 left left)
+) {
+    @each $space in $default-space-amounts-with-direction {
+        .margin-#{nth($space, 3)}-#{nth($space, 1)} {
+            margin-#{nth($space, 2)}: #{nth($space, 1)}px;
+        }
+    }
+}
+$right-space-vars: (0 right right, 5 right right, 10 right right, 15 right right, 20 right right, 25 right right, 30 right right);
+$bottom-space-vars: (0 bottom bottom, 5 bottom bottom, 10 bottom bottom, 15 bottom bottom, 20 bottom bottom, 25 bottom bottom, 30 bottom bottom);
+$top-space-vars: (0 top top, 5 top top, 10 top top, 15 top top, 20 top top, 25 top top, 30 top top);
+@include generate-spacing-classes(); // left comes by default
+@include generate-spacing-classes($right-space-vars);
+@include generate-spacing-classes($bottom-space-vars);
+@include generate-spacing-classes($top-space-vars);
 
 /* Navbar */
 nav.navbar {
@@ -63,3 +109,134 @@ nav.navbar {
 .details {
     color: $gray-light;
 }
+
+/* Portfolio */
+.portfolio-item h1 {
+    margin-bottom: 0;
+}
+/* Portfolio Item */
+.portfolio-img {
+    @include shadow-2();
+    &.portfolio-browser {
+        border-radius: 5px;
+    }
+}
+
+/* Slideshow */
+.slideshow {
+    @extend .portfolio-img;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    .item {
+        display: none;
+        &:first-child {
+            display: block;
+        }
+    }
+    &.slick-initialized .item {
+        display: block;
+    }
+    .slideshow-prev, .slideshow-next {
+        /*font-size: 20px;*/
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 53px;
+        height: 100%;
+        z-index: 20;
+        .fa.fa-circle {
+            color: #FFF;
+            border-radius: 50%;
+
+        }
+        &:hover .fa.fa-circle {
+            background-color: $sanmarino;
+            -webkit-transition: background-color 1s linear;
+            -moz-transition: background-color 1s linear;
+            -o-transition: background-color 1s linear;
+            -ms-transition: background-color 1s linear;
+            transition: background-color 1s linear;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    .slideshow-prev {
+        left: 0;
+        .fa-angle-left {
+            left: -2px;
+            //top: -1px;
+        }
+    }
+    .slideshow-next {
+        right: 0;
+        .fa-angle-right {
+            left: auto;
+            right: -2px;
+            //top: -1px;
+        }
+
+    }
+}
+/* Portfolio - Christ Luther Church */
+#christ-lutheran-church-of-waterford-portfolio {
+    .color-swatch {
+        &.swatch1 {
+            background-color: #003366;
+        }
+        &.swatch2 {
+            background-color: #00a99d;
+        }
+        &.swatch3 {
+            background-color: #8b8c84;
+        }
+        &.swatch4 {
+            background-color: #00746b;
+        }
+        &.swatch5 {
+            background-color: #1cbbb4;
+        }
+        &.swatch6 {
+            background-color: #252525;
+        }
+    }
+}
+/* Portfolio - Clarkston Area Chamber of Commerce */
+#clarkston-area-chamber-of-commerce-portfolio {
+    .color-swatch {
+        &.swatch1 {
+            background-color: #00529e;
+        }
+        &.swatch2 {
+            background-color: #d66e2f;
+        }
+        &.swatch3 {
+            background-color: #000000;
+        }
+    }
+}
+/* Portfolio - Facials by Jude */
+#facials-by-jude-portfolio {
+    .color-swatch {
+        &.swatch1 {
+            background-color: #8a175a;
+        }
+        &.swatch2 {
+            background-color: #ffccff;
+        }
+        &.swatch3 {
+            background-color: #4f7e12;
+        }
+        &.swatch4 {
+            background-color: #990033;
+        }
+        &.swatch5 {
+            background-color: #5e3e4a;
+        }
+        &.swatch6 {
+            background-color: #252525;
+        }
+    }
+}
+

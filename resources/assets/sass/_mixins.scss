@@ -31,7 +31,7 @@
 }
 
 @mixin page-width() {
-    max-width: 1300px;
+    max-width: 1360px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -49,10 +49,15 @@
     }
 }
 
-@mixin sidebar-active() {
-    background-color: lighten($darkblue, 5);
+@mixin hover-transition() {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
-
-@mixin sidebar-child-active() {
-    background-color: lighten($gray, 5);
+@mixin size-transition() {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
 }

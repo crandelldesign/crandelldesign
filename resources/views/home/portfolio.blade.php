@@ -1,91 +1,21 @@
 @extends('layouts.default')
 @section('content')
 
-<p><a class="animsition-link" href="{{url('/')}}">Home</a></p>
+<div class="container-fluid page">
+    <div class="content">
 
-<div class="row">
-    <div class="col-sm-3 col-xs-6">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3 col-xs-6">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3 col-xs-6">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3 col-xs-6">
-        <img src="http://placehold.it/350x150" class="img-responsive">
+        <p><a class="animsition-link" href="{{url('/')}}">Home</a></p>
+
+        <div class="row">
+        @foreach($portfolio as $key=>$client)
+            @include('layouts.thumbnail')
+            @if(($key+1) % 4 == 0)
+            </div><div class="row">
+            @endif
+        @endforeach
+        </div>
+
     </div>
 </div>
-
-<hr>
-
-<div class="row">
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-</div>
-
-<hr>
-
-<div class="row">
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-</div>
-
-<hr>
-
-<div class="row">
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-</div>
-
-<hr>
-
-<div class="row">
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-    <div class="col-sm-3">
-        <img src="http://placehold.it/350x150" class="img-responsive">
-    </div>
-</div>
-
-<hr>
 
 @stop

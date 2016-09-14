@@ -10119,6 +10119,11 @@ body {
   height: 100%;
   padding-top: 50px; }
 
+.page.container-fluid .content {
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto; }
+
 .h2, h2 {
   font-weight: 400;
   color: #358132; }
@@ -10234,7 +10239,12 @@ body {
 /* Navbar */
 nav.navbar {
   border-color: #4759a7;
-  background-color: #FFF; }
+  background-color: #FFF;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  nav.navbar .container-fluid {
+    max-width: 1390px;
+    margin-right: auto;
+    margin-left: auto; }
   nav.navbar .navbar-brand img {
     max-width: 212px; }
 
@@ -10263,11 +10273,70 @@ nav.navbar {
 .details {
   color: #777777; }
 
+/* Portfolio Thumbnail */
+.portfolio-thumbnail {
+  display: block;
+  border-radius: 2px;
+  border: 1px solid #4759a7;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  .portfolio-thumbnail div.client-img {
+    overflow: hidden;
+    position: relative; }
+    .portfolio-thumbnail div.client-img img {
+      max-width: 101%;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0) scale(1, 1); }
+    .portfolio-thumbnail div.client-img .hover-img {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0; }
+  .portfolio-thumbnail div.info {
+    padding: 10px; }
+    .portfolio-thumbnail div.info .client-name {
+      display: block;
+      /* Fallback for non-webkit */
+      display: -webkit-box;
+      color: #252525;
+      font-size: 14px;
+      height: 32.34px;
+      line-height: normal;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .portfolio-thumbnail div.info .client-location {
+      font-size: 13px;
+      color: #777777; }
+  .portfolio-thumbnail:hover div.client-img .main-img {
+    opacity: 0;
+    visibility: hidden; }
+  .portfolio-thumbnail:hover div.client-img .hover-img {
+    opacity: 1;
+    visibility: visible; }
+
 /* Portfolio */
 .portfolio-item h1 {
   margin-bottom: 0; }
 
-/* Portfolio Item */
+.portfolio-item div.row > div > h2 {
+  margin-top: 0; }
+
+.testimonial {
+  margin-top: 10px;
+  margin-bottom: 0; }
+  .testimonial strong {
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    line-height: 18px;
+    padding: 0 2px;
+    color: #4cb848; }
+
+/* Portfolio Display */
 .portfolio-img, .slideshow {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .portfolio-img.portfolio-browser, .portfolio-browser.slideshow {

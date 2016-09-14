@@ -8,11 +8,7 @@
     <body>
         <div class="animsition">
             @include('layouts.nav')
-            <div class="container-fluid page">
-                <div class="content">
-                    @yield('content')
-                </div>
-            </div>
+            @yield('content')
 
             <script type="text/javascript" src="{{ elixir('js/default.js') }}"></script>
             @include('layouts.footer')

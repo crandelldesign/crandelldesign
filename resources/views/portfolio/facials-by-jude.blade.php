@@ -18,7 +18,7 @@
                 @else
                     </h3>
                 @endif
-                Oxford, MI | <a href="http://www.facialsbyjude.org" target="_blank">View Website <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                Oxford, MI | <a href="http://www.facialsbyjude.com" target="_blank">View Website <i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
             <div class="modal-body">
 

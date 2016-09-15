@@ -325,3 +325,22 @@ nav.navbar {
     }
 }
 
+/* Blog */
+.blog-entry {
+    display: block;
+    border-radius: $border-radius-base;
+    border: 1px solid $sanmarino;
+    margin-bottom: 30px;
+    @include shadow-1();
+    .blog-media {
+        width: 100%;
+        height: 175px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    p {
+        margin: 10px;
+    }
+}
+

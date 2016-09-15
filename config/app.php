@@ -180,6 +180,8 @@ return [
 
         Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
 
+        Thujohn\Twitter\TwitterServiceProvider::class,
+
     ],
 
     /*
@@ -228,6 +230,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Analytics' => Ipunkt\LaravelAnalytics\AnalyticsFacade::class,
+        
+        'Twitter' => Thujohn\Twitter\Facades\Twitter::class,
     ],
 
 ];

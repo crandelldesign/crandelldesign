@@ -4,6 +4,7 @@ namespace CrandellDesign\Http\Controllers;
 
 use CrandellDesign\Http\Controllers\Controller;
 use \StdClass;
+use \Twitter;
 
 class HomeController extends Controller
 {
@@ -15,6 +16,15 @@ class HomeController extends Controller
 
         $portfolio = $this->portfolio();
         $view->portfolio = $portfolio->take(8);
+
+        try
+        {
+            $view->blog_entries = Twitter::getUserTimeline(['screen_name' => 'crandelldesign', 'count' => 10, 'include_rts' => false, 'exclude_replies' => true]);
+        }
+        catch (Exception $e)
+        {
+            
+        }
 
         return $view;
     }

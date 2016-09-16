@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@getIndex');
 Route::get('/portfolio/{client?}', 'HomeController@getPortfolio');
+Route::get('/services/{service?}', 'HomeController@getServices');
 Route::get('/style', function () {
     return view('style');
 });

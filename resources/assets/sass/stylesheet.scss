@@ -27,6 +27,10 @@ body {
         @include page-width();
     }
 }
+.h1, h1 {
+    color: $sanmarino;
+    font-weight: $light;
+}
 .h2, h2 {
     font-weight: $regular;
     color: $goblin;
@@ -56,6 +60,40 @@ body {
         color: #FFF;
     }
 }
+.btn-clear {
+    color: #FFF;
+    border: 1px solid #FFF;
+    &:focus {
+        color: #FFF;
+    }
+    &:hover {
+        background-color: #FFF;
+        color: $black;
+    }
+}
+.btn-translucent-apple {
+    border: 1px solid #FFF;
+    background: none;
+    &:hover, &:focus {
+        background: $apple;
+        background: rgba($apple, 0.5);
+    }
+}
+.btn-translucent-sanmarino {
+    border: 1px solid #FFF;
+    background: none;
+    &:hover, &:focus {
+        background: $sanmarino;
+        background: rgba($sanmarino, 0.5);
+    }
+}
+a.hover {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+}
+.section-description {
+    max-width: 700px;
+}
 
 /* Spacing Elements */
 @mixin generate-spacing-classes(
@@ -80,6 +118,9 @@ nav.navbar {
     border-color: $sanmarino;
     background-color: #FFF;
     @include shadow-2();
+    &.navbar-hidden {
+        box-shadow: none;
+    }
     .container-fluid {
         max-width: 1390px;
         margin-right: auto;
@@ -87,6 +128,69 @@ nav.navbar {
     }
     .navbar-brand img {
         max-width: 212px;
+    }
+}
+
+/* Footer */
+.footer {
+    .footer-top {
+        background-color: $black;
+        .container-fluid {
+            @media (min-width: $screen-sm-min) {
+                max-width: 1360px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        ul li a {
+            display: block;
+            padding: 7px 5px;
+            margin: 20px 5px;
+            line-height: 35px;
+        }
+        .social-icons {
+            text-align: center;
+            @media (min-width: $screen-sm-min) {
+                text-align: left;
+            }
+            .list-inline > li {
+                padding: 0;
+                font-size: 30px;
+                a {
+                    color: #717171;
+                    &:hover {
+                    color: #FFF;
+                    }
+                }
+                .flaticon {
+                    top: 0;
+                }
+            }
+        }
+        .footer-nav {
+            text-align: right;
+            ul {
+                list-style: none;
+            }
+            ul li a {
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #FFF;
+                font-weight: 600;
+                &:hover {
+                    color: #4cb848;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        color: #333;
+        font-size: 12px;
+        padding: 20px;
+        text-align: center;
+        p {
+            margin-bottom: 1px;
+        }
     }
 }
 
@@ -120,6 +224,41 @@ nav.navbar {
 }
 .details {
     color: $gray-light;
+}
+
+/* Section Styles */
+.container-fluid.page {
+    .content {
+        padding: 30px 0;
+    }
+}
+
+/* Home */
+#home {
+    padding-top: 76px;
+    background: $rhino url(/img/home-container-bg.jpg) no-repeat center center; 
+    @include mobile-bg();
+    min-height: 550px;
+    @media (min-width: $screen-sm-min) {
+        background: url(/img/home-container-bg.jpg) no-repeat center center fixed; 
+        @include desktop-bg();
+        min-height: 100vh;
+    }
+    .content {
+        padding-top: 15px;
+        text-align: center;
+    }
+    h1.slogan {
+        color: #FFFFFF;
+        font-size: 30px;
+        line-height: normal;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        @media (min-width: $screen-sm-min) {
+            font-size: 50px;
+            margin-top: 25vh;
+        }
+    }
 }
 
 /* Portfolio Thumbnail */
@@ -325,6 +464,107 @@ nav.navbar {
     }
 }
 
+/* Services */
+#services {
+    color: #FFF;
+    //background: #4759a7 url(../img/services-container-bg-mobile.jpg) no-repeat center center; 
+    background: url(/img/services-container-bg.jpg) no-repeat center center fixed;
+    @include mobile-bg();
+    @media (min-width: $screen-sm-min) {
+        @include desktop-bg();
+        min-height: 600px;
+    }
+    h2, h3 {
+        color: #FFF;
+    }
+    .btn {
+        display: block;
+        white-space: normal;
+        h3 {
+            font-size: 15px;
+            height: 40px;
+            @media (min-width: $screen-sm-min) {
+                font-size: 18px;
+            }
+            @media (min-width: $screen-md-min) {
+                height: 50px;
+            }
+        }
+    }
+}
+
+/* Contact */
+#contact {
+    color: #FFF;
+    background: $sanmarino url(/img/contact-container-bg.jpg) no-repeat center center;
+    @include mobile-bg();
+    @media (min-width: $screen-sm-min) {
+        background: url(/img/contact-container-bg.jpg) no-repeat center center fixed;
+        @include desktop-bg();
+    }
+    h2 {
+        color: #FFF;
+    }
+    .btn {
+        @media (min-width: $screen-md-min) {
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+        }
+    }
+    .form {
+        margin: 0 auto 10px auto;
+        .form-control {
+            /*border-radius: 0;
+            -webkit-box-shadow: 0;
+            box-shadow: none;
+            border-color: #FFFFFF;*/
+            border: 0;
+        }
+        input, .error-label {
+            font-weight: $light;
+        }
+        .error-label {
+            display: none;
+            margin-bottom: 0;
+        }
+        .has-error .form-control {
+            border-color: #A94442;
+        }
+        .has-error .error-label {
+            display: inline-block;
+        }
+        .url {
+            display: none;
+        }
+    }
+    .col-sm-5{
+        p {
+            font-size: 18px;
+            @media (min-width: $screen-md-min) {
+                font-size: 20px;
+            }
+            @media (min-width: $screen-lg-min) {
+                font-size: 25px;
+            }
+        }
+        a:not(.btn) {
+            text-decoration: none;
+            color: #FFF;
+            font-weight: $regular;
+            //text-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
+            &:hover {
+                //color: $lightgreen;
+            }
+            .phone {
+                color: #FFF;
+                cursor: text;
+            }
+        }
+    }
+
+}
+
 /* Blog */
 .blog-entry {
     display: block;
@@ -341,6 +581,10 @@ nav.navbar {
     }
     p {
         margin: 10px;
+        &.date-created {
+            font-size: 13px;
+            color: $gray-light;
+        }
     }
 }
 

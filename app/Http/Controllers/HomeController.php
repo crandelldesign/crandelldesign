@@ -31,8 +31,7 @@ class HomeController extends Controller
 
     public function getPortfolio($client = null)
     {
-        if ($client)
-        {
+        if ($client) {
             $client = $this->portfolio()->where('slug',$client)->first();
             if(!empty($client)) {
                 $view = view('home.portfolio-item');
@@ -53,6 +52,19 @@ class HomeController extends Controller
         $view->portfolio = $portfolio;
 
         return $view;
+    }
+
+    public function getServices($service = null)
+    {
+        if (!$service) {
+            return redirect('/#services', 301);
+        } else {
+            $view = view('home.services-'.$service);
+            $view->title = "Crandell Design by Matt Crandell | Web Design and Development";
+            $view->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
+
+            return $view;
+        }
     }
 
     private function portfolio()

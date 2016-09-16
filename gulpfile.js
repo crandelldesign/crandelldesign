@@ -30,6 +30,8 @@ elixir(function(mix) {
     ], 'public/css/stylesheet.css', './');
     // Copy Jquery's JS
     mix.copy('node_modules/jquery/dist/jquery.min.js', 'resources/assets/js/jquery');
+    // Copy Jquery's JS
+    mix.copy('node_modules/jquery.easing/jquery.easing.min.js', 'resources/assets/js/jquery-easing');
     // Copy Bootstrap's JS
     mix.copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'resources/assets/js/bootstrap');
     // Copy Slick's JS
@@ -42,6 +44,7 @@ elixir(function(mix) {
     mix.scripts(
         [
             'jquery/jquery.min.js',
+            'jquery-easing/jquery.easing.min.js',
             'bootstrap/bootstrap.js',
             'animsition/animsition.js',
             'bootstrap-autohidingnavbar/jquery.bootstrap-autohidingnavbar.js',

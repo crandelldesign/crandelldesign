@@ -10124,6 +10124,10 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
+.h1, h1 {
+  color: #4759a7;
+  font-weight: 300; }
+
 .h2, h2 {
   font-weight: 400;
   color: #358132; }
@@ -10150,6 +10154,36 @@ body {
   .btn-sanmarino:hover, .btn-sanmarino:focus {
     background-color: #303c71;
     color: #FFF; }
+
+.btn-clear {
+  color: #FFF;
+  border: 1px solid #FFF; }
+  .btn-clear:focus {
+    color: #FFF; }
+  .btn-clear:hover {
+    background-color: #FFF;
+    color: #252525; }
+
+.btn-translucent-apple {
+  border: 1px solid #FFF;
+  background: none; }
+  .btn-translucent-apple:hover, .btn-translucent-apple:focus {
+    background: #4cb848;
+    background: rgba(76, 184, 72, 0.5); }
+
+.btn-translucent-sanmarino {
+  border: 1px solid #FFF;
+  background: none; }
+  .btn-translucent-sanmarino:hover, .btn-translucent-sanmarino:focus {
+    background: #4759a7;
+    background: rgba(71, 89, 167, 0.5); }
+
+a.hover {
+  color: #82cd7f;
+  text-decoration: none; }
+
+.section-description {
+  max-width: 700px; }
 
 /* Spacing Elements */
 .margin-left-0 {
@@ -10241,12 +10275,61 @@ nav.navbar {
   border-color: #4759a7;
   background-color: #FFF;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  nav.navbar.navbar-hidden {
+    box-shadow: none; }
   nav.navbar .container-fluid {
     max-width: 1390px;
     margin-right: auto;
     margin-left: auto; }
   nav.navbar .navbar-brand img {
     max-width: 212px; }
+
+/* Footer */
+.footer .footer-top {
+  background-color: #252525; }
+  @media (min-width: 768px) {
+    .footer .footer-top .container-fluid {
+      max-width: 1360px;
+      margin-left: auto;
+      margin-right: auto; } }
+  .footer .footer-top ul li a {
+    display: block;
+    padding: 7px 5px;
+    margin: 20px 5px;
+    line-height: 35px; }
+  .footer .footer-top .social-icons {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .footer .footer-top .social-icons {
+        text-align: left; } }
+    .footer .footer-top .social-icons .list-inline > li {
+      padding: 0;
+      font-size: 30px; }
+      .footer .footer-top .social-icons .list-inline > li a {
+        color: #717171; }
+        .footer .footer-top .social-icons .list-inline > li a:hover {
+          color: #FFF; }
+      .footer .footer-top .social-icons .list-inline > li .flaticon {
+        top: 0; }
+  .footer .footer-top .footer-nav {
+    text-align: right; }
+    .footer .footer-top .footer-nav ul {
+      list-style: none; }
+    .footer .footer-top .footer-nav ul li a {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #FFF;
+      font-weight: 600; }
+      .footer .footer-top .footer-nav ul li a:hover {
+        color: #4cb848; }
+
+.footer .footer-bottom {
+  color: #333;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center; }
+  .footer .footer-bottom p {
+    margin-bottom: 1px; }
 
 /* Color Swatches */
 .color-swatch {
@@ -10272,6 +10355,35 @@ nav.navbar {
 
 .details {
   color: #777777; }
+
+/* Section Styles */
+.container-fluid.page .content {
+  padding: 30px 0; }
+
+/* Home */
+#home {
+  padding-top: 76px;
+  background: #303c71 url(/img/home-container-bg.jpg) no-repeat center center;
+  background-size: auto 100%, auto;
+  min-height: 550px; }
+  @media (min-width: 768px) {
+    #home {
+      background: url(/img/home-container-bg.jpg) no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh; } }
+  #home .content {
+    padding-top: 15px;
+    text-align: center; }
+  #home h1.slogan {
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: normal;
+    margin-top: 100px;
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      #home h1.slogan {
+        font-size: 50px;
+        margin-top: 25vh; } }
 
 /* Portfolio Thumbnail */
 .portfolio-thumbnail {
@@ -10428,6 +10540,81 @@ nav.navbar {
 #facials-by-jude-portfolio .color-swatch.swatch6 {
   background-color: #252525; }
 
+/* Services */
+#services {
+  color: #FFF;
+  background: url(/img/services-container-bg.jpg) no-repeat center center fixed;
+  background-size: auto 100%, auto; }
+  @media (min-width: 768px) {
+    #services {
+      background-size: cover;
+      min-height: 600px; } }
+  #services h2, #services h3 {
+    color: #FFF; }
+  #services .btn {
+    display: block;
+    white-space: normal; }
+    #services .btn h3 {
+      font-size: 15px;
+      height: 40px; }
+      @media (min-width: 768px) {
+        #services .btn h3 {
+          font-size: 18px; } }
+      @media (min-width: 992px) {
+        #services .btn h3 {
+          height: 50px; } }
+
+/* Contact */
+#contact {
+  color: #FFF;
+  background: #4759a7 url(/img/contact-container-bg.jpg) no-repeat center center;
+  background-size: auto 100%, auto; }
+  @media (min-width: 768px) {
+    #contact {
+      background: url(/img/contact-container-bg.jpg) no-repeat center center fixed;
+      background-size: cover; } }
+  #contact h2 {
+    color: #FFF; }
+  @media (min-width: 992px) {
+    #contact .btn {
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.3333333; } }
+  #contact .form {
+    margin: 0 auto 10px auto; }
+    #contact .form .form-control {
+      /*border-radius: 0;
+            -webkit-box-shadow: 0;
+            box-shadow: none;
+            border-color: #FFFFFF;*/
+      border: 0; }
+    #contact .form input, #contact .form .error-label {
+      font-weight: 300; }
+    #contact .form .error-label {
+      display: none;
+      margin-bottom: 0; }
+    #contact .form .has-error .form-control {
+      border-color: #A94442; }
+    #contact .form .has-error .error-label {
+      display: inline-block; }
+    #contact .form .url {
+      display: none; }
+  #contact .col-sm-5 p {
+    font-size: 18px; }
+    @media (min-width: 992px) {
+      #contact .col-sm-5 p {
+        font-size: 20px; } }
+    @media (min-width: 1200px) {
+      #contact .col-sm-5 p {
+        font-size: 25px; } }
+  #contact .col-sm-5 a:not(.btn) {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400; }
+    #contact .col-sm-5 a:not(.btn) .phone {
+      color: #FFF;
+      cursor: text; }
+
 /* Blog */
 .blog-entry {
   display: block;
@@ -10443,6 +10630,9 @@ nav.navbar {
     background-position: center center; }
   .blog-entry p {
     margin: 10px; }
+    .blog-entry p.date-created {
+      font-size: 13px;
+      color: #777777; }
 
 /*# sourceMappingURL=stylesheet.css.map */
 

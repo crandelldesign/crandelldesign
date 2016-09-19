@@ -33,4 +33,12 @@
 <meta name="msapplication-TileImage" content="{{url('/')}}/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
+<noscript>
+    <style>
+        .animsition, .animsition-overlay {
+            opacity: 1;
+        }
+    </style>
+</noscript>
+
 @yield('head')

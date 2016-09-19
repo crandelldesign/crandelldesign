@@ -74,7 +74,7 @@
                         <h1>Typography</h1>
 
                         <h1>Heading 1</h1>
-                        <p class="details">Font: Aileron / Black #252525</p>
+                        <p class="details">Font: Aileron / San Marino #4759a7</p>
 
                         <hr>
 

@@ -51,6 +51,11 @@
                     </div>
                 </div>
             @endif
+
+            <div class="button-holder text-center">
+                <a href="{{url('/portfolio')}}" class="btn btn-lg btn-apple animsition-link">See My Full Portfolio <i class="fa fa-angle-right"></i></a>
+            </div>
+            
         </div>
     </div>
 </div>

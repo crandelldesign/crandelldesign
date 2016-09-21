@@ -96,23 +96,35 @@
 <div id="contact" class="container-fluid page">
     <div class="content">
         <h2>Contact</h2>
+        <p class="section-description">Interested in getting your next project off to a great start? Contact me using the form below.</p>
         <div class="row">
             <div class="col-sm-7">
-                <form class="form" role="form" action="{{url('/')}}/submit-contact" method="post" autocomplete="off">
-                    <div class="form-group">
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
+                <form class="form" action="{{url('/')}}/contact" method="post" autocomplete="off">
+                    <div class="form-group {{($errors->has('name'))?'has-error':''}}">
                         <label for="name" class="sr-only">Name</label>
+                        @foreach ($errors->get('name') as $error)
+                            <div class="alert alert-danger">{{ $error }}</div>
+                        @endforeach
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                        <label class="control-label error-label" for="name">Please Enter Your Name</label>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group {{($errors->has('email'))?'has-error':''}}">
                         <label for="email" class="sr-only">Email</label>
+                        @foreach ($errors->get('email') as $error)
+                            <div class="alert alert-danger">{{ $error }}</div>
+                        @endforeach
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                        <label class="control-label error-label" for="email">Please Enter A Valid Email Address</label>
                     </div>
-                    <div class="form-group">
-                        <label for="message" class="sr-only">Message</label>
-                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                        <label class="control-label error-label" for="message">What? You Don't Want to Say Something?</label>
+                    <div class="form-group {{($errors->has('message_text'))?'has-error':''}}">
+                        <label for="message_text" class="sr-only">Message</label>
+                        @foreach ($errors->get('message_text') as $error)
+                            <div class="alert alert-danger">{{ $error }}</div>
+                        @endforeach
+                        <textarea class="form-control" rows="5" id="message_text" name="message_text" placeholder="Message"></textarea>
                     </div>
                     {{ csrf_field() }}
                     <!--<input class="url" type="text" id="url" name="url" value="" />-->
@@ -123,10 +135,10 @@
                 </form>
             </div>
             <div class="col-sm-5">
-                <p>Phone:&nbsp;&nbsp;<a class="phone" href="tel:+12483835376">248&ndash;383&ndash;5376</a><br>
-                Email:&nbsp;&nbsp;<a href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
+                <p>Phone: <a class="phone" href="tel:+12483835376">248-383-5376</a><br>
+                Email: <a href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
                 <h3>Matt Crandell's R&eacute;sum&eacute;</h3>
-                <p><a href="{{url('/')}}/img/resume.pdf" target="_blank" class="btn btn-apple" title="Download Matt Crandell's R&eacute;sum&eacute; as PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download My R&eacute;sum&eacute;</a></p>
+                <p><a href="{{url('/')}}/resume.pdf" target="_blank" class="btn btn-apple" title="Download Matt Crandell's R&eacute;sum&eacute; as PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download My R&eacute;sum&eacute;</a></p>
             </div>
         </div>
     </div>

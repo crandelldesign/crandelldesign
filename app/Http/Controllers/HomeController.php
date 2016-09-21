@@ -2,9 +2,15 @@
 
 namespace CrandellDesign\Http\Controllers;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 use CrandellDesign\Http\Controllers\Controller;
-use \StdClass;
-use \Twitter;
+use CrandellDesign\Mail\Contact;
+use CrandellDesign\Mail\ContactThankYou;
+use StdClass;
+use Twitter;
+use Validator;
 
 class HomeController extends Controller
 {
@@ -16,6 +22,8 @@ class HomeController extends Controller
 
         $portfolio = $this->portfolio();
         $view->portfolio = $portfolio->take(8);
+
+        $view->active_page = 'home';
 
         try
         {
@@ -45,7 +53,7 @@ class HomeController extends Controller
         }
 
         $view = view('home.portfolio');
-        $view->title = "Crandell Design by Matt Crandell | Web Design and Development";
+        $view->title = "Portfolio | Web Design and Development";
         $view->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
 
         $portfolio = $this->portfolio();
@@ -60,11 +68,55 @@ class HomeController extends Controller
             return redirect('/#services', 301);
         } else {
             $view = view('home.services-'.$service);
-            $view->title = "Crandell Design by Matt Crandell | Web Design and Development";
-            $view->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
+            switch ($service) {
+                case 'web-design':
+                    $view->title = "Web Design and Development Services | Crandell Design by Matt Crandell";
+                    $view->description = "Crandell Design provides web design and development services to small business in Metro Detroit, Michigan.";
+                    break;
+                case 'web-hosting':
+                    $view->title = "Web Design and Development Services | Crandell Design by Matt Crandell";
+                    $view->description = "Crandell Design can host your new website for you.";
+                    break;
+                case 'social-media':
+                    $view->title = "Social Media Services | Crandell Design by Matt Crandell";
+                    $view->description = "Crandell Design will help you and your small business become social media masters.";
+                    break;
+                case 'logo-design':
+                    $view->title = "Logo Design Services | Crandell Design by Matt Crandell";
+                    $view->description = "Crandell Design can design or restore a logo for your company.";
+                    break;
+                case 'seo':
+                    $view->title = "Logo Design Services | Crandell Design by Matt Crandell";
+                    $view->description = "Crandell Design can design or restore a logo for your company.";
+                    break;
+            }
 
             return $view;
         }
+    }
+
+    public function postContact(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+                'name' => 'required',
+                'email' => 'required|email',
+                'message_text' => 'required'
+            ],
+            [
+                'name.required' => 'Please enter your name.',
+                'email.required' => 'Please enter your email address.',
+                'email.email' => 'Please enter a valid email address.',
+                'message_text.required' => 'What? You Don\'t Want to Say Something?'
+            ]
+        );
+        if ($validator->fails()) {
+            return redirect('/#contact')
+                ->withErrors($validator)
+                ->withInput();
+        }
+        Mail::to('matt@crandelldesign.com')->send(new Contact($request));
+        Mail::to($request->get('email'))->send(new ContactThankYou($request));
+        return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
     }
 
     private function portfolio()
@@ -230,6 +282,25 @@ class HomeController extends Controller
             $client->url = 'http://sageorthodontics.com';
             $client->description = '<p>In this website for Sage Orthodontics, located in Portage, MI, I incorporated not only the colors in the logo, but also colors used in the office itself. My goal was to create a very "hygienic" look using clean lines and colors that were pleasing to the eye.</p>';
             $client->services = ['Web Design', 'Web Maintenance', 'Web Hosting'];
+        $clients[] = $client;
+            $client = new StdClass;
+            $client->name = 'Nuview Nutrition';
+            $client->slug = str_slug($client->name);
+            $client->city = 'Clarkston';
+            $client->state = 'MI';
+            $client->assets = [
+                '/img/samples/nuviewnutrition-responsive.jpg',
+                '/img/samples/nuviewnutrition1.jpg',
+                '/img/samples/nuview-logo.jpg',
+                '/img/samples/nuviewnutrition2.jpg',
+                '/img/samples/nuviewnutrition3.jpg',
+            ];
+            $client->display_img = $client->assets[1];
+            $client->hover_img = $client->assets[0];
+            //$client->is_use_url = 1;
+            //$client->url = 'http://sageorthodontics.com';
+            $client->description = '<p>The logo and website created for Nuview Nutrition displays a clean look and bold colors.</p>';
+            $client->services = ['Logo Design'];
         $clients[] = $client;
         $portfolio = collect($clients);
 

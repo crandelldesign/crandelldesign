@@ -644,3 +644,8 @@ nav.navbar {
     }
 }
 
+/* Error Page */
+.img-404 {
+    border: 1px solid $sanmarino;
+    @include shadow-1();
+}

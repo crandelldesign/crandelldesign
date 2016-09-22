@@ -10678,6 +10678,11 @@ nav.navbar {
       font-size: 13px;
       color: #777777; }
 
+/* Error Page */
+.img-404 {
+  border: 1px solid #4759a7;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
 /*# sourceMappingURL=stylesheet.css.map */
 
 /*# sourceMappingURL=stylesheet.css.map */

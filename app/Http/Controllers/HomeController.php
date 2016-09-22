@@ -128,12 +128,28 @@ class HomeController extends Controller
             $client->city = 'Rodney';
             $client->state = 'MI';
             $client->assets = [
-                '/img/samples/fourgreenfieldsfarm1-v4.jpg',
-                '/img/samples/fourgreenfieldsfarm-responsive-v4.jpg'
+                '/img/samples/fourgreenfieldsfarm1.jpg',
+                '/img/samples/fourgreenfieldsfarm2.jpg'
             ];
             $client->display_img = $client->assets[0];
             $client->hover_img = $client->assets[1];
             $client->is_custom = 1;
+        $clients[] = $client;
+            $client = new StdClass;
+            $client->name = 'Habitat for Humanity of Oakland County';
+            $client->slug = str_slug($client->name);
+            $client->city = 'Pontiac';
+            $client->state = 'MI';
+            $client->assets = [
+                '/img/samples/habitat-for-humanity1.jpg',
+                '/img/samples/habitat-for-humanity2.jpg',
+            ];
+            $client->display_img = $client->assets[0];
+            $client->hover_img = $client->assets[1];
+            $client->is_use_url = 1;
+            $client->url = 'https://www.habitatoakland.org';
+            $client->description = 'This custom WordPress backed website for news and events also features bright yet clean design.';
+            $client->services = ['Web Design', 'Web Hosting', 'Web Maintenance.'];
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Christ Lutheran Church of Waterford';

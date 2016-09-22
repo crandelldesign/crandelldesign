@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'postmaster@crandelldesign.com',
+        'address' => 'matt@crandelldesign.com',
         'name' => 'Matt Crandell',
     ],
 

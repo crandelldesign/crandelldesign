@@ -10282,7 +10282,10 @@ nav.navbar {
     margin-right: auto;
     margin-left: auto; }
   nav.navbar .navbar-brand img {
-    max-width: 283px; }
+    max-width: 230px; }
+    @media (min-width: 992px) {
+      nav.navbar .navbar-brand img {
+        max-width: 283px; } }
   nav.navbar .navbar-nav > li > a {
     color: #4cb848;
     font-size: 20px;
@@ -10292,6 +10295,12 @@ nav.navbar {
         padding: 25px 12px; } }
     nav.navbar .navbar-nav > li > a:hover, nav.navbar .navbar-nav > li > a:focus {
       color: #FFF; }
+  nav.navbar .navbar-toggle {
+    border-color: #4759a7; }
+    nav.navbar .navbar-toggle:hover, nav.navbar .navbar-toggle:focus {
+      background-color: #82cd7f; }
+    nav.navbar .navbar-toggle .icon-bar {
+      background-color: #4cb848; }
 
 /* Footer */
 .footer .footer-top {

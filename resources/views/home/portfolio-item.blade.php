@@ -52,10 +52,22 @@
                 </div>
             @endif
 
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-lg-3 margin-bottom-15">
+                    @if ((!empty($previous)))
+                        <a href="{{url('/portfolio/'.$previous->slug)}}" class="btn btn-lg btn-block btn-apple animsition-link"><i class="fa fa-angle-left"></i> Previous</a>
+                    @endif
+                </div>
+                <div class="col-xs-6 col-sm-4 col-lg-3 col-sm-offset-4 col-lg-offset-6 margin-bottom-15 text-right">
+                    @if ((!empty($next)))
+                        <a href="{{url('/portfolio/'.$next->slug)}}" class="btn btn-lg btn-block btn-apple animsition-link">Next <i class="fa fa-angle-right"></i></a>
+                    @endif
+                </div>
+            </div>
+
             <div class="button-holder text-center">
                 <a href="{{url('/portfolio')}}" class="btn btn-lg btn-apple animsition-link">See My Full Portfolio <i class="fa fa-angle-right"></i></a>
             </div>
-            
         </div>
     </div>
 </div>

@@ -12,7 +12,7 @@
                         <li><a href="https://github.com/crandelldesign" target="_blank" rel="publisher"><i class="fa fa-github-square"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-sm-6 footer-contact hidden-xs">
+                <div class="col-sm-6 footer-contact">
                     <p>Phone: <a class="phone" href="tel:+12483835376">248-383-5376</a><br>
                     Email: <a href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
                 </div>

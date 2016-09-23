@@ -127,7 +127,10 @@ nav.navbar {
         margin-left: auto;
     }
     .navbar-brand img {
-        max-width: 283px;
+        max-width: 230px;
+        @media (min-width: $screen-md-min) {
+            max-width: 283px;
+        }
     }
     .navbar-nav {
         > li {
@@ -143,6 +146,16 @@ nav.navbar {
                     color: #FFF;
                 }
             }
+        }
+    }
+    .navbar-toggle {
+        border-color: $sanmarino;
+        &:hover,
+        &:focus {
+            background-color: $deyork;
+        }
+        .icon-bar {
+            background-color: $apple;
         }
     }
 }

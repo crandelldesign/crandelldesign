@@ -46,6 +46,18 @@ class HomeController extends Controller
                 $view->title = $client->name." | Crandell Design by Matt Crandell";
                 $view->description = $client->name;
                 $view->client = $client;
+                
+                // get previous client id
+                $previousID = $this->portfolio()->where('id', '<', $client->id)->max('id');
+                $previous = $this->portfolio()->where('id', '=', $previousID)->first();
+
+                // get next client id
+                $nextID = $this->portfolio()->where('id', '>', $client->id)->min('id');
+                $next = $this->portfolio()->where('id', '=', $nextID)->first();
+
+                $view->previous = $previous;
+                $view->next = $next;
+
                 return $view;
             } else {
                 return redirect('/portfolio', 301);
@@ -319,6 +331,9 @@ class HomeController extends Controller
             $client->services = ['Logo Design'];
         $clients[] = $client;
         $portfolio = collect($clients);
+        foreach ($portfolio as $key => $client) {
+            $client->id = $key+1;
+        }
 
         return $portfolio;
     }

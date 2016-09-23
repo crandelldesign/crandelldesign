@@ -16,4 +16,11 @@ $(document).ready(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+    setTimeout(function(){
+        $('.animsition').css({
+            'animation-duration': '300ms',
+            'opacity': '1'
+        });
+        console.log('hi');
+    }, 2000);
 });

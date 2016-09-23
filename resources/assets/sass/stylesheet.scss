@@ -263,11 +263,11 @@ nav.navbar {
 /* Home */
 #home {
     padding-top: 76px;
-    background: $rhino url(/img/home-container-bg.jpg) no-repeat center center; 
+    background: $rhino url(/img/home-container-bg.jpg) no-repeat center center;
     @include mobile-bg();
     min-height: 550px;
     @media (min-width: $screen-sm-min) {
-        background: url(/img/home-container-bg.jpg) no-repeat center center fixed; 
+        background: url(/img/home-container-bg.jpg) no-repeat center center fixed;
         @include desktop-bg();
         min-height: 100vh;
     }
@@ -348,11 +348,11 @@ nav.navbar {
 /* Portfolio - Home */
 #portfolio-home {
     padding-top: 76px;
-    background: $rhino url(/img/home-container-bg.jpg) no-repeat center center; 
+    background: $rhino url(/img/home-container-bg.jpg) no-repeat center center;
     @include mobile-bg();
     min-height: 300px;
     @media (min-width: $screen-sm-min) {
-        background: url(/img/home-container-bg.jpg) no-repeat center center fixed; 
+        background: url(/img/home-container-bg.jpg) no-repeat center center fixed;
         @include desktop-bg();
         background-position: center -250px;
     }
@@ -516,11 +516,43 @@ nav.navbar {
         }
     }
 }
+/* Portfolio - Four Green Fields Farm */
+#four-green-fields-farm-portfolio {
+    .color-swatch {
+        &.swatch1 {
+            background-color: #005a2c;
+        }
+        &.swatch2 {
+            background-color: #00a651;
+        }
+        &.swatch3 {
+            background-color: #000e07;
+        }
+        &.swatch4 {
+            background-color: #ffcb05;
+        }
+        &.swatch5 {
+            background-color: #ffdb52;
+        }
+        &.swatch6 {
+            background-color: #b89100;
+        }
+        &.swatch7 {
+            background-color: #647b97;
+        }
+        &.swatch8 {
+            background-color: #91a2b6;
+        }
+        &.swatch9 {
+            background-color: #465669;
+        }
+    }
+}
 
 /* Services */
 #services {
     color: #FFF;
-    //background: #4759a7 url(../img/services-container-bg-mobile.jpg) no-repeat center center; 
+    //background: #4759a7 url(../img/services-container-bg-mobile.jpg) no-repeat center center;
     background: url(/img/services-container-bg.jpg) no-repeat center center fixed;
     @include mobile-bg();
     @media (min-width: $screen-sm-min) {

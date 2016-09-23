@@ -3,7 +3,7 @@
 
 <hr>
 
-<div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/christwaterford-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-responsive-banner.jpg')}}" alt="Responsive Display of the Christ Lutheran Church of Waterford Website" class="img-responsive center-block portfolio-img portfolio-browser" /></div>
+<div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/fourgreenfieldsfarm-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-responsive-banner.jpg')}}" alt="Responsive Display of the Four Green Fields Farm Website" class="img-responsive center-block portfolio-img portfolio-browser" /></div>
 
 <div class="row">
     <div class="col-lg-8">
@@ -26,45 +26,63 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="color-swatch swatch1">
-                    Midnight Blue<br>
-                    #003366
+                    Camarone<br>
+                    #005a2c
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="color-swatch swatch2">
-                    Persian Green<br>
-                    #00a99d
+                    Green Haze<br>
+                    #00a651
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="color-swatch swatch3">
-                    Gray<br>
-                    #8b8c84
+                    Holly<br>
+                    #000e07
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="color-swatch swatch4">
-                    Pine Green<br>
-                    #00746b
+                    Supernova<br>
+                    #ffcb05
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="color-swatch swatch5">
-                    Light Sea Green<br>
-                    #1cbbb4
+                    Mustard<br>
+                    #fffdb52
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="color-swatch swatch6">
+                    Pirate Gold<br>
+                    #b89100
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-swatch swatch7">
+                    Lynch<br>
+                    #647b97
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-swatch swatch8">
+                    Bali Hai<br>
+                    #91a2b6
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="color-swatch swatch9">
                     Black<br>
-                    #252525
+                    #465669
                 </div>
             </div>
         </div>
     </div>
     <div class="col-sm-6 margin-bottom-20">
         <h2>Typography</h2>
-        <img src="{{url('/img/samples/christwaterford-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Christ Lutheran Church of Waterford Typography">
+        <img src="{{url('/img/samples/fourgreenfieldsfarm-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Four Green Fields Farm Typography">
     </div>
 </div>
 

@@ -5,6 +5,9 @@ $(document).ready(function() {
         outDuration: 300,
         linkElement: '.animsition-link',
     });
+    $(".navbar-toggle").on("click", function () {
+        $(this).toggleClass("active");
+    });
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         //var $anchor = $(this);

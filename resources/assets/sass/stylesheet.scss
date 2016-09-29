@@ -1,15 +1,11 @@
 @import 'mixins';
 @import 'variables';
-/* Boostrap */
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+/* Boostrap Custom */
+@import 'bootstrap-custom';
 /* Font Awesome */
 @import 'node_modules/font-awesome/scss/font-awesome';
 /* Slick - slideshow plugin */
 @import 'node_modules/slick-carousel/slick/slick.scss';
-/* Animsition - page transition plugin */
-//@import "node_modules/animsition/src/css/base.css";
-//@import "node_modules/animsition/src/css/loading.css";
-//@import "node_modules/animsition/src/css/fade/fade.css";
 
 /* General Styles */
 html {
@@ -149,14 +145,38 @@ nav.navbar {
         }
     }
     .navbar-toggle {
-        border-color: $sanmarino;
+        //border-color: $sanmarino;
         &:hover,
         &:focus {
-            background-color: $deyork;
+            //background-color: $deyork;
         }
         .icon-bar {
-            background-color: $apple;
+            background-color: $sanmarino;
+            position: relative;
+            transition: all 250ms ease-in-out;
+            &:nth-of-type(3) {
+                top: 1px;
+            }
+            &:nth-of-type(4) {
+                top: 2px;
+            }
         }
+        &.active {
+            .icon-bar {
+                background-color: $apple;
+            }
+            .icon-bar:nth-of-type(2) {
+                top: 6px;
+                transform: rotate(45deg);
+            }
+            .icon-bar:nth-of-type(3) {
+                background-color: transparent;
+            }
+            .icon-bar:nth-of-type(4) {
+                top: -6px;
+                transform: rotate(-45deg);
+            }
+        } 
     }
 }
 
@@ -672,6 +692,7 @@ nav.navbar {
     border-radius: $border-radius-base;
     border: 1px solid $sanmarino;
     margin-bottom: 30px;
+    overflow: hidden;
     @include shadow-1();
     .blog-media {
         width: 100%;

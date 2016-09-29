@@ -151,7 +151,7 @@
         <div class="row">
         @for ($i = 0; $i < 4; $i++)
         <?php $entry = $blog_entries[$i]; ?>
-            <div class="col-sm-3 col-xs-6">
+            <div class="col-md-3 col-sm-6">
                 <div class="blog-entry">
                     @if(isset($entry->entities->media))
                         <div class="blog-media" style="background-image: url({{$entry->entities->media[0]->media_url}})"></div>

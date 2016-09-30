@@ -31,7 +31,7 @@ class HomeController extends Controller
         }
         catch (Exception $e)
         {
-            
+
         }
 
         return $view;
@@ -46,7 +46,7 @@ class HomeController extends Controller
                 $view->title = $client->name." | Crandell Design by Matt Crandell";
                 $view->description = $client->name;
                 $view->client = $client;
-                
+
                 // get previous client id
                 $previousID = $this->portfolio()->where('id', '<', $client->id)->max('id');
                 $previous = $this->portfolio()->where('id', '=', $previousID)->first();
@@ -141,7 +141,7 @@ class HomeController extends Controller
             $client->state = 'MI';
             $client->assets = [
                 '/img/samples/fourgreenfieldsfarm1.jpg',
-                '/img/samples/fourgreenfieldsfarm2.jpg'
+                '/img/samples/fourgreenfieldsfarm-mockup-ipad-iphone.jpg'
             ];
             $client->display_img = $client->assets[0];
             $client->hover_img = $client->assets[1];

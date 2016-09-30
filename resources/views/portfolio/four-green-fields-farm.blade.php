@@ -13,10 +13,10 @@
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/christwaterford-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-browser-homepage.jpg')}}" alt="Homepage of the Christ Lutheran Church of Waterford Website" class="img-responsive center-block portfolio-img portfolio-browser" />
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-homepage.jpg')}}" alt="Homepage of the Four Green Fields Farm Website" class="img-responsive center-block portfolio-img portfolio-browser" />
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/christwaterford-mockup-phone@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-mockup-phone.jpg')}}" alt="The Christ Lutheran Church of Waterford Website on a Mobile Device" class="img-responsive center-block portfolio-img" />
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-mockup-ipad-iphone@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-mockup-ipad-iphone.jpg')}}" alt="The Four Green Fields Farm Website on a Mobile Device" class="img-responsive center-block portfolio-img" />
     </div>
 </div>
 
@@ -90,19 +90,19 @@
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/christwaterford-browser-events@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-browser-events.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford event calendar">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford event calendar">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/christwaterford-browser-events-open@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-browser-events-open.jpg')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford event calendar with event description open">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open.jpg')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford event calendar with event description open">
     </div>
 </div>
 
 <h2>Admin Interface</h2>
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/christwaterford-browser-admin-event-list@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-browser-admin-event-list.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford admin event list">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford admin event list">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/christwaterford-browser-admin-event-edit@2x.jpg')}} 2x" src="{{url('/img/samples/christwaterford-browser-admin-event-edit.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford admin event editing interface">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford admin event editing interface">
     </div>
 </div>

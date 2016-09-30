@@ -14,11 +14,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-menu-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="animsition-link" href="{{url('/portfolio')}}">Portfolio</a></li>
-                <li><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':'animsition-link'}}" href="{{url('/#services')}}">Services</a></li>
-                <li><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':'animsition-link'}}" href="{{url('/#about')}}">About</a></li>
-                <li><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':'animsition-link'}}" href="{{url('/#contact')}}">Contact</a></li>
-                <li><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':'animsition-link'}}" href="{{url('/#blog')}}">Blog</a></li>
+                <li><a class="animsition-link" href="{{url('/portfolio')}}" data-toggle="collapse" data-target="#main-menu-collapse">Portfolio</a></li>
+                <li><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':'animsition-link'}}" href="{{url('/#services')}}" data-toggle="collapse" data-target="#main-menu-collapse">Services</a></li>
+                <li><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':'animsition-link'}}" href="{{url('/#about')}}" data-toggle="collapse" data-target="#main-menu-collapse">About</a></li>
+                <li><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':'animsition-link'}}" href="{{url('/#contact')}}" data-toggle="collapse" data-target="#main-menu-collapse">Contact</a></li>
+                <li><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':'animsition-link'}}" href="{{url('/#blog')}}" data-toggle="collapse" data-target="#main-menu-collapse">Blog</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

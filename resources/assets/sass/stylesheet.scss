@@ -139,7 +139,8 @@ nav.navbar {
                 }
                 &:hover,
                 &:focus {
-                    color: #FFF;
+                    color: $black;
+                    @include hover-transition();
                 }
             }
         }
@@ -578,6 +579,26 @@ nav.navbar {
         }
         &.swatch9 {
             background-color: #465669;
+        }
+    }
+}
+/* Portfolio - Habitat for Humanity of Oakland County */
+#habitat-for-humanity-of-oakland-county-portfolio {
+    .color-swatch {
+        &.swatch1 {
+            background-color: #005596;
+        }
+        &.swatch2 {
+            background-color: #51b948;
+        }
+        &.swatch3 {
+            background-color: #8b8c84;
+        }
+        &.swatch4 {
+            background-color: #8fc3e9;
+        }
+        &.swatch5 {
+            background-color: #007cb1;
         }
     }
 }

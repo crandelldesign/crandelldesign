@@ -154,7 +154,7 @@ class HomeController extends Controller
             $client->state = 'MI';
             $client->assets = [
                 '/img/samples/habitat-for-humanity1.jpg',
-                '/img/samples/habitat-for-humanity2.jpg',
+                '/img/samples/habitat-for-humanity-mockup-macbook-ipad.jpg',
             ];
             $client->display_img = $client->assets[0];
             $client->hover_img = $client->assets[1];
@@ -162,6 +162,7 @@ class HomeController extends Controller
             $client->url = 'https://www.habitatoakland.org';
             $client->description = 'This custom WordPress backed website for news and events also features bright yet clean design.';
             $client->services = ['Web Design', 'Web Hosting', 'Web Maintenance.'];
+            $client->is_custom = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Christ Lutheran Church of Waterford';

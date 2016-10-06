@@ -5614,7 +5614,7 @@ tbody.collapse.in {
       padding: 10px 15px; }
       .nav > li > a:hover, .nav > li > a:focus {
         text-decoration: none;
-        background-color: #4cb848; }
+        background-color: #FFF; }
     .nav > li.disabled > a {
       color: #777777; }
       .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
@@ -5623,7 +5623,7 @@ tbody.collapse.in {
         background-color: transparent;
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: #4cb848;
+    background-color: #FFF;
     border-color: #4cb848; }
   .nav .nav-divider {
     height: 1px;
@@ -8831,7 +8831,9 @@ nav.navbar {
       nav.navbar .navbar-nav > li > a {
         padding: 25px 12px; } }
     nav.navbar .navbar-nav > li > a:hover, nav.navbar .navbar-nav > li > a:focus {
-      color: #FFF; }
+      color: #252525;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
   nav.navbar .navbar-toggle .icon-bar {
     background-color: #4759a7;
     position: relative;
@@ -9170,6 +9172,22 @@ nav.navbar {
 
 #four-green-fields-farm-portfolio .color-swatch.swatch9 {
   background-color: #465669; }
+
+/* Portfolio - Habitat for Humanity of Oakland County */
+#habitat-for-humanity-of-oakland-county-portfolio .color-swatch.swatch1 {
+  background-color: #005596; }
+
+#habitat-for-humanity-of-oakland-county-portfolio .color-swatch.swatch2 {
+  background-color: #51b948; }
+
+#habitat-for-humanity-of-oakland-county-portfolio .color-swatch.swatch3 {
+  background-color: #8b8c84; }
+
+#habitat-for-humanity-of-oakland-county-portfolio .color-swatch.swatch4 {
+  background-color: #8fc3e9; }
+
+#habitat-for-humanity-of-oakland-county-portfolio .color-swatch.swatch5 {
+  background-color: #007cb1; }
 
 /* Services */
 #services {

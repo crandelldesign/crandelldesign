@@ -31,6 +31,6 @@ $(document).ready(function() {
             'animation-duration': '300ms',
             'opacity': '1'
         });
-        console.log('hi');
+        $('.animsition-loading').remove()
     }, 2000);
 });

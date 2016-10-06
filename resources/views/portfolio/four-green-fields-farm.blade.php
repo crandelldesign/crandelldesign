@@ -90,19 +90,19 @@
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford event calendar">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm event calendar">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open.jpg')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford event calendar with event description open">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open.jpg')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Four Green Fields Farm event calendar with event description open">
     </div>
 </div>
 
 <h2>Admin Interface</h2>
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford admin event list">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm admin event list">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Christ Lutheran Church of Waterford admin event editing interface">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm admin event editing interface">
     </div>
 </div>

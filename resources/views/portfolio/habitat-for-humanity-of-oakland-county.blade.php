@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-lg-8">
-        <p class="lead">As one of Crandell Design's earliest clients, the website for Habitat for Humanity of Oakland County is kept up to date with improvements and redesigns including a new admin interface to update events.</p>
+        <p class="lead">This custom WordPress backed website for news, events, and other valuable resources also features bright yet clean design.</p>
     </div>
 </div>
 

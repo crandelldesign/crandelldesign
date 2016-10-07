@@ -160,7 +160,7 @@ class HomeController extends Controller
             $client->hover_img = $client->assets[1];
             $client->is_use_url = 1;
             $client->url = 'https://www.habitatoakland.org';
-            $client->description = 'This custom WordPress backed website for news and events also features bright yet clean design.';
+            $client->description = 'This custom WordPress backed website for news, events, and other valuable resources also features bright yet clean design.';
             $client->services = ['Web Design', 'Web Hosting', 'Web Maintenance.'];
             $client->is_custom = 1;
         $clients[] = $client;

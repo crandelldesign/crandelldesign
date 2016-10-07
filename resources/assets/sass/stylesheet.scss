@@ -147,6 +147,7 @@ nav.navbar {
     }
     .navbar-toggle {
         //border-color: $sanmarino;
+        @include navbar-vertical-align(40px);
         &:hover,
         &:focus {
             //background-color: $deyork;

@@ -44,7 +44,7 @@ class HomeController extends Controller
             if(!empty($client)) {
                 $view = view('home.portfolio-item');
                 $view->title = $client->name." | Crandell Design by Matt Crandell";
-                $view->description = $client->name;
+                $view->description = (isset($client->meta_description)?$client->meta_description:$client->name);
                 $view->client = $client;
 
                 // get previous client id
@@ -66,7 +66,7 @@ class HomeController extends Controller
 
         $view = view('home.portfolio');
         $view->title = "Portfolio | Web Design and Development";
-        $view->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
+        $view->description = "See the portfolio of Matt Crandell, web design in Metro Detroit, MI.";
 
         $portfolio = $this->portfolio();
         $view->portfolio = $portfolio;
@@ -145,6 +145,7 @@ class HomeController extends Controller
             ];
             $client->display_img = $client->assets[0];
             $client->hover_img = $client->assets[1];
+            $client->meta_description = 'The website for Four Green Fields Farm is kept up to date with improvements and redesigns including a new admin interface to update events.';
             $client->is_custom = 1;
         $clients[] = $client;
             $client = new StdClass;
@@ -160,7 +161,7 @@ class HomeController extends Controller
             $client->hover_img = $client->assets[1];
             $client->is_use_url = 1;
             $client->url = 'https://www.habitatoakland.org';
-            $client->description = 'This custom WordPress backed website for news, events, and other valuable resources also features bright yet clean design.';
+            $client->meta_description = 'The Habitat for Humanity of Oakland County is a custom WordPress backed website for news, events, and other valuable resources also features bright yet clean design.';
             $client->services = ['Web Design', 'Web Hosting', 'Web Maintenance.'];
             $client->is_custom = 1;
         $clients[] = $client;
@@ -175,6 +176,7 @@ class HomeController extends Controller
             ];
             $client->display_img = $client->assets[0];
             $client->hover_img = $client->assets[1];
+            $client->meta_description = 'Since 2009, the Christ Lutheran Church website has seen numerous improvements and redesigns including a new admin interface to keep events up to date.';
             $client->is_custom = 1;
         $clients[] = $client;
             $client = new StdClass;
@@ -195,6 +197,7 @@ class HomeController extends Controller
             $client->url = 'http://www.riflerivercampground.com';
             $client->description = '<p>This website was created for Rifle River Campground. It was built utilizing WordPress allowing the customer to be able to edit the content on the site without coding knowledge.</p>
                 <p>The website is simple and user friendly yet informative. It provides details on everything that the campground has to offer.</p>';
+            $client->meta_description = 'This website was created for Rifle River Campground built utilizing WordPress allowing the customer to be able to edit the content on the site without coding knowledge.';
             $client->services = ['Web Design', 'Web Hosting'];
         $clients[] = $client;
             $client = new StdClass;
@@ -208,6 +211,7 @@ class HomeController extends Controller
             ];
             $client->display_img = $client->assets[0];
             $client->hover_img = $client->assets[1];
+            $client->meta_description = 'Crandell Design redesigned the logo for Clarkston Area Chamber of Commerce and created supplementary logos for the various programs and events that the chamber offers.';
             $client->is_custom = 1;
         $clients[] = $client;
             $client = new StdClass;
@@ -221,6 +225,7 @@ class HomeController extends Controller
             ];
             $client->display_img = $client->assets[0];
             $client->hover_img = $client->assets[1];
+            $client->meta_description = 'With the latest redesign, the website is configured to work on multiple devices and features Jude\'s personal style.';
             $client->is_custom = 1;
         $clients[] = $client;
             $client = new StdClass;
@@ -239,6 +244,7 @@ class HomeController extends Controller
             $client->is_use_url = 1;
             $client->url = 'http://www.greggsgourmetcafe.com';
             $client->description = '<p>This is a website that I created for Gregg\'s Gourmet Cafe of Clarkston, MI. The design of the site borrows the colors and simplicity of the existing logo.</p>';
+            $client->meta_description = 'This is a website that I created for Gregg\'s Gourmet Cafe of Clarkston, MI. The design of the site borrows the colors and simplicity of the existing logo.';
             $client->services = ['Web Design', 'Web Maintenance', 'Web Hosting'];
         $clients[] = $client;
             $client = new StdClass;
@@ -258,6 +264,7 @@ class HomeController extends Controller
             $client->url = 'http://www.alchinsdisposal.com';
             $client->description = '<p>I redesigned the website for Alchin\'s Disposal to take advantage of new technologies and new design trends. The new website uses bolder colors and takes advantage of white space to fill the screen in a fresh and inviting way. The logo renovation helps build the brand of the company while also bringing something more unique to the table. The website, of course, is responsive and works on all devices.</p>
                 <p>Starting with a clear and concise style guide, I was able to quickly build out the website and exceed the client\'s expectations. Keeping with the vision of the style guide, change requests by the client could quickly be applied.</p>';
+            $client->meta_description = 'I redesigned the website for Alchin\'s Disposal to take advantage of new technologies and new design trends.';
             $client->services = ['Web Design', 'Web Maintenance', 'Logo Renovation'];
         $clients[] = $client;
             $client = new StdClass;
@@ -275,6 +282,7 @@ class HomeController extends Controller
             $client->hover_img = $client->assets[0];
             $client->description = '<p>This is a logo and flyer for the Brewing 4 Business networking event between the Clarkston Area Chamber of Commerce and Waterford Chamber of Commerce. The event featured breweries, beer samples, and food.</p>
                 <p>Both the logo and flyer utilize the same typefaces and color scheme. The logo was utilized for banners and some event promotions. The flyer would be used for mail flyers and online promotions.<p>';
+            $client->meta_description = 'This is a logo and flyer for the Brewing 4 Business networking event between the Clarkston Area Chamber of Commerce and Waterford Chamber of Commerce.';
             $client->services = ['Logo Design', 'Flyer Design'];
         $clients[] = $client;
             $client = new StdClass;
@@ -292,7 +300,8 @@ class HomeController extends Controller
             $client->hover_img = $client->assets[2];
             $client->is_use_url = 1;
             $client->url = 'http://vicksburgfamilydentistry.com';
-            $client->description = 'This is a website that I designed for Vicksburg Family Dentistry. The site is fully responsive so that it works on all devices, and was built on Wordpress so that the client can changes and update everything without any coding knowledge. Borrowing from some of the principles of Google\'s Material Design,  I used flat design and depth together.';
+            $client->description = 'This is a website that I designed for Vicksburg Family Dentistry. The site is fully responsive so that it works on all devices, and was built on WordPress so that the client can changes and update everything without any coding knowledge. Borrowing from some of the principles of Google\'s Material Design,  I used flat design and depth together.';
+            $client->meta_description = 'This is a website that I designed for Vicksburg Family Dentistry built using WordPress.';
             $client->services = ['Web Design', 'Web Maintenance'];
         $clients[] = $client;
             $client = new StdClass;
@@ -310,6 +319,7 @@ class HomeController extends Controller
             $client->is_use_url = 1;
             $client->url = 'http://sageorthodontics.com';
             $client->description = '<p>In this website for Sage Orthodontics, located in Portage, MI, I incorporated not only the colors in the logo, but also colors used in the office itself. My goal was to create a very "hygienic" look using clean lines and colors that were pleasing to the eye.</p>';
+            $client->meta_description = 'In this website for Sage Orthodontics, located in Portage, MI, I incorporated not only the colors in the logo, but also colors used in the office itself.';
             $client->services = ['Web Design', 'Web Maintenance', 'Web Hosting'];
         $clients[] = $client;
             $client = new StdClass;
@@ -326,9 +336,8 @@ class HomeController extends Controller
             ];
             $client->display_img = $client->assets[1];
             $client->hover_img = $client->assets[0];
-            //$client->is_use_url = 1;
-            //$client->url = 'http://sageorthodontics.com';
             $client->description = '<p>The logo and website created for Nuview Nutrition displays a clean look and bold colors.</p>';
+            $client->meta_description = 'The logo and website created for Nuview Nutrition displays a clean look and bold colors.';
             $client->services = ['Logo Design'];
         $clients[] = $client;
         $portfolio = collect($clients);

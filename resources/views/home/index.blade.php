@@ -135,8 +135,8 @@
                 </form>
             </div>
             <div class="col-sm-5">
-                <p>Phone: <a class="phone" href="tel:+12483835376">248-383-5376</a><br>
-                Email: <a href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
+                <p>Phone: <a class="phone btn btn-link" href="tel:+12483835376">248-383-5376</a><br>
+                Email: <a class="btn btn-link" href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
                 <h3>Matt Crandell's R&eacute;sum&eacute;</h3>
                 <p><a href="{{url('/')}}/resume.pdf" target="_blank" class="btn btn-apple" title="Download Matt Crandell's R&eacute;sum&eacute; as PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download My R&eacute;sum&eacute;</a></p>
             </div>

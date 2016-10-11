@@ -135,8 +135,8 @@
                 </form>
             </div>
             <div class="col-sm-5">
-                <p>Phone: <a class="phone btn btn-link" href="tel:+12483835376">248-383-5376</a><br>
-                Email: <a class="btn btn-link" href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
+                <p>Phone <a class="phone btn btn-link" href="tel:+12483835376">248-383-5376</a><br>
+                Email <a class="btn btn-link" href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
                 <h3>Matt Crandell's R&eacute;sum&eacute;</h3>
                 <p><a href="{{url('/')}}/resume.pdf" target="_blank" class="btn btn-apple" title="Download Matt Crandell's R&eacute;sum&eacute; as PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download My R&eacute;sum&eacute;</a></p>
             </div>
@@ -158,7 +158,6 @@
                     @endif
                     <p>{!!preg_replace('"\b(https?://\S+)"', '<a class="animsition-link" href="$1">$1</a>', $entry->text)!!}</p>
                     <p class="date-created">{{date('n/d/Y',strtotime($entry->created_at))}}
-                    <!--<?php echo "<pre>", print_r($entry, true), "</pre>"; ?>-->
                 </div>
             </div>
         @endfor

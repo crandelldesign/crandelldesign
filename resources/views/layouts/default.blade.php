@@ -6,6 +6,19 @@
         {!! Analytics::render() !!}
     </head>
     <body>
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Crandell Design",
+            "url": "http://www.crandelldesign.com",
+            "sameAs": [
+                "http://facebook.com/crandelldesign",
+                "https://plus.google.com/100599816596951419097",
+                "http://twitter.com/crandelldesign"
+            ]
+        }
+        </script>
         <div class="animsition">
             @include('layouts.nav')
             @yield('content')
@@ -15,5 +28,5 @@
             @yield('scripts')
         </div>
     </body>
-    
+
 </html>

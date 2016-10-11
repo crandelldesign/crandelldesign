@@ -127,7 +127,7 @@
                         <textarea class="form-control" rows="5" id="message_text" name="message_text" placeholder="Message"></textarea>
                     </div>
                     {{ csrf_field() }}
-                    <!--<input class="url" type="text" id="url" name="url" value="" />-->
+                    {{-- <!--<input class="url" type="text" id="url" name="url" value="" />--> --}}
                     <div class="form-group">
                         <button type="submit" class="btn btn-submit pull-right btn-apple" data-loading-text="Sending...">Send</button>
                         <div class="clearfix"></div>

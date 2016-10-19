@@ -9,7 +9,7 @@
 
     <!-- Web Font / @font-face : BEGIN -->
     <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
-    
+
     <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
     <!--[if mso]>
         <style>
@@ -18,14 +18,14 @@
             }
         </style>
     <![endif]-->
-    
+
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
         <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
     <!--<![endif]-->
 
     <!-- Web Font / @font-face : END -->
-    
+
     <!-- CSS Reset -->
     <style>
 
@@ -38,25 +38,25 @@
             height: 100% !important;
             width: 100% !important;
         }
-        
+
         /* What it does: Stops email clients resizing small text. */
         * {
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
         }
-        
+
         /* What it does: Centers email on Android 4.4 */
         div[style*="margin: 16px 0"] {
             margin:0 !important;
         }
-        
+
         /* What it does: Stops Outlook from adding extra spacing to tables. */
         table,
         td {
             mso-table-lspace: 0pt !important;
             mso-table-rspace: 0pt !important;
         }
-                
+
         /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
         table {
             border-spacing: 0 !important;
@@ -65,26 +65,26 @@
             margin: 0 auto !important;
         }
         table table table {
-            table-layout: auto; 
+            table-layout: auto;
         }
-        
+
         /* What it does: Uses a better rendering method when resizing images in IE. */
         img {
             -ms-interpolation-mode:bicubic;
         }
-        
+
         /* What it does: A work-around for iOS meddling in triggered links. */
         .mobile-link--footer a,
         a[x-apple-data-detectors] {
             color:inherit !important;
             text-decoration: underline !important;
         }
-      
+
     </style>
-    
+
     <!-- Progressive Enhancements -->
     <style>
-        
+
         /* What it does: Hover styles for buttons */
         .button-td,
         .button-a {
@@ -126,7 +126,7 @@
             .stack-column-center {
                 text-align: center !important;
             }
-        
+
             /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
             .center-on-narrow {
                 text-align: center !important;
@@ -138,7 +138,7 @@
             table.center-on-narrow {
                 display: inline-block !important;
             }
-                
+
         }
 
     </style>
@@ -149,15 +149,15 @@
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
-            (Optional) This text will appear in the inbox preview, but not the email body.
+            <!--(Optional) This text will appear in the inbox preview, but not the email body. -->
         </div>
         <!-- Visually Hidden Preheader Text : END -->
 
-        <!--    
+        <!--
             Set the email width. Defined in two places:
             1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
             2. MSO tags for Desktop Windows Outlook enforce a 680px width.
-            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.  
+            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
         -->
         <div style="max-width: 680px; margin: auto;">
             <!--[if mso]>
@@ -174,10 +174,10 @@
                 </tr>
             </table>
             <!-- Email Header : END -->
-            
+
             <!-- Email Body : BEGIN -->
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
-                
+
                 <!-- Hero Image, Flush : BEGIN -->
                 <tr>
                     <td bgcolor="#ffffff">
@@ -207,7 +207,7 @@
 
             </table>
             <!-- Email Body : END -->
-          
+
             <!-- Email Footer : BEGIN -->
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
                 <tr>

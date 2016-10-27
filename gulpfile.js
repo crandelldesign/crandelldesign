@@ -65,5 +65,5 @@ elixir(function(mix) {
     mix.copy('node_modules/font-awesome/fonts', 'public/fonts');
 
     // Create Build Numbers
-    mix.version(['css/stylesheet.css', 'js/default.js']);
+    mix.version(['css/stylesheet.css', 'js/default.js', 'js/slideshow.js']);
 });

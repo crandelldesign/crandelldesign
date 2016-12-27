@@ -143,8 +143,8 @@ class HomeController extends Controller
                 '/img/samples/fourgreenfieldsfarm1.jpg',
                 '/img/samples/fourgreenfieldsfarm-mockup-ipad-iphone.jpg'
             ];
-            $client->display_img = $client->assets[0];
-            $client->hover_img = $client->assets[1];
+            $client->display_img = '/img/samples/fourgreenfieldsfarm-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/fourgreenfieldsfarm-thumbnail2.jpg';
             $client->meta_description = 'The website for Four Green Fields Farm is kept up to date with improvements and redesigns including a new admin interface to update events.';
             $client->is_custom = 1;
         $clients[] = $client;
@@ -157,8 +157,8 @@ class HomeController extends Controller
                 '/img/samples/habitat-for-humanity1.jpg',
                 '/img/samples/habitat-for-humanity-mockup-macbook-ipad.jpg',
             ];
-            $client->display_img = $client->assets[0];
-            $client->hover_img = $client->assets[1];
+            $client->display_img = '/img/samples/habitat-for-humanity-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/habitat-for-humanity-thumbnail2.jpg';
             $client->is_use_url = 1;
             $client->url = 'https://www.habitatoakland.org';
             $client->meta_description = 'The Habitat for Humanity of Oakland County is a custom WordPress backed website for news, events, and other valuable resources also features bright yet clean design.';
@@ -174,8 +174,8 @@ class HomeController extends Controller
                 '/img/samples/christwaterford1.jpg',
                 '/img/samples/christwaterford-responsive2.jpg'
             ];
-            $client->display_img = $client->assets[0];
-            $client->hover_img = $client->assets[1];
+            $client->display_img = '/img/samples/christwaterford-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/christwaterford-thumbnail2.jpg';
             $client->meta_description = 'Since 2009, the Christ Lutheran Church website has seen numerous improvements and redesigns including a new admin interface to keep events up to date.';
             $client->is_custom = 1;
         $clients[] = $client;
@@ -191,8 +191,8 @@ class HomeController extends Controller
                 '/img/samples/rifle-river-campground2.jpg',
                 '/img/samples/rifle-river-campground3.jpg',
             ];
-            $client->display_img = $client->assets[2];
-            $client->hover_img = $client->assets[1];
+            $client->display_img = '/img/samples/rifle-river-campground-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/rifle-river-campground-thumbnail2.jpg';
             $client->is_use_url = 1;
             $client->url = 'http://www.riflerivercampground.com';
             $client->description = '<p>This website was created for Rifle River Campground. It was built utilizing WordPress allowing the customer to be able to edit the content on the site without coding knowledge.</p>
@@ -209,8 +209,8 @@ class HomeController extends Controller
                 '/img/samples/clarkston-chamber-of-commerce1.jpg',
                 '/img/samples/clarkston-chamber-of-commerce-mockup1.jpg'
             ];
-            $client->display_img = $client->assets[0];
-            $client->hover_img = $client->assets[1];
+            $client->display_img = '/img/samples/clarkston-chamber-of-commerce-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/clarkston-chamber-of-commerce-thumbnail2.jpg';
             $client->meta_description = 'Crandell Design redesigned the logo for Clarkston Area Chamber of Commerce and created supplementary logos for the various programs and events that the chamber offers.';
             $client->is_custom = 1;
         $clients[] = $client;
@@ -223,8 +223,8 @@ class HomeController extends Controller
                 '/img/samples/facialsbyjude.jpg',
                 '/img/samples/facialsbyjude-mockup.jpg'
             ];
-            $client->display_img = $client->assets[0];
-            $client->hover_img = $client->assets[1];
+            $client->display_img = '/img/samples/facialsbyjude-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/facialsbyjude-thumbnail2.jpg';
             $client->meta_description = 'With the latest redesign, the website is configured to work on multiple devices and features Jude\'s personal style.';
             $client->is_custom = 1;
         $clients[] = $client;
@@ -239,8 +239,8 @@ class HomeController extends Controller
                 '/img/samples/greggsgourmetcafe2.jpg',
                 '/img/samples/greggsgourmetcafe3.jpg'
             ];
-            $client->display_img = $client->assets[1];
-            $client->hover_img = $client->assets[0];
+            $client->display_img = '/img/samples/greggsgourmetcafe-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/greggsgourmetcafe-thumbnail2.jpg';
             $client->is_use_url = 1;
             $client->url = 'http://www.greggsgourmetcafe.com';
             $client->description = '<p>This is a website that I created for Gregg\'s Gourmet Cafe of Clarkston, MI. The design of the site borrows the colors and simplicity of the existing logo.</p>';
@@ -258,8 +258,8 @@ class HomeController extends Controller
                 '/img/samples/alchinsdisposal2.jpg',
                 '/img/samples/alchinsdisposal-mockup2.jpg'
             ];
-            $client->display_img = $client->assets[1];
-            $client->hover_img = $client->assets[3];
+            $client->display_img = '/img/samples/alchinsdisposal-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/alchinsdisposal-thumbnail2.jpg';
             $client->is_use_url = 1;
             $client->url = 'http://www.alchinsdisposal.com';
             $client->description = '<p>I redesigned the website for Alchin\'s Disposal to take advantage of new technologies and new design trends. The new website uses bolder colors and takes advantage of white space to fill the screen in a fresh and inviting way. The logo renovation helps build the brand of the company while also bringing something more unique to the table. The website, of course, is responsive and works on all devices.</p>

@@ -292,7 +292,7 @@ nav.navbar {
 /* Home */
 #home {
     padding-top: 76px;
-    background: $rhino url(/img/home-container-bg.jpg) no-repeat center center;
+    background: $rhino url(/img/home-container-bg-mobiles.jpg) no-repeat center center;
     @include mobile-bg();
     min-height: 550px;
     @media (min-width: $screen-sm-min) {

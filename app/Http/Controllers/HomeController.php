@@ -147,6 +147,7 @@ class HomeController extends Controller
             $client->hover_img = '/img/samples/fourgreenfieldsfarm-thumbnail2.jpg';
             $client->meta_description = 'The website for Four Green Fields Farm is kept up to date with improvements and redesigns including a new admin interface to update events.';
             $client->is_custom = 1;
+            $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Habitat for Humanity of Oakland County';
@@ -164,6 +165,7 @@ class HomeController extends Controller
             $client->meta_description = 'The Habitat for Humanity of Oakland County is a custom WordPress backed website for news, events, and other valuable resources also features bright yet clean design.';
             $client->services = ['Web Design', 'Web Hosting', 'Web Maintenance.'];
             $client->is_custom = 1;
+            $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Christ Lutheran Church of Waterford';
@@ -178,6 +180,7 @@ class HomeController extends Controller
             $client->hover_img = '/img/samples/christwaterford-thumbnail2.jpg';
             $client->meta_description = 'Since 2009, the Christ Lutheran Church website has seen numerous improvements and redesigns including a new admin interface to keep events up to date.';
             $client->is_custom = 1;
+            $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Rifle River Campground';
@@ -199,6 +202,7 @@ class HomeController extends Controller
                 <p>The website is simple and user friendly yet informative. It provides details on everything that the campground has to offer.</p>';
             $client->meta_description = 'This website was created for Rifle River Campground built utilizing WordPress allowing the customer to be able to edit the content on the site without coding knowledge.';
             $client->services = ['Web Design', 'Web Hosting'];
+            $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Clarkston Area Chamber of Commerce';
@@ -213,6 +217,7 @@ class HomeController extends Controller
             $client->hover_img = '/img/samples/clarkston-chamber-of-commerce-thumbnail2.jpg';
             $client->meta_description = 'Crandell Design redesigned the logo for Clarkston Area Chamber of Commerce and created supplementary logos for the various programs and events that the chamber offers.';
             $client->is_custom = 1;
+            $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Facials By Jude';
@@ -227,6 +232,7 @@ class HomeController extends Controller
             $client->hover_img = '/img/samples/facialsbyjude-thumbnail2.jpg';
             $client->meta_description = 'With the latest redesign, the website is configured to work on multiple devices and features Jude\'s personal style.';
             $client->is_custom = 1;
+            $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Gregg\'s Gourmet Cafe';
@@ -246,6 +252,7 @@ class HomeController extends Controller
             $client->description = '<p>This is a website that I created for Gregg\'s Gourmet Cafe of Clarkston, MI. The design of the site borrows the colors and simplicity of the existing logo.</p>';
             $client->meta_description = 'This is a website that I created for Gregg\'s Gourmet Cafe of Clarkston, MI. The design of the site borrows the colors and simplicity of the existing logo.';
             $client->services = ['Web Design', 'Web Maintenance', 'Web Hosting'];
+            $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Alchin\'s Disposal';
@@ -266,6 +273,7 @@ class HomeController extends Controller
                 <p>Starting with a clear and concise style guide, I was able to quickly build out the website and exceed the client\'s expectations. Keeping with the vision of the style guide, change requests by the client could quickly be applied.</p>';
             $client->meta_description = 'I redesigned the website for Alchin\'s Disposal to take advantage of new technologies and new design trends.';
             $client->services = ['Web Design', 'Web Maintenance', 'Logo Renovation'];
+            $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Brewing 4 Business';

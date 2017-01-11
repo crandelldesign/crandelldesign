@@ -109,16 +109,22 @@ class HomeController extends Controller
 
     public function postContact(Request $request)
     {
+        $captcha = $this->verifyCaptcha($request->get('g-recaptcha-response'));
+        $request->request->add(['captcha' => $captcha]);
         $validator = Validator::make($request->all(), [
                 'name' => 'required',
                 'email' => 'required|email',
-                'message_text' => 'required'
+                'message_text' => 'required',
+                'g-recaptcha-response' => 'required',
+                'captcha' => 'required|min:1'
             ],
             [
                 'name.required' => 'Please enter your name.',
                 'email.required' => 'Please enter your email address.',
                 'email.email' => 'Please enter a valid email address.',
-                'message_text.required' => 'What? You Don\'t Want to Say Something?'
+                'message_text.required' => 'What? You Don\'t Want to Say Something?',
+                'g-recaptcha-response.required' => 'Captcha is required',
+                'captcha.min' => 'Wrong captcha, please try again.'
             ]
         );
         if ($validator->fails()) {
@@ -129,6 +135,26 @@ class HomeController extends Controller
         Mail::to('matt@crandelldesign.com')->send(new Contact($request));
         Mail::to($request->get('email'))->send(new ContactThankYou($request));
         return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
+    }
+
+    private function verifyCaptcha($response)
+    {
+        $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.env('RE_CAP_SECRET').
+               "&response=".$response;
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($curl, CURLOPT_TIMEOUT, 15);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, TRUE);
+        $curlData = curl_exec($curl);
+
+        curl_close($curl);
+
+        $res = json_decode($curlData, TRUE);
+        if($res['success'] == 'true')
+            return 1;
+        else
+            return 0;
     }
 
     private function portfolio()

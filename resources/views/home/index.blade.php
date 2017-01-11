@@ -104,7 +104,7 @@
                         {{ session('status') }}
                     </div>
                 @endif
-                <form class="form" action="{{url('/')}}/contact" method="post" autocomplete="off">
+                <form id="contact-form" class="form" action="{{url('/')}}/contact" method="post" autocomplete="off">
                     <div class="form-group {{($errors->has('name'))?'has-error':''}}">
                         <label for="name" class="sr-only">Name</label>
                         @foreach ($errors->get('name') as $error)
@@ -128,8 +128,14 @@
                     </div>
                     {{ csrf_field() }}
                     {{-- <!--<input class="url" type="text" id="url" name="url" value="" />--> --}}
+                    @foreach ($errors->get('g-recaptcha-response') as $error)
+                        <div class="alert alert-danger">{{ $error }}</div>
+                    @endforeach
+                    @foreach ($errors->get('captcha') as $error)
+                        <div class="alert alert-danger">{{ $error }}</div>
+                    @endforeach
                     <div class="form-group">
-                        <button type="submit" class="btn btn-submit pull-right btn-apple" data-loading-text="Sending...">Send</button>
+                        <button type="submit" class="btn btn-submit pull-right btn-apple g-recaptcha" data-sitekey="{{ env('RE_CAP_SITE') }}" data-callback="onSubmit" data-loading-text="Sending...">Send</button>
                         <div class="clearfix"></div>
                     </div>
                 </form>

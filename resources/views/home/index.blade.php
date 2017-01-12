@@ -134,9 +134,8 @@
                     @foreach ($errors->get('captcha') as $error)
                         <div class="alert alert-danger">{{ $error }}</div>
                     @endforeach
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-submit pull-right btn-apple g-recaptcha" data-sitekey="{{ env('RE_CAP_SITE') }}" data-callback="onSubmit" data-loading-text="Sending...">Send</button>
-                        <div class="clearfix"></div>
+                    <div class="form-group form-group-submit">
+                        <button type="submit" class="btn btn-submit btn-apple g-recaptcha" data-sitekey="{{ env('RE_CAP_SITE') }}" data-callback="onSubmit" data-badge="inline" data-loading-text="Sending...">Send</button>
                     </div>
                 </form>
             </div>

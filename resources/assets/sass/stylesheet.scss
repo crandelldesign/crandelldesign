@@ -329,6 +329,7 @@ nav.navbar {
         position: relative;
         img {
             max-width: 101%;
+            width: 101%;
             @include hover-transition();
             -webkit-backface-visibility: hidden;
             -webkit-transform: translateZ(0) scale(1, 1);

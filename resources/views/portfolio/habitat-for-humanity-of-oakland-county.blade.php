@@ -21,6 +21,13 @@
 </div>
 
 <div class="row">
+    <div class="col-md-6 margin-bottom-20">
+        <p class="testimonial"><strong>&ldquo;</strong>Thank you for all of your hard work and support on this. I know we ask a lot of you and I appreciate your responsiveness and dedication!<strong>&rdquo;</strong></p>
+        <p class="testimonial-author text-right">&mdash; Stephanie Osterland, Director of Partner &amp; Community Programs</p>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-sm-6 margin-bottom-20">
         <h2>Color Scheme</h2>
         <div class="row">

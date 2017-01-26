@@ -30,6 +30,6 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.contact')->subject('You\'ve Been Contacted from Crandell Design by '. $this->request->name);
+        return $this->view('emails.contact')->subject('You\'ve Been Contacted from Crandell Design by '. $this->request->name)->replyTo($this->request->email, $this->request->name);
     }
 }

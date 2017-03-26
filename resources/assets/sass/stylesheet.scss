@@ -597,6 +597,29 @@ nav.navbar {
         }
     }
 }
+/* Portfolio - Habitat for Humanity of Oakland County */
+#nuview-nutrition-portfolio {
+    .color-swatch {
+        &.swatch1 {
+            background-color: #ed1c24;
+        }
+        &.swatch2 {
+            background-color: #f36368;
+        }
+        &.swatch3 {
+            background-color: #af0e14;
+        }
+        &.swatch4 {
+            background-color: #0bb957;
+        }
+        &.swatch5 {
+            background-color: #1ff27b;
+        }
+        &.swatch6 {
+            background-color: #077135;
+        }
+    }
+}
 
 /* Services */
 #services {

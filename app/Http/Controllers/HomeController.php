@@ -161,6 +161,23 @@ class HomeController extends Controller
     {
         $clients = [];
             $client = new StdClass;
+            $client->name = 'Nuview Nutrition';
+            $client->slug = str_slug($client->name);
+            $client->city = 'Clarkston';
+            $client->state = 'MI';
+            $client->assets = [
+                '/img/samples/nuviewnutrition-responsive-banner.jpg',
+                '/img/samples/nuviewnutrition-browser-homepage.jpg'
+            ];
+            $client->display_img = '/img/samples/nuviewnutrition-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/nuviewnutrition-thumbnail2.jpg';
+            $client->description = '<p>The logo and website created for Nuview Nutrition displays a clean look and bold colors.</p>';
+            $client->meta_description = 'The logo and website created for Nuview Nutrition displays a clean look and bold colors.';
+            $client->services = ['Logo Design'];
+            $client->is_custom = 1;
+            $client->has_highres = 1;
+        $clients[] = $client;
+            $client = new StdClass;
             $client->name = 'Four Green Fields Farm';
             $client->slug = str_slug($client->name);
             $client->city = 'Rodney';
@@ -356,24 +373,7 @@ class HomeController extends Controller
             $client->meta_description = 'In this website for Sage Orthodontics, located in Portage, MI, I incorporated not only the colors in the logo, but also colors used in the office itself.';
             $client->services = ['Web Design', 'Web Maintenance', 'Web Hosting'];
         $clients[] = $client;
-            $client = new StdClass;
-            $client->name = 'Nuview Nutrition';
-            $client->slug = str_slug($client->name);
-            $client->city = 'Clarkston';
-            $client->state = 'MI';
-            $client->assets = [
-                '/img/samples/nuviewnutrition-responsive.jpg',
-                '/img/samples/nuviewnutrition1.jpg',
-                '/img/samples/nuview-logo.jpg',
-                '/img/samples/nuviewnutrition2.jpg',
-                '/img/samples/nuviewnutrition3.jpg',
-            ];
-            $client->display_img = $client->assets[1];
-            $client->hover_img = $client->assets[0];
-            $client->description = '<p>The logo and website created for Nuview Nutrition displays a clean look and bold colors.</p>';
-            $client->meta_description = 'The logo and website created for Nuview Nutrition displays a clean look and bold colors.';
-            $client->services = ['Logo Design'];
-        $clients[] = $client;
+
         $portfolio = collect($clients);
         foreach ($portfolio as $key => $client) {
             $client->id = $key+1;

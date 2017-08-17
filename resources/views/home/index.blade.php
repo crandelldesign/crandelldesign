@@ -159,7 +159,7 @@
             <div class="col-md-3 col-sm-6">
                 <div class="blog-entry">
                     @if(isset($entry->entities->media))
-                        <div class="blog-media" style="background-image: url({{$entry->entities->media[0]->media_url}})"></div>
+                        <div class="blog-media" style="background-image: url({{$entry->entities->media[0]->media_url_https}}:small)"></div>
                     @endif
                     <p>{!!preg_replace('"\b(https?://\S+)"', '<a class="animsition-link" href="$1">$1</a>', $entry->text)!!}</p>
                     <p class="date-created">{{date('n/d/Y',strtotime($entry->created_at))}}

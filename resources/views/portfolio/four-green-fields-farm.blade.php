@@ -6,8 +6,12 @@
 <div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/fourgreenfieldsfarm-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-responsive-banner.jpg')}}" alt="Responsive Display of the Four Green Fields Farm Website" class="img-responsive center-block portfolio-img portfolio-browser" /></div>
 
 <div class="row">
-    <div class="col-lg-8">
+    <div class="col-md-5">
         <p class="lead">As one of Crandell Design's earliest clients, the website for Four Green Fields Farm is kept up to date with improvements and redesigns including a new admin interface to update events.</p>
+    </div>
+    <div class="col-md-7 margin-bottom-20">
+        <p class="testimonial"><strong>&ldquo;</strong>I've been a customer of Crandell Design since 2009 and have never once considered switching to another company for my web site services. The level of service and quality of the product has simply been outstanding. The affordability is also critical to a small business like mine. What impresses me most about Matt is that he can take my ideas for my website and rapidly make them reality. That is so important for a person like me who does not possess the technical skill or ability to manage my own site. I have no doubt that the level of professional service and the resulting high quality website provided by Crandell Design have been an important factor in the growth of my business.<strong>&rdquo;</strong></p>
+        <p class="testimonial-author text-right">&mdash; Kevin Courtney, Owner</p>
     </div>
 </div>
 

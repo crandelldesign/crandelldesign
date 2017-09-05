@@ -292,11 +292,23 @@ nav.navbar {
 /* Home */
 #home {
     padding-top: 76px;
-    background: $rhino url(/img/home-container-bg-mobile.jpg) no-repeat center center;
+    // background: $rhino url(/img/home-container-bg-mobile.jpg) no-repeat center center;
+    background: $rhino no-repeat center center;
+    background-image: url(/img/intro-wallpaper.jpg);
+    background-image:
+        -webkit-image-set(
+            url(/img/intro-wallpaper.jpg) 1x,
+            url(/img/intro-wallpaper@2x.jpg) 2x
+        );
+    background-image:
+        image-set(
+            url(/img/intro-wallpaper.jpg) 1x,
+            url(/img/intro-wallpaper@2x.jpg) 2x
+        );
     @include mobile-bg();
     min-height: 550px;
     @media (min-width: $screen-sm-min) {
-        background: url(/img/home-container-bg.jpg) no-repeat center center fixed;
+        //background: url(/img/home-container-bg.jpg) no-repeat center center fixed;
         @include desktop-bg();
         min-height: 100vh;
     }
@@ -637,16 +649,32 @@ nav.navbar {
     .btn {
         display: block;
         white-space: normal;
+        padding: 20px;
         h3 {
             font-size: 15px;
             height: 40px;
+            margin: 0;
             @media (min-width: $screen-sm-min) {
                 font-size: 18px;
             }
             @media (min-width: $screen-md-min) {
-                height: 50px;
+                //height: 50px;
             }
         }
+        svg {
+            @extend .img-responsive;
+            fill: #FFF;
+            margin-bottom: 15px;
+        }
+    }
+}
+.service-page {
+    svg {
+        @extend .img-responsive;
+        @extend .center-block;
+        fill: $apple;
+        max-width: 300px;
+
     }
 }
 

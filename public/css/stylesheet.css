@@ -9018,12 +9018,14 @@ nav.navbar {
 /* Portfolio - Home */
 #portfolio-home {
   padding-top: 76px;
-  background: #303c71 url(/img/home-container-bg.jpg) no-repeat center center;
+  background: #303c71 no-repeat center center;
+  background-image: url(/img/intro-wallpaper.jpg);
+  background-image: -webkit-image-set(url(/img/intro-wallpaper.jpg) 1x, url(/img/intro-wallpaper@2x.jpg) 2x);
+  background-image: image-set(url(/img/intro-wallpaper.jpg) 1x, url(/img/intro-wallpaper@2x.jpg) 2x);
   background-size: auto 100%, auto;
   min-height: 300px; }
   @media (min-width: 768px) {
     #portfolio-home {
-      background: url(/img/home-container-bg.jpg) no-repeat center center fixed;
       background-size: cover;
       background-position: center -250px; } }
   #portfolio-home .content {

@@ -1,15 +1,15 @@
 <?php
 
-namespace CrandellDesign\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
-use CrandellDesign\Http\Controllers\Controller;
-use CrandellDesign\Mail\Contact;
-use CrandellDesign\Mail\ContactThankYou;
+use App\Http\Controllers\Controller;
+use App\Mail\Contact;
+use App\Mail\ContactThankYou;
 use StdClass;
-use Twitter;
+//use Twitter;
 use Validator;
 
 class HomeController extends Controller
@@ -25,14 +25,14 @@ class HomeController extends Controller
 
         $view->active_page = 'home';
 
-        try
+        /*try
         {
             $view->blog_entries = Twitter::getUserTimeline(['screen_name' => 'crandelldesign', 'count' => 10, 'include_rts' => false, 'exclude_replies' => true]);
         }
         catch (Exception $e)
         {
 
-        }
+        }*/
 
         return $view;
     }

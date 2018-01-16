@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         @include('layouts.head')
-        {!! Analytics::render() !!}
     </head>
     <body>
         <script type="application/ld+json">
@@ -11,11 +10,11 @@
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Crandell Design",
-            "url": "http://www.crandelldesign.com",
+            "url": "https://www.crandelldesign.com",
             "sameAs": [
-                "http://facebook.com/crandelldesign",
+                "https://facebook.com/crandelldesign",
                 "https://plus.google.com/100599816596951419097",
-                "http://twitter.com/crandelldesign"
+                "https://twitter.com/crandelldesign"
             ]
         }
         </script>
@@ -23,7 +22,7 @@
             @include('layouts.nav')
             @yield('content')
 
-            <script type="text/javascript" src="{{ elixir('js/default.js') }}"></script>
+            <script type="text/javascript" src="{{ mix('js/default.js') }}"></script>
             @include('layouts.footer')
             @yield('scripts')
         </div>

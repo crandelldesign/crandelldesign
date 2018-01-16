@@ -1,0 +1,24 @@
+// Nav
+.navbar {
+    height: 3.75rem; // 60px
+    .logo-container {
+        display: block;
+        height: 3.75rem; // 60px
+        padding: 0.625rem 0.9375rem; // 10px 15px
+        @include media-breakpoint-up(sm) {
+            display: inline-block;
+        }
+        .logo {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .navbar-links {
+        @include media-breakpoint-up(sm) {
+            float: right;
+        }
+        &:after {
+            @extend .clearfix;
+        }
+    }
+}

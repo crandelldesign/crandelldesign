@@ -1,3 +1,159 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-ultralight-webfont.eot");
+  src: url("/fonts/aileron-ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-ultralight-webfont.woff") format("woff"), url("/fonts/aileron-ultralight-webfont.ttf") format("truetype"), url("/fonts/aileron-ultralight-webfont.svg#Aileron") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-ultralightitalic-webfont.eot");
+  src: url("/fonts/aileron-ultralightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-ultralightitalic-webfont.woff") format("woff"), url("/fonts/aileron-ultralightitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-ultralightitalic-webfont.svg#Aileron") format("svg");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-thin-webfont.eot");
+  src: url("/fonts/aileron-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-thin-webfont.woff") format("woff"), url("/fonts/aileron-thin-webfont.ttf") format("truetype"), url("/fonts/aileron-thin-webfont.svg#aileronthin") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-thinitalic-webfont.eot");
+  src: url("/fonts/aileron-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-thinitalic-webfont.woff") format("woff"), url("/fonts/aileron-thinitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-thinitalic-webfont.svg#Aileron") format("svg");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-light-webfont.eot");
+  src: url("/fonts/aileron-light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-light-webfont.woff") format("woff"), url("/fonts/aileron-light-webfont.ttf") format("truetype"), url("/fonts/aileron-light-webfont.svg#Aileron") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-lightitalic-webfont.eot");
+  src: url("/fonts/aileron-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-lightitalic-webfont.woff") format("woff"), url("/fonts/aileron-lightitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-lightitalic-webfont.svg#Aileron") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-regular-webfont.eot");
+  src: url("/fonts/aileron-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-regular-webfont.woff") format("woff"), url("/fonts/aileron-regular-webfont.ttf") format("truetype"), url("/fonts/aileron-regular-webfont.svg#Aileron") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-italic-webfont.eot");
+  src: url("/fonts/aileron-italic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-italic-webfont.woff") format("woff"), url("/fonts/aileron-italic-webfont.ttf") format("truetype"), url("/fonts/aileron-italic-webfont.svg#Aileron") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-semibold-webfont.eot");
+  src: url("/fonts/aileron-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-semibold-webfont.woff") format("woff"), url("/fonts/aileron-semibold-webfont.ttf") format("truetype"), url("/fonts/aileron-semibold-webfont.svg#Aileron") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-semibolditalic-webfont.eot");
+  src: url("/fonts/aileron-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-semibolditalic-webfont.woff") format("woff"), url("/fonts/aileron-semibolditalic-webfont.ttf") format("truetype"), url("/fonts/aileron-semibolditalic-webfont.svg#Aileron") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-bold-webfont.eot");
+  src: url("/fonts/aileron-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-bold-webfont.woff") format("woff"), url("/fonts/aileron-bold-webfont.ttf") format("truetype"), url("/fonts/aileron-bold-webfont.svg#Aileron") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-bolditalic-webfont.eot");
+  src: url("/fonts/aileron-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-bolditalic-webfont.woff") format("woff"), url("/fonts/aileron-bolditalic-webfont.ttf") format("truetype"), url("/fonts/aileron-bolditalic-webfont.svg#Aileron") format("svg");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-heavy-webfont.eot");
+  src: url("/fonts/aileron-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-heavy-webfont.woff") format("woff"), url("/fonts/aileron-heavy-webfont.ttf") format("truetype"), url("/fonts/aileron-heavy-webfont.svg#Aileron") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-heavyitalic-webfont.eot");
+  src: url("/fonts/aileron-heavyitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-heavyitalic-webfont.woff") format("woff"), url("/fonts/aileron-heavyitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-heavyitalic-webfont.svg#Aileron") format("svg");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-black-webfont.eot");
+  src: url("/fonts/aileron-black-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-black-webfont.woff") format("woff"), url("/fonts/aileron-black-webfont.ttf") format("truetype"), url("/fonts/aileron-black-webfont.svg#Aileron") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url("/fonts/aileron-blackitalic-webfont.eot");
+  src: url("/fonts/aileron-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-blackitalic-webfont.woff") format("woff"), url("/fonts/aileron-blackitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-blackitalic-webfont.svg#Aileron") format("svg");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Standard Shadows */
+
+/* Top shadows (for "bottom" positionned elements) */
+
+/* Shadows for full size "side" elements (using spread to make corners look right) */
+
+/* Font Paths */
+
+/* Colors */
+
+/* Greens */
+
+/* Blues */
+
+/* Black */
+
+/* Typography */
+
+/* Font Weights */
+
+/* Bootstrap Colors and Variables */
+
+/* Modal Variables */
+
+/* Alerts */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -25,7 +181,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Aileron", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -65,7 +221,7 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Aileron", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -172,15 +328,15 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #4cb848;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #82cd7f;
+  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
@@ -466,7 +622,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(37, 37, 37, 0.1);
 }
 
 small,
@@ -1919,11 +2075,11 @@ pre code {
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(37, 37, 37, 0.05);
 }
 
 .table-hover tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(37, 37, 37, 0.075);
 }
 
 .table-primary,
@@ -2049,16 +2205,16 @@ pre code {
 .table-active,
 .table-active > th,
 .table-active > td {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(37, 37, 37, 0.075);
 }
 
 .table-hover .table-active:hover {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(24, 24, 24, 0.075);
 }
 
 .table-hover .table-active:hover > td,
 .table-hover .table-active:hover > th {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: rgba(24, 24, 24, 0.075);
 }
 
 .table .thead-dark th {
@@ -3349,20 +3505,20 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #4cb848;
   background-color: transparent;
 }
 
 .btn-link:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: #82cd7f;
+  text-decoration: none;
   background-color: transparent;
   border-color: transparent;
 }
 
 .btn-link:focus,
 .btn-link.focus {
-  text-decoration: underline;
+  text-decoration: none;
   border-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3476,7 +3632,7 @@ tbody.collapse.show {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(37, 37, 37, 0.15);
   border-radius: 0.25rem;
 }
 
@@ -4035,8 +4191,8 @@ tbody.collapse.show {
 .custom-select:focus {
   border-color: #80bdff;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  -webkit-box-shadow: inset 0 1px 2px rgba(37, 37, 37, 0.075), 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: inset 0 1px 2px rgba(37, 37, 37, 0.075), 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .custom-select:focus::-ms-value {
@@ -4247,7 +4403,7 @@ tbody.collapse.show {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(37, 37, 37, 0.125);
   border-radius: 0.25rem;
 }
 
@@ -4297,8 +4453,8 @@ tbody.collapse.show {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(37, 37, 37, 0.03);
+  border-bottom: 1px solid rgba(37, 37, 37, 0.125);
 }
 
 .card-header:first-child {
@@ -4311,8 +4467,8 @@ tbody.collapse.show {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(37, 37, 37, 0.03);
+  border-top: 1px solid rgba(37, 37, 37, 0.125);
 }
 
 .card-footer:last-child {
@@ -4699,7 +4855,7 @@ tbody.collapse.show {
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(37, 37, 37, 0.125);
 }
 
 .list-group-item:first-child {
@@ -4951,14 +5107,14 @@ button.list-group-item-dark.active {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: #000;
+  color: #252525;
   text-shadow: 0 1px 0 #fff;
   opacity: .5;
 }
 
 .close:focus,
 .close:hover {
-  color: #000;
+  color: #252525;
   text-decoration: none;
   opacity: .75;
 }
@@ -5039,7 +5195,7 @@ button.close {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
   border-radius: 0.3rem;
   outline: 0;
 }
@@ -5051,7 +5207,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: #252525;
 }
 
 .modal-backdrop.fade {
@@ -5152,7 +5308,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Aileron", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5203,7 +5359,7 @@ button.close {
 .bs-tooltip-auto[x-placement^="top"] .arrow::before {
   top: 0;
   border-width: 0.4rem 0.4rem 0;
-  border-top-color: #000;
+  border-top-color: #252525;
 }
 
 .bs-tooltip-right,
@@ -5222,7 +5378,7 @@ button.close {
 .bs-tooltip-auto[x-placement^="right"] .arrow::before {
   right: 0;
   border-width: 0.4rem 0.4rem 0.4rem 0;
-  border-right-color: #000;
+  border-right-color: #252525;
 }
 
 .bs-tooltip-bottom,
@@ -5239,7 +5395,7 @@ button.close {
 .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
   bottom: 0;
   border-width: 0 0.4rem 0.4rem;
-  border-bottom-color: #000;
+  border-bottom-color: #252525;
 }
 
 .bs-tooltip-left,
@@ -5258,7 +5414,7 @@ button.close {
 .bs-tooltip-auto[x-placement^="left"] .arrow::before {
   left: 0;
   border-width: 0.4rem 0 0.4rem 0.4rem;
-  border-left-color: #000;
+  border-left-color: #252525;
 }
 
 .tooltip-inner {
@@ -5266,7 +5422,7 @@ button.close {
   padding: 0.25rem 0.5rem;
   color: #fff;
   text-align: center;
-  background-color: #000;
+  background-color: #252525;
   border-radius: 0.25rem;
 }
 
@@ -5277,7 +5433,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Aileron", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5295,7 +5451,7 @@ button.close {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(37, 37, 37, 0.2);
   border-radius: 0.3rem;
 }
 
@@ -5336,7 +5492,7 @@ button.close {
 .bs-popover-top .arrow::before,
 .bs-popover-auto[x-placement^="top"] .arrow::before {
   bottom: 0;
-  border-top-color: rgba(0, 0, 0, 0.25);
+  border-top-color: rgba(37, 37, 37, 0.25);
 }
 
 .bs-popover-top .arrow::after,
@@ -5368,7 +5524,7 @@ button.close {
 .bs-popover-right .arrow::before,
 .bs-popover-auto[x-placement^="right"] .arrow::before {
   left: 0;
-  border-right-color: rgba(0, 0, 0, 0.25);
+  border-right-color: rgba(37, 37, 37, 0.25);
 }
 
 .bs-popover-right .arrow::after,
@@ -5397,7 +5553,7 @@ button.close {
 .bs-popover-bottom .arrow::before,
 .bs-popover-auto[x-placement^="bottom"] .arrow::before {
   top: 0;
-  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-bottom-color: rgba(37, 37, 37, 0.25);
 }
 
 .bs-popover-bottom .arrow::after,
@@ -5441,7 +5597,7 @@ button.close {
 .bs-popover-left .arrow::before,
 .bs-popover-auto[x-placement^="left"] .arrow::before {
   right: 0;
-  border-left-color: rgba(0, 0, 0, 0.25);
+  border-left-color: rgba(37, 37, 37, 0.25);
 }
 
 .bs-popover-left .arrow::after,
@@ -9021,19 +9177,367 @@ a.text-dark:hover {
   }
 }
 
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 8.333333%);
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  grid-column: span 12;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+@media (min-width: 576px) {
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    grid-column: span 1;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-12 {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    grid-column: span 1;
+  }
+
+  .col-xl-2 {
+    grid-column: span 2;
+  }
+
+  .col-xl-3 {
+    grid-column: span 3;
+  }
+
+  .col-xl-4 {
+    grid-column: span 4;
+  }
+
+  .col-xl-5 {
+    grid-column: span 5;
+  }
+
+  .col-xl-6 {
+    grid-column: span 6;
+  }
+
+  .col-xl-7 {
+    grid-column: span 7;
+  }
+
+  .col-xl-8 {
+    grid-column: span 8;
+  }
+
+  .col-xl-9 {
+    grid-column: span 9;
+  }
+
+  .col-xl-10 {
+    grid-column: span 10;
+  }
+
+  .col-xl-11 {
+    grid-column: span 11;
+  }
+
+  .col-xl-12 {
+    grid-column: span 12;
+  }
+}
+
 .navbar {
-  height: 3.75rem;
+  border-bottom: 1px solid #4759a7;
+  background-color: #FFF;
+}
+
+@media (min-width: 576px) {
+  .navbar {
+    height: 3.875rem;
+  }
 }
 
 .navbar .logo-container {
   display: block;
+  text-align: center;
   height: 3.75rem;
-  padding: 0.625rem 0.9375rem;
+  padding: 0.625rem 0;
 }
 
 @media (min-width: 576px) {
   .navbar .logo-container {
-    display: inline-block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar .logo-container {
+    padding: 0.625rem 0.9375rem;
   }
 }
 
@@ -9042,9 +9546,56 @@ a.text-dark:hover {
   width: auto;
 }
 
+.navbar ul.nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
 @media (min-width: 576px) {
-  .navbar .navbar-links {
+  .navbar ul.nav {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     float: right;
   }
+}
+
+@media (min-width: 768px) {
+  .navbar ul.nav {
+    padding: 0 0.9375rem;
+  }
+}
+
+.navbar ul.nav a {
+  display: block;
+  padding: 0 0.625rem 0.625rem;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .navbar ul.nav a {
+    padding: 1.3125rem 0.3125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar ul.nav a {
+    font-size: 1.25rem;
+    padding: 1rem 0.75rem;
+  }
+}
+
+.navbar ul.nav a:hover,
+.navbar ul.nav a:focus {
+  color: #252525;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.scrolled {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 

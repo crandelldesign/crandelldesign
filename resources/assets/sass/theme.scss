@@ -2,11 +2,13 @@
 // Fonts
 //@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-// Variables
+// Variables and Mixins
 @import "theme/variables";
+@import "theme/mixins";
 
 // Bootstrap
 @import "theme/bootstrap-custom";
+@import "theme/css-grid";
 
 // Styles
 @import "theme/nav"

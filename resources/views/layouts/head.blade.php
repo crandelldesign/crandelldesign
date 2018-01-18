@@ -4,6 +4,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+<style>
+    #site-overlay {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background-color: #ddd;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: opacity .20s ease-in-out;
+        -moz-transition: opacity .20s ease-in-out;
+        -webkit-transition: opacity .20s ease-in-out;
+    }
+    #site-overlay.loaded {
+        opacity: 0;
+        z-index: 0;
+    }
+    #site-overlay svg {
+        height: 80px;
+        width: 80px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -40px;
+        margin-left: -40px;
+        border-radius: 50%;
+        animation-name: ckw;
+        animation-duration: 5s;
+        /* Things added */
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+        display: block;
+        /* <--- */
+    }
+    @keyframes ckw {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<script>
+    // Page Transitions
+    function hideSiteOverlay() {
+        var element = document.getElementById('site-overlay');
+        element.classList.add('loaded');
+    }
+    function showSiteOverlay(e) {
+        var e = window.e || e;
+
+        if (e.target.tagName !== 'A')
+            return;
+
+        var element = document.getElementById('site-overlay');
+        element.classList.remove('loaded');
+    }
+    // Listen to remove overlay
+    if (window.addEventListener)
+        window.addEventListener("load", hideSiteOverlay, false);
+    else if (window.attachEvent)
+        window.attachEvent("onload", hideSiteOverlay);
+    else window.onload = hideSiteOverlay;
+    // Listen to add overlay
+    if (document.addEventListener)
+        document.addEventListener('click', showSiteOverlay, false);
+    else
+        document.attachEvent('onclick', showSiteOverlay);
+    // Cancel Transition if it's taking too long
+    setTimeout(function() {
+        hideSiteOverlay()
+    }, 5000);
+</script>
+
 <link rel="stylesheet" type="text/css" href="{{ mix('css/theme.css') }}" />
 
 <link rel="apple-touch-icon" sizes="57x57" href="{{url('/')}}/apple-icon-57x57.png">

@@ -14,7 +14,7 @@ try {
 
 } catch (e) {}
 
-window.Barba = require('barba.js');
+//window.Barba = require('barba.js');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

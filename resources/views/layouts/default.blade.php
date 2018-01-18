@@ -18,15 +18,14 @@
             ]
         }
         </script>
-        <div id="wrapper" class="animsition">
-            <div class="site-container">
-                @include('layouts.nav')
-                @yield('content')
+        <div id="site-overlay">@include('layouts.logo-circle')</div>
+        <div class="site-container">
+            @include('layouts.nav')
+            @yield('content')
 
-                <script type="text/javascript" src="{{ mix('js/default.js') }}"></script>
-                @include('layouts.footer')
-                @yield('scripts')
-            </div>
+            <script type="text/javascript" src="{{ mix('js/default.js') }}"></script>
+            @include('layouts.footer')
+            @yield('scripts')
         </div>
     </body>
 

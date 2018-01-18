@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function(){
 }, false);
 
 
+
+
 // Auto Hide Navbar on Scroll
 // https://codepen.io/pirrera/pen/rayoLW
 ;(function(document, window, index) {

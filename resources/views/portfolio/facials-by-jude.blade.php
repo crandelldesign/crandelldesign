@@ -3,7 +3,7 @@
 
 <hr>
 
-<div class="text-center margin-bottom-20"><img srcset="{{url('/')}}/img/samples/facialsbyjude-responsive@2x.jpg 2x" src="{{url('/')}}/img/samples/facialsbyjude-responsive.jpg" alt="Website for Facials By Jude" class="img-responsive center-block portfolio-img" /></div>
+<div class="text-center margin-bottom-20"><img srcset="{{url('/')}}/img/samples/facialsbyjude-responsive@2x.jpg 2x" src="{{url('/')}}/img/samples/facialsbyjude-responsive.jpg" alt="Website for Facials By Jude" class="img-fluid center-block portfolio-img" /></div>
 
 <div class="row">
     <div class="col-lg-8">
@@ -17,7 +17,7 @@
         <p class="testimonial-author text-right">&mdash; J. Cunningham, Owner</p>
     </div>
     <div class="col-sm-5 col-lg-4 margin-bottom-20">
-        <p class="text-center"><img srcset="{{url('/')}}/img/samples/facialsbyjude-mockup@2x.jpg 2x" src="{{url('/')}}/img/samples/facialsbyjude-mockup.jpg" alt="Website for Facials By Jude" class="img-responsive center-block portfolio-img" /></p>
+        <p class="text-center"><img srcset="{{url('/')}}/img/samples/facialsbyjude-mockup@2x.jpg 2x" src="{{url('/')}}/img/samples/facialsbyjude-mockup.jpg" alt="Website for Facials By Jude" class="img-fluid center-block portfolio-img" /></p>
     </div>
 </div>
 
@@ -65,15 +65,15 @@
     </div>
     <div class="col-sm-6 margin-bottom-20">
         <h2>Typography</h2>
-        <img src="{{url('/img/samples/facialsbyjude-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Facials By Jude Typography">
+        <img src="{{url('/img/samples/facialsbyjude-typography.jpg')}}" class="img-fluid center-block portfolio-img" alt="Facials By Jude Typography">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-6 margin-bottom-20">
-        <p class="text-center"><img srcset="{{url('/img/samples/facialsbyjude-browser-homepage@2x.png')}} 2x" src="{{url('/img/samples/facialsbyjude-browser-homepage.png')}}" alt="Facials By Jude Homepage" class="img-responsive center-block portfolio-img portfolio-browser" /></p>
+        <p class="text-center"><img srcset="{{url('/img/samples/facialsbyjude-browser-homepage@2x.png')}} 2x" src="{{url('/img/samples/facialsbyjude-browser-homepage.png')}}" alt="Facials By Jude Homepage" class="img-fluid center-block portfolio-img portfolio-browser" /></p>
     </div>
     <div class="col-sm-6 margin-bottom-20">
-        <p class="text-center"><img srcset="{{url('/img/samples/facialsbyjude-browser-menu@2x.png')}} 2x" src="{{url('/img/samples/facialsbyjude-browser-menu.png')}}" alt="Facials By Jude Menu Open" class="img-responsive center-block portfolio-img portfolio-browser" /></p>
+        <p class="text-center"><img srcset="{{url('/img/samples/facialsbyjude-browser-menu@2x.png')}} 2x" src="{{url('/img/samples/facialsbyjude-browser-menu.png')}}" alt="Facials By Jude Menu Open" class="img-fluid center-block portfolio-img portfolio-browser" /></p>
     </div>
 </div>

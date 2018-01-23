@@ -1,5 +1,5 @@
 /* Fonts */
-@font-face {
+/*@font-face {
     font-family: 'Aileron';
     src: url('/fonts/aileron-ultralight-webfont.eot');
     src: url('/fonts/aileron-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
@@ -38,7 +38,7 @@
          url('/fonts/aileron-thinitalic-webfont.svg#Aileron') format('svg');
     font-weight: 200;
     font-style: italic;
-}
+}*/
 @font-face {
     font-family: 'Aileron';
     src: url('/fonts/aileron-light-webfont.eot');
@@ -99,7 +99,7 @@
     font-weight: 500;
     font-style: italic;
 }
-@font-face {
+/*@font-face {
     font-family: 'Aileron';
     src: url('/fonts/aileron-bold-webfont.eot');
     src: url('/fonts/aileron-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -158,7 +158,7 @@
          url('/fonts/aileron-blackitalic-webfont.svg#Aileron') format('svg');
     font-weight: 900;
     font-style: italic;
-}
+}*/
 
 /* Standard Shadows */
 $z1-shadow: 0  1px  3px rgba(#000, 0.12), 0  1px  2px rgba(#000, 0.24);
@@ -208,6 +208,10 @@ $font-light: 300;
 $font-regular: 400;
 $font-bold: 500;
 $headings-font-weight: $font-bold;
+$font-weight-light: $font-light;
+$font-weight-normal: $font-light;
+$font-weight-bold: $font-bold;
+$font-weight-base: $font-light;
 
 /* Bootstrap Colors and Variables */
 $brand-primary: $apple;
@@ -229,4 +233,7 @@ $modal-content-fallback-border-color: transparent;
 $state-success-text: #FFF;
 $state-success-bg: $deyork;
 $state-success-border: $goblin;
+
+// Buttons
+$btn-border-width: 0;
 

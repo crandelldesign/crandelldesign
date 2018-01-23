@@ -3,7 +3,7 @@
 
 <hr>
 
-<div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/fourgreenfieldsfarm-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-responsive-banner.jpg')}}" alt="Responsive Display of the Four Green Fields Farm Website" class="img-responsive center-block portfolio-img portfolio-browser" /></div>
+<div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/fourgreenfieldsfarm-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-responsive-banner.jpg')}}" alt="Responsive Display of the Four Green Fields Farm Website" class="img-fluid center-block portfolio-img portfolio-browser" /></div>
 
 <div class="row">
     <div class="col-md-5">
@@ -17,10 +17,10 @@
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-homepage.jpg')}}" alt="Homepage of the Four Green Fields Farm Website" class="img-responsive center-block portfolio-img portfolio-browser" />
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-homepage.jpg')}}" alt="Homepage of the Four Green Fields Farm Website" class="img-fluid center-block portfolio-img portfolio-browser" />
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-mockup-ipad-iphone@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-mockup-ipad-iphone.jpg')}}" alt="The Four Green Fields Farm Website on a Mobile Device" class="img-responsive center-block portfolio-img" />
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-mockup-ipad-iphone@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-mockup-ipad-iphone.jpg')}}" alt="The Four Green Fields Farm Website on a Mobile Device" class="img-fluid center-block portfolio-img" />
     </div>
 </div>
 
@@ -86,7 +86,7 @@
     </div>
     <div class="col-sm-6 margin-bottom-20">
         <h2>Typography</h2>
-        <img src="{{url('/img/samples/fourgreenfieldsfarm-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Four Green Fields Farm Typography">
+        <img src="{{url('/img/samples/fourgreenfieldsfarm-typography.jpg')}}" class="img-fluid center-block portfolio-img" alt="Four Green Fields Farm Typography">
     </div>
 </div>
 
@@ -94,19 +94,19 @@
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm event calendar">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm event calendar">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open.jpg')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Four Green Fields Farm event calendar with event description open">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-events-open.jpg')}}" class="img-fluid center-block  portfolio-img portfolio-browser" alt="Four Green Fields Farm event calendar with event description open">
     </div>
 </div>
 
 <h2>Admin Interface</h2>
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm admin event list">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-list.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm admin event list">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm admin event editing interface">
+        <img srcset="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit@2x.jpg')}} 2x" src="{{url('/img/samples/fourgreenfieldsfarm-browser-admin-event-edit.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Four Green Fields Farm admin event editing interface">
     </div>
 </div>

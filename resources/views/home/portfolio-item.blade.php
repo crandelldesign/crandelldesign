@@ -14,14 +14,14 @@
                 <div class="row">
                     <div class="col-sm-7 col-sm-push-5 margin-bottom-15">
                         @if(count($client->assets) == 1)
-                        <p><img src="{{url('/').$client->featured_img}}" alt="{{$client->name}}" class="img-responsive center-block" /></p>
+                        <p><img src="{{url('/').$client->featured_img}}" alt="{{$client->name}}" class="img-fluid center-block" /></p>
                         @else
                         <div class="slideshow">
                             <div class="arrows"></div>
                             <?php $i = 0; ?>
                             @foreach($client->assets as $asset)
                                 <div class="item {{($i++ == 0)?'active':''}}">
-                                    <img src="{{url('/').$asset}}" alt="{{$client->name.' image #'.$i}}" class="img-responsive center-block" />
+                                    <img src="{{url('/').$asset}}" alt="{{$client->name.' image #'.$i}}" class="img-fluid center-block" />
                                 </div>
                             @endforeach
                         </div>

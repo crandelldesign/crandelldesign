@@ -3,7 +3,7 @@
 
 <hr>
 
-<div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/nuviewnutrition-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-responsive-banner.jpg')}}" alt="Responsive Display of the Nuview Nutrition Website" class="img-responsive center-block portfolio-img portfolio-browser" /></div>
+<div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/nuviewnutrition-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-responsive-banner.jpg')}}" alt="Responsive Display of the Nuview Nutrition Website" class="img-fluid center-block portfolio-img portfolio-browser" /></div>
 
 <div class="row">
     <div class="col-md-5">
@@ -17,10 +17,10 @@
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/nuviewnutrition-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-homepage.jpg')}}" alt="Homepage of the Nuview Nutrition Website" class="img-responsive center-block portfolio-img portfolio-browser" />
+        <img srcset="{{url('/img/samples/nuviewnutrition-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-homepage.jpg')}}" alt="Homepage of the Nuview Nutrition Website" class="img-fluid center-block portfolio-img portfolio-browser" />
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/nuviewnutrition-mockup-business-card-iphone@2x.jpg')}} 2x"  src="{{url('/img/samples/nuviewnutrition-mockup-business-card-iphone.jpg')}}" alt="The Nuview Nutrition Logo and Website on Devices" class="img-responsive center-block portfolio-img" />
+        <img srcset="{{url('/img/samples/nuviewnutrition-mockup-business-card-iphone@2x.jpg')}} 2x"  src="{{url('/img/samples/nuviewnutrition-mockup-business-card-iphone.jpg')}}" alt="The Nuview Nutrition Logo and Website on Devices" class="img-fluid center-block portfolio-img" />
     </div>
 </div>
 
@@ -68,24 +68,24 @@
     </div>
     <div class="col-sm-6 margin-bottom-20">
         <h2>Typography</h2>
-        <img src="{{url('/img/samples/nuviewnutrition-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Nuview Nutrition Typography">
+        <img src="{{url('/img/samples/nuviewnutrition-typography.jpg')}}" class="img-fluid center-block portfolio-img" alt="Nuview Nutrition Typography">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/nuviewnutrition-browser-about-us@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-about-us.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Nuview Nutrition About Us Page">
+        <img srcset="{{url('/img/samples/nuviewnutrition-browser-about-us@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-about-us.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Nuview Nutrition About Us Page">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/nuviewnutrition-browser-detoxification@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-detoxification.jpg')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Nuview Nutrition Detoxification Specialty Page">
+        <img srcset="{{url('/img/samples/nuviewnutrition-browser-detoxification@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-detoxification.jpg')}}" class="img-fluid center-block  portfolio-img portfolio-browser" alt="Nuview Nutrition Detoxification Specialty Page">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/nuviewnutrition-browser-programs@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-programs.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Nuview Nutrition Programs Page">
+        <img srcset="{{url('/img/samples/nuviewnutrition-browser-programs@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-programs.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Nuview Nutrition Programs Page">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/nuviewnutrition-browser-classes@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-classes.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Nuview Nutrition Classes Page">
+        <img srcset="{{url('/img/samples/nuviewnutrition-browser-classes@2x.jpg')}} 2x" src="{{url('/img/samples/nuviewnutrition-browser-classes.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Nuview Nutrition Classes Page">
     </div>
 </div>

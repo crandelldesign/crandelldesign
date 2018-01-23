@@ -10,14 +10,14 @@
         z-index: 9999;
         width: 100%;
         height: 100%;
-        background-color: #ddd;
+        background-color: #FFF;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        transition: opacity .20s ease-in-out;
-        -moz-transition: opacity .20s ease-in-out;
-        -webkit-transition: opacity .20s ease-in-out;
+        transition: all .25s ease-in-out;
+        -moz-transition: all .25s ease-in-out;
+        -webkit-transition: all .25s ease-in-out;
     }
     #site-overlay.loaded {
         opacity: 0;
@@ -32,13 +32,9 @@
         margin-top: -40px;
         margin-left: -40px;
         border-radius: 50%;
-        animation-name: ckw;
-        animation-duration: 5s;
-        /* Things added */
-        animation-iteration-count: infinite;
+        animation: ckw 2s infinite linear;
         transform-origin: 50% 50%;
         display: block;
-        /* <--- */
     }
     @keyframes ckw {
         0% {

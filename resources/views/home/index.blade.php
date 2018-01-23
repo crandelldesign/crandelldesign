@@ -5,7 +5,9 @@
     <div class="content">
         <h1 class="slogan heading">Anybody can make a website, but only a few can make it look good!</h1>
         <div class="button-holder">
-            <a href="#portfolio" class="btn btn-clear btn-lg page-scroll">See For Yourself <i class="fa fa-angle-down"></i></a>
+            <a href="#portfolio" class="btn btn-outline-light btn-lg page-scroll">See For Yourself <svg class="i-chevron-bottom" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M30 12 L16 24 2 12"></path>
+        </svg></a>
         </div>
     </div>
 </div>
@@ -26,7 +28,9 @@
         </div>
 
         <div class="button-holder text-center">
-            <a href="{{url('/portfolio')}}" class="btn btn-lg btn-apple animsition-link">See My Full Portfolio <i class="fa fa-angle-right"></i></a>
+            <a href="{{url('/portfolio')}}" class="btn btn-lg btn-apple animsition-link">See My Full Portfolio <svg id="i-chevron-right" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M12 30 L24 16 12 2" />
+</svg></a>
         </div>
 
     </div>
@@ -80,7 +84,7 @@
         <h2>About</h2>
         <div class="row">
             <div class="col-sm-3">
-                <img srcset="{{url('/')}}/img/matt-crandell-2014@2x.jpg 2x" src="{{url('/')}}/img/matt-crandell-2014.jpg" class="img-responsive me-pic" alt="Picture of Matt Crandell">
+                <img srcset="{{url('/')}}/img/matt-crandell-2014@2x.jpg 2x" src="{{url('/')}}/img/matt-crandell-2014.jpg" class="img-fluid me-pic" alt="Picture of Matt Crandell">
                 <div class="margin-bottom-10 visible-xs-block"></div>
             </div>
             <div class="col-sm-9 col-xs-12">

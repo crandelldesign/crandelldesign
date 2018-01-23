@@ -1,7 +1,7 @@
 <h1>Clarkston Area Chamber of Commerce</h1>
 <p class="city-view-more">Clarkston, MI</p>
 
-<div class="text-center margin-bottom-20"><img src="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-banner.jpg" alt="Logo for Clarkston Area Chamber of Commerce" class="img-responsive center-block portfolio-img" /></div>
+<div class="text-center margin-bottom-20"><img src="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-banner.jpg" alt="Logo for Clarkston Area Chamber of Commerce" class="img-fluid center-block portfolio-img" /></div>
 
 <div class="row">
     <div class="col-lg-8">
@@ -15,7 +15,7 @@
         <p class="testimonial-author text-right">&mdash; Janelle Best, Director</p>
     </div>
     <div class="col-sm-5 col-lg-4">
-        <p class="text-center"><img srcset="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-mockup1@2x.jpg 2x" src="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-mockup1.jpg" alt="Logo for Clarkston Area Chamber of Commerce" class="img-responsive center-block portfolio-img" /></p>
+        <p class="text-center"><img srcset="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-mockup1@2x.jpg 2x" src="{{url('/')}}/img/samples/clarkston-chamber-of-commerce-mockup1.jpg" alt="Logo for Clarkston Area Chamber of Commerce" class="img-fluid center-block portfolio-img" /></p>
     </div>
 </div>
 
@@ -45,47 +45,47 @@
     </div>
     <div class="col-sm-6 margin-bottom-20">
         <h2>Typography</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Clarkston Area Chamber of Commerce Typography">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-typography.jpg')}}" class="img-fluid center-block portfolio-img" alt="Clarkston Area Chamber of Commerce Typography">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-4 margin-bottom-20">
         <h2>Business Over Breakfast</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-business-over-breakfast.jpg')}}" class="img-responsive center-block portfolio-img" alt="Business Over Breakfast">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-business-over-breakfast.jpg')}}" class="img-fluid center-block portfolio-img" alt="Business Over Breakfast">
     </div>
     <div class="col-sm-4 margin-bottom-20">
         <h2>WeBiz</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-webiz.jpg')}}" class="img-responsive center-block portfolio-img" alt="WeBiz">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-webiz.jpg')}}" class="img-fluid center-block portfolio-img" alt="WeBiz">
     </div>
     <div class="col-sm-4 margin-bottom-20">
         <h2>Annual Golf Classic</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-annual-meeting.jpg')}}" class="img-responsive center-block portfolio-img" alt="Annual Golf Classic">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-annual-meeting.jpg')}}" class="img-fluid center-block portfolio-img" alt="Annual Golf Classic">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-4 margin-bottom-20">
         <h2>Best of the Best Expo</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-best-of-the-best-expo.jpg')}}" class="img-responsive center-block portfolio-img" alt="Best of the Best Expo">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-best-of-the-best-expo.jpg')}}" class="img-fluid center-block portfolio-img" alt="Best of the Best Expo">
     </div>
     <div class="col-sm-4 margin-bottom-20">
         <h2>Concerts in the Park</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-concerts-in-the-park.jpg')}}" class="img-responsive center-block portfolio-img" alt="Concerts in the Park">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-concerts-in-the-park.jpg')}}" class="img-fluid center-block portfolio-img" alt="Concerts in the Park">
     </div>
     <div class="col-sm-4 margin-bottom-20">
         <h2>Body Mind Green Expo</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-body-mind-green.jpg')}}" class="img-responsive center-block portfolio-img" alt="Body Mind Green Expo">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-body-mind-green.jpg')}}" class="img-fluid center-block portfolio-img" alt="Body Mind Green Expo">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-4 col-sm-offset-2 margin-bottom-20">
         <h2>Luncheon Mixer</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-luncheon-mixer.jpg')}}" class="img-responsive center-block portfolio-img" alt="Luncheon Mixer">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-luncheon-mixer.jpg')}}" class="img-fluid center-block portfolio-img" alt="Luncheon Mixer">
     </div>
     <div class="col-sm-4 margin-bottom-20">
         <h2>Annual Meeting</h2>
-        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-annual-meeting.jpg')}}" class="img-responsive center-block portfolio-img" alt="Annual Meeting">
+        <img src="{{url('/img/samples/clarkston-chamber-of-commerce-annual-meeting.jpg')}}" class="img-fluid center-block portfolio-img" alt="Annual Meeting">
     </div>
 </div>

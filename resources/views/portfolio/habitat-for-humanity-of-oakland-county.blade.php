@@ -3,7 +3,7 @@
 
 <hr>
 
-<div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/habitat-for-humanity-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-responsive-banner.jpg')}}" alt="Responsive Display of the Habitat for Humanity of Oakland County Website" class="img-responsive center-block portfolio-img portfolio-browser" /></div>
+<div class="text-center margin-bottom-20"><img srcset="{{url('/img/samples/habitat-for-humanity-responsive-banner@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-responsive-banner.jpg')}}" alt="Responsive Display of the Habitat for Humanity of Oakland County Website" class="img-fluid center-block portfolio-img portfolio-browser" /></div>
 
 <div class="row">
     <div class="col-lg-8">
@@ -13,10 +13,10 @@
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-homepage.jpg')}}" alt="Homepage of the Habitat for Humanity of Oakland County Website" class="img-responsive center-block portfolio-img portfolio-browser" />
+        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-homepage@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-homepage.jpg')}}" alt="Homepage of the Habitat for Humanity of Oakland County Website" class="img-fluid center-block portfolio-img portfolio-browser" />
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img src="{{url('/img/samples/habitat-for-humanity-mockup-macbook-ipad.jpg')}}" alt="The Habitat for Humanity of Oakland County Website on Devices" class="img-responsive center-block portfolio-img" />
+        <img src="{{url('/img/samples/habitat-for-humanity-mockup-macbook-ipad.jpg')}}" alt="The Habitat for Humanity of Oakland County Website on Devices" class="img-fluid center-block portfolio-img" />
     </div>
 </div>
 
@@ -65,24 +65,24 @@
     </div>
     <div class="col-sm-6 margin-bottom-20">
         <h2>Typography</h2>
-        <img src="{{url('/img/samples/habitat-for-humanity-typography.jpg')}}" class="img-responsive center-block portfolio-img" alt="Habitat for Humanity of Oakland County Typography">
+        <img src="{{url('/img/samples/habitat-for-humanity-typography.jpg')}}" class="img-fluid center-block portfolio-img" alt="Habitat for Humanity of Oakland County Typography">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-restore@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-restore.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Habitat for Humanity of Oakland County - Restore">
+        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-restore@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-restore.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Habitat for Humanity of Oakland County - Restore">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-company-team-building@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-company-team-building.jpg')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Habitat for Humanity of Oakland County - Company Team Building with form opened">
+        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-company-team-building@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-company-team-building.jpg')}}" class="img-fluid center-block  portfolio-img portfolio-browser" alt="Habitat for Humanity of Oakland County - Company Team Building with form opened">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-construction-opportunities@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-construction-opportunities.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Habitat for Humanity of Oakland County - Construction Opportunities">
+        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-construction-opportunities@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-construction-opportunities.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Habitat for Humanity of Oakland County - Construction Opportunities">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-women-build@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-women-build.jpg')}}" class="img-responsive center-block portfolio-img portfolio-browser" alt="Habitat for Humanity of Oakland County - Women Build">
+        <img srcset="{{url('/img/samples/habitat-for-humanity-browser-women-build@2x.jpg')}} 2x" src="{{url('/img/samples/habitat-for-humanity-browser-women-build.jpg')}}" class="img-fluid center-block portfolio-img portfolio-browser" alt="Habitat for Humanity of Oakland County - Women Build">
     </div>
 </div>

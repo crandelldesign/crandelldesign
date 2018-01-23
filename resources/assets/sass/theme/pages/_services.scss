@@ -1,0 +1,44 @@
+// Services
+#services {
+    color: #FFF;
+    //background: #4759a7 url(../img/services-container-bg-mobile.jpg) no-repeat center center;
+    background: url(/img/services-container-bg.jpg) no-repeat center center fixed;
+    @include mobile-bg();
+    @include media-breakpoint-up(sm) {
+        @include desktop-bg();
+        min-height: 600px;
+    }
+    h2, h3 {
+        color: #FFF;
+    }
+    .btn {
+        display: block;
+        white-space: normal;
+        padding: 20px;
+        h3 {
+            font-size: 15px;
+            height: 40px;
+            margin: 0;
+            @include media-breakpoint-up(sm) {
+                font-size: 18px;
+            }
+            @include media-breakpoint-up(md) {
+                //height: 50px;
+            }
+        }
+        svg {
+            @extend .img-fluid;
+            fill: #FFF;
+            margin-bottom: 15px;
+        }
+    }
+}
+.service-page {
+    svg {
+        @extend .img-fluid;
+        @extend .align-self-center;
+        fill: $apple;
+        max-width: 300px;
+
+    }
+}

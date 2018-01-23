@@ -1,0 +1,7 @@
+// About
+#about {
+    .me-pic {
+        border: 1px solid $sanmarino;
+        @include shadow-1();
+    }
+}

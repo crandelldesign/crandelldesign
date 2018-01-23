@@ -10,7 +10,7 @@
 
             <header class="style-header">
                 <div class="logo-container">
-                    <img src="{{url('/img/crandell-design-wordmark.svg')}}" alt="Crandell Design" class="img-responsive">
+                    <img src="{{url('/img/crandell-design-wordmark.svg')}}" alt="Crandell Design" class="img-fluid">
                 </div>
             </header>
 
@@ -109,5 +109,5 @@
         @include('layouts.footer')
         @yield('scripts')
     </body>
-    
+
 </html>

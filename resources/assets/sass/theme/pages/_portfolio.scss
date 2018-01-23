@@ -1,0 +1,56 @@
+// Portfolio
+.portfolio-thumbnail {
+    display: block;
+    border-radius: $border-radius-base;
+    border: 1px solid $sanmarino;
+    margin-bottom: 30px;
+    @include shadow-1();
+    div.client-img {
+        overflow: hidden;
+        position: relative;
+        img {
+            max-width: 101%;
+            width: 101%;
+            @include hover-transition();
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateZ(0) scale(1, 1);
+        }
+        .hover-img {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+        }
+    }
+    div.info {
+        padding: 10px;
+        .client-name {
+            display: block; /* Fallback for non-webkit */
+            display: -webkit-box;
+            color: $black;
+            font-size: 14px;
+            height: 14px*1.1*2.1;
+            line-height: normal;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .client-location {
+            font-size: 13px;
+            color: $gray-600;
+        }
+    }
+    &:hover {
+        div.client-img {
+            .main-img {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .hover-img {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/news', 'NewsController@index');
+Route::get('/news/page/{page?}', 'NewsController@index');
 Route::get('/news/category/{name?}', 'NewsController@category');
 Route::get('/news/{years}/{month?}/{name?}', 'NewsController@news');
 

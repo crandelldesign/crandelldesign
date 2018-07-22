@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Name
+    | Application Name / URL / WordPress
     |--------------------------------------------------------------------------
     |
     | This value is the name of your application. This value is used when the
@@ -14,6 +14,7 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'news_api_url' => env('APP_NEWS_API_URL', 'https://news-api.crandelldesign.com'),
 
     /*
     |--------------------------------------------------------------------------

@@ -280,22 +280,7 @@ class HomeController extends Controller
             $client->meta_description = 'Crandell Design redesigned the logo for Clarkston Area Chamber of Commerce and created supplementary logos for the various programs and events that the chamber offers.';
             $client->is_custom = 1;
             $client->has_highres = 1;
-        $clients[] = $client;
-            $client = new StdClass;
-            $client->name = 'Facials By Jude';
-            $client->slug = str_slug($client->name);
-            $client->city = 'Oxford';
-            $client->state = 'MI';
-            $client->assets = [
-                '/img/samples/facialsbyjude.jpg',
-                '/img/samples/facialsbyjude-mockup.jpg'
-            ];
-            $client->display_img = '/img/samples/facialsbyjude-thumbnail1.jpg';
-            $client->hover_img = '/img/samples/facialsbyjude-thumbnail2.jpg';
-            $client->meta_description = 'With the latest redesign, the website is configured to work on multiple devices and features Jude\'s personal style.';
-            $client->is_custom = 1;
-            $client->has_highres = 1;
-        $clients[] = $client;
+            $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Gregg\'s Gourmet Cafe';
             $client->slug = str_slug($client->name);
@@ -314,6 +299,21 @@ class HomeController extends Controller
             $client->description = '<p>This is a website that I created for Gregg\'s Gourmet Cafe of Clarkston, MI. The design of the site borrows the colors and simplicity of the existing logo.</p>';
             $client->meta_description = 'This is a website that I created for Gregg\'s Gourmet Cafe of Clarkston, MI. The design of the site borrows the colors and simplicity of the existing logo.';
             $client->services = ['Web Design', 'Web Maintenance', 'Web Hosting'];
+            $client->has_highres = 1;
+        $clients[] = $client;
+            $client = new StdClass;
+            $client->name = 'Facials By Jude';
+            $client->slug = str_slug($client->name);
+            $client->city = 'Oxford';
+            $client->state = 'MI';
+            $client->assets = [
+                '/img/samples/facialsbyjude.jpg',
+                '/img/samples/facialsbyjude-mockup.jpg'
+            ];
+            $client->display_img = '/img/samples/facialsbyjude-thumbnail1.jpg';
+            $client->hover_img = '/img/samples/facialsbyjude-thumbnail2.jpg';
+            $client->meta_description = 'With the latest redesign, the website is configured to work on multiple devices and features Jude\'s personal style.';
+            $client->is_custom = 1;
             $client->has_highres = 1;
         $clients[] = $client;
             $client = new StdClass;

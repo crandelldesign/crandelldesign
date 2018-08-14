@@ -643,6 +643,29 @@ nav.navbar {
         }
     }
 }
+/* Portfolio - Habitat for Humanity of Oakland County */
+#vicksburg-family-dentistry-portfolio {
+    .color-swatch {
+        &.swatch1 {
+            background-color: #555555;
+        }
+        &.swatch2 {
+            background-color: #006DB0;
+        }
+        &.swatch3 {
+            background-color: #000E16;
+        }
+        &.swatch4 {
+            background-color: #009EFF;
+        }
+        &.swatch5 {
+            background-color: #BBBDBF;
+        }
+        &.swatch6 {
+            background-color: #0AB1C7;
+        }
+    }
+}
 
 /* Services */
 #services {

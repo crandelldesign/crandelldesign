@@ -161,6 +161,25 @@ class HomeController extends Controller
     {
         $clients = [];
             $client = new StdClass;
+            $client->name = 'Vicksburg Family Dentistry';
+            $client->slug = str_slug($client->name);
+            $client->city = 'Vicksburg';
+            $client->state = 'MI';
+            $client->assets = [
+                '/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-thumbnail1.jpg',
+                '/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-thumbnail2.jpg'
+            ];
+            $client->display_img = '/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-thumbnail1.jpg';
+            $client->hover_img = '/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-thumbnail2.jpg';
+            $client->is_use_url = 1;
+            $client->url = 'https://www.vicksburgfamilydentistry.com';
+            $client->description = 'This is a website that I designed for Vicksburg Family Dentistry. The site is fully responsive so that it works on all devices, and was built on WordPress so that the client can changes and update everything without any coding knowledge. Borrowing from some of the principles of Google\'s Material Design,  I used flat design and depth together.';
+            $client->meta_description = 'This is a website that I designed for Vicksburg Family Dentistry built using WordPress.';
+            $client->services = ['Web Design', 'Web Maintenance'];
+            $client->is_custom = 1;
+            $client->has_highres = 1;
+        $clients[] = $client;
+            $client = new StdClass;
             $client->name = 'Nuview Nutrition';
             $client->slug = str_slug($client->name);
             $client->city = 'Clarkston';
@@ -335,25 +354,6 @@ class HomeController extends Controller
                 <p>Both the logo and flyer utilize the same typefaces and color scheme. The logo was utilized for banners and some event promotions. The flyer would be used for mail flyers and online promotions.<p>';
             $client->meta_description = 'This is a logo and flyer for the Brewing 4 Business networking event between the Clarkston Area Chamber of Commerce and Waterford Chamber of Commerce.';
             $client->services = ['Logo Design', 'Flyer Design'];
-        $clients[] = $client;
-            $client = new StdClass;
-            $client->name = 'Vicksburg Family Dentistry';
-            $client->slug = str_slug($client->name);
-            $client->city = 'Vicksburg';
-            $client->state = 'MI';
-            $client->assets = [
-                '/img/samples/vicksburgfamilydentistry1.jpg',
-                '/img/samples/vicksburgfamilydentistry2.jpg',
-                '/img/samples/vicksburgfamilydentistry-mockup1.jpg',
-                '/img/samples/vicksburgfamilydentistry-mockup2.jpg'
-            ];
-            $client->display_img = $client->assets[0];
-            $client->hover_img = $client->assets[2];
-            $client->is_use_url = 1;
-            $client->url = 'http://vicksburgfamilydentistry.com';
-            $client->description = 'This is a website that I designed for Vicksburg Family Dentistry. The site is fully responsive so that it works on all devices, and was built on WordPress so that the client can changes and update everything without any coding knowledge. Borrowing from some of the principles of Google\'s Material Design,  I used flat design and depth together.';
-            $client->meta_description = 'This is a website that I designed for Vicksburg Family Dentistry built using WordPress.';
-            $client->services = ['Web Design', 'Web Maintenance'];
         $clients[] = $client;
             $client = new StdClass;
             $client->name = 'Sage Orthodontics';

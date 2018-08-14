@@ -7,7 +7,8 @@
 
 <div class="row">
     <div class="col-lg-8">
-        <p class="lead">The Vicksburg Family Dentistry website was resigned as a slick, single page website that displays all of the crucial information for potential patients to find their next dentist.</p>
+        <p class="lead">In 2013, the original version of the Vicksburg Family Dentistry website was a multipage WordPress blog with a rigid design created for desktop screens with mobile design as an afterthought.</p>
+        <p class="lead">After watching how the client utilized the website and discussing their needs in further depth, I went back to the drawing board. The result: a single page website with the essential information presented in a clean and friendly manner.</p>
     </div>
 </div>
 
@@ -17,13 +18,6 @@
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
         <img srcset="{{url('/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-demo@2x.jpg')}} 2x" src="{{url('/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-demo.jpg')}}" alt="The Vicksburg Family Dentistry Website on Devices" class="img-responsive center-block portfolio-img" />
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-8">
-        <p>I created the original version of the Vicksburg Family Dentistry website back in 2013. It was created as a multipage WordPress blog with a rigid design created for desktop screens with mobile design as an afterthought.</p>
-        <p>After watching how the client utilized the website and discussing their needs in further depth, I went back to the drawing board with everything. The result: a single page website with the essential information presented in a clean and friendly manner.</p>
     </div>
 </div>
 

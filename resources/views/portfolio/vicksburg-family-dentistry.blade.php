@@ -77,6 +77,6 @@
         <img srcset="{{url('/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-mobile-features@2x.png')}} 2x" src="{{url('/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-mobile-features.png')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Vicksburg Family Dentistry Website Features Section on Mobile">
     </div>
     <div class="col-sm-6 text-center margin-bottom-20">
-        <img srcset="{{url('/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-browser-contact@2x.png')}} 2x" src="{{url('/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-browser-homepage.png')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Vicksburg Family Dentistry Website Contact Section">
+        <img srcset="{{url('/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-browser-contact@2x.png')}} 2x" src="{{url('/img/portfolio/vicksburg-family-dentistry/vicksburg-family-dentistry-browser-contact.png')}}" class="img-responsive center-block  portfolio-img portfolio-browser" alt="Vicksburg Family Dentistry Website Contact Section">
     </div>
 </div>

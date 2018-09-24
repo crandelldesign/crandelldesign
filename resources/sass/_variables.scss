@@ -1,20 +1,37 @@
-
-// Body
-$body-bg: #f8fafc;
+// Colors
+// Greens
+$apple: #4cb848;
+$deyork: lighten($apple,15%); //#82cd7f
+$goblin: darken($apple,15%); //#358132
+// Blues
+$sanmarino: #4759a7;
+$shipcove: lighten($sanmarino,15%); //#7685c5
+$rhino: darken($sanmarino,15%); //#303c71
+// Black
+$black: #252525;
 
 // Typography
-$font-family-sans-serif: "Nunito", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+$font-family-base: 'Aileron', sans-serif;
+$font-size-base: 1rem;
+$font-weight-base: 300;
+$line-height-base: 1.5;
+$body-color: $black;
+$body-bg: #FFF;
+$link-color: $apple;
+$link-decoration: none;
+$link-hover-color: $deyork;
+$link-hover-decoration: none;
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66D9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$spacer: 1rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+
+$headings-margin-bottom: ($spacer / 2);
+
+$grid-xs: 0;
+$grid-sm: 576px;
+$grid-md: 768px;
+$grid-lg: 992px;
+$grid-xl: 1200px;

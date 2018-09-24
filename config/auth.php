@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => CrandellDesign\User::class,
+            'model' => App\User::class,
         ],
 
         // 'users' => [

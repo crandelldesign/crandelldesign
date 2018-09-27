@@ -9,8 +9,9 @@
 
     <title>Crandell Design</title>
   </head>
-  <body>
+  <body class="{{$view_name}}">
     @include('layouts.header')
     @yield('content')
+    @include('layouts.footer')
   </body>
 </html>

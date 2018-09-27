@@ -1,3 +1,6 @@
+// General
+$spacer: 1rem;
+
 // Colors
 // Greens
 $apple: #4cb848;
@@ -9,6 +12,8 @@ $shipcove: lighten($sanmarino,15%); //#7685c5
 $rhino: darken($sanmarino,15%); //#303c71
 // Black
 $black: #252525;
+// Gray
+$french-gray: #bbbbbd;
 
 // Typography
 $font-family-base: 'Aileron', sans-serif;
@@ -21,8 +26,20 @@ $link-color: $apple;
 $link-decoration: none;
 $link-hover-color: $deyork;
 $link-hover-decoration: none;
+// Headings
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+$headings-margin-bottom:      ($spacer / 2);
+$headings-font-family:        inherit;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              inherit;
 
-$spacer: 1rem;
+$paragraph-margin-bottom:   1rem;
 
 $font-weight-light: 300;
 $font-weight-normal: 400;
@@ -35,3 +52,13 @@ $grid-sm: 576px;
 $grid-md: 768px;
 $grid-lg: 992px;
 $grid-xl: 1200px;
+
+$max-width: 1430px;
+
+// Forms
+$label-margin-bottom: .5rem;
+
+// Transitins
+$transition-base: all .2s ease-in-out;
+$transition-fade: opacity .15s linear;
+$transition-collapse: height .35s ease;

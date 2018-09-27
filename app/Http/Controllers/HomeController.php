@@ -21,4 +21,18 @@ class HomeController extends Controller
 
         return $view;
     }
+
+    public function style()
+    {
+        $view = view('home.style');
+        $view->title = "Crandell Design by Matt Crandell | Web Design and Development";
+        $view->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
+
+        //$portfolio = $this->portfolio();
+        //$view->portfolio = $portfolio->take(8);
+
+        $view->active_page = 'style';
+
+        return $view;
+    }
 }

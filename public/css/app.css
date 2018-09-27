@@ -1,36 +1,43 @@
-/* Fonts */
-
-@font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-ultralight-webfont.eot");
-  src: url("/fonts/aileron-ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-ultralight-webfont.woff") format("woff"), url("/fonts/aileron-ultralight-webfont.ttf") format("truetype"), url("/fonts/aileron-ultralight-webfont.svg#Aileron") format("svg");
-  font-weight: 100;
-  font-style: normal;
+/*@font-face {
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-ultralight-webfont.eot');
+    src: url('/fonts/aileron-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-ultralight-webfont.woff') format('woff'),
+         url('/fonts/aileron-ultralight-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-ultralight-webfont.svg#Aileron') format('svg');
+    font-weight: 100;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-ultralightitalic-webfont.eot");
-  src: url("/fonts/aileron-ultralightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-ultralightitalic-webfont.woff") format("woff"), url("/fonts/aileron-ultralightitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-ultralightitalic-webfont.svg#Aileron") format("svg");
-  font-weight: 100;
-  font-style: italic;
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-ultralightitalic-webfont.eot');
+    src: url('/fonts/aileron-ultralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-ultralightitalic-webfont.woff') format('woff'),
+         url('/fonts/aileron-ultralightitalic-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-ultralightitalic-webfont.svg#Aileron') format('svg');
+    font-weight: 100;
+    font-style: italic;
 }
-
 @font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-thin-webfont.eot");
-  src: url("/fonts/aileron-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-thin-webfont.woff") format("woff"), url("/fonts/aileron-thin-webfont.ttf") format("truetype"), url("/fonts/aileron-thin-webfont.svg#aileronthin") format("svg");
-  font-weight: 200;
-  font-style: normal;
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-thin-webfont.eot');
+    src: url('/fonts/aileron-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-thin-webfont.woff') format('woff'),
+         url('/fonts/aileron-thin-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-thin-webfont.svg#aileronthin') format('svg');
+    font-weight: 200;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-thinitalic-webfont.eot");
-  src: url("/fonts/aileron-thinitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-thinitalic-webfont.woff") format("woff"), url("/fonts/aileron-thinitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-thinitalic-webfont.svg#Aileron") format("svg");
-  font-weight: 200;
-  font-style: italic;
-}
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-thinitalic-webfont.eot');
+    src: url('/fonts/aileron-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-thinitalic-webfont.woff') format('woff'),
+         url('/fonts/aileron-thinitalic-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-thinitalic-webfont.svg#Aileron') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}*/
 
 @font-face {
   font-family: 'Aileron';
@@ -80,53 +87,66 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-bold-webfont.eot");
-  src: url("/fonts/aileron-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-bold-webfont.woff") format("woff"), url("/fonts/aileron-bold-webfont.ttf") format("truetype"), url("/fonts/aileron-bold-webfont.svg#Aileron") format("svg");
-  font-weight: 600;
-  font-style: normal;
+/*@font-face {
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-bold-webfont.eot');
+    src: url('/fonts/aileron-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-bold-webfont.woff') format('woff'),
+         url('/fonts/aileron-bold-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-bold-webfont.svg#Aileron') format('svg');
+    font-weight: 600;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-bolditalic-webfont.eot");
-  src: url("/fonts/aileron-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-bolditalic-webfont.woff") format("woff"), url("/fonts/aileron-bolditalic-webfont.ttf") format("truetype"), url("/fonts/aileron-bolditalic-webfont.svg#Aileron") format("svg");
-  font-weight: 600;
-  font-style: italic;
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-bolditalic-webfont.eot');
+    src: url('/fonts/aileron-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-bolditalic-webfont.woff') format('woff'),
+         url('/fonts/aileron-bolditalic-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-bolditalic-webfont.svg#Aileron') format('svg');
+    font-weight: 600;
+    font-style: italic;
 }
-
 @font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-heavy-webfont.eot");
-  src: url("/fonts/aileron-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-heavy-webfont.woff") format("woff"), url("/fonts/aileron-heavy-webfont.ttf") format("truetype"), url("/fonts/aileron-heavy-webfont.svg#Aileron") format("svg");
-  font-weight: 800;
-  font-style: normal;
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-heavy-webfont.eot');
+    src: url('/fonts/aileron-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-heavy-webfont.woff') format('woff'),
+         url('/fonts/aileron-heavy-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-heavy-webfont.svg#Aileron') format('svg');
+    font-weight: 800;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-heavyitalic-webfont.eot");
-  src: url("/fonts/aileron-heavyitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-heavyitalic-webfont.woff") format("woff"), url("/fonts/aileron-heavyitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-heavyitalic-webfont.svg#Aileron") format("svg");
-  font-weight: 800;
-  font-style: italic;
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-heavyitalic-webfont.eot');
+    src: url('/fonts/aileron-heavyitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-heavyitalic-webfont.woff') format('woff'),
+         url('/fonts/aileron-heavyitalic-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-heavyitalic-webfont.svg#Aileron') format('svg');
+    font-weight: 800;
+    font-style: italic;
 }
-
 @font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-black-webfont.eot");
-  src: url("/fonts/aileron-black-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-black-webfont.woff") format("woff"), url("/fonts/aileron-black-webfont.ttf") format("truetype"), url("/fonts/aileron-black-webfont.svg#Aileron") format("svg");
-  font-weight: 900;
-  font-style: normal;
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-black-webfont.eot');
+    src: url('/fonts/aileron-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-black-webfont.woff') format('woff'),
+         url('/fonts/aileron-black-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-black-webfont.svg#Aileron') format('svg');
+    font-weight: 900;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: 'Aileron';
-  src: url("/fonts/aileron-blackitalic-webfont.eot");
-  src: url("/fonts/aileron-blackitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/aileron-blackitalic-webfont.woff") format("woff"), url("/fonts/aileron-blackitalic-webfont.ttf") format("truetype"), url("/fonts/aileron-blackitalic-webfont.svg#Aileron") format("svg");
-  font-weight: 900;
-  font-style: italic;
-}
+    font-family: 'Aileron';
+    src: url('/fonts/aileron-blackitalic-webfont.eot');
+    src: url('/fonts/aileron-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aileron-blackitalic-webfont.woff') format('woff'),
+         url('/fonts/aileron-blackitalic-webfont.ttf') format('truetype'),
+         url('/fonts/aileron-blackitalic-webfont.svg#Aileron') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}*/
 
 *,
 *::before,
@@ -146,6 +166,13 @@ body {
   background-color: #FFF;
 }
 
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
 h1,
 h2,
 h3,
@@ -154,6 +181,25 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
 }
 
 a {
@@ -165,6 +211,56 @@ a {
 a:hover {
   color: #82cd7f;
   text-decoration: none;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
 }
 
 .logo {
@@ -184,10 +280,152 @@ a:hover {
   fill: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
 .h1,
 h1 {
   color: #4759a7;
   font-weight: 300;
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 300;
+  border: 1px solid transparent;
+  background-color: #FFF;
+  padding: .5rem 1rem;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .btn {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.btn:focus,
+.btn.focus {
+  outline: 0;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-apple {
+  background-color: #4cb848;
+  color: #FFF;
+}
+
+.btn-apple:hover,
+.btn-apple:focus {
+  background-color: #358132;
+}
+
+.btn-sanmarino {
+  background-color: #4759a7;
+  color: #FFF;
+}
+
+.btn-sanmarino:hover,
+.btn-sanmarino:focus {
+  background-color: #303c71;
+}
+
+.btn-translucent-apple {
+  border: 1px solid #FFF;
+  background: none;
+}
+
+.btn-translucent-apple:hover,
+.btn-translucent-apple:focus {
+  background: #4cb848;
+  background: rgba(76, 184, 72, 0.5);
+}
+
+.btn-translucent-sanmarino {
+  border: 1px solid #FFF;
+  background: none;
+}
+
+.btn-translucent-sanmarino:hover,
+.btn-translucent-sanmarino:focus {
+  background: #4759a7;
+  background: rgba(71, 89, 167, 0.5);
+}
+
+.btn-outline-white {
+  color: #FFF;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #FFF;
+}
+
+.btn-outline-white:hover {
+  color: #252525;
+  background-color: #FFF;
+}
+
+.btn-outline-white.disabled,
+.btn-outline-white:disabled {
+  color: #FFF;
+  background-color: transparent;
 }
 
 header.header {
@@ -205,12 +443,20 @@ header.header > .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  header.header > .container {
+    max-width: 1430px;
+    margin: 0 auto;
+  }
 }
 
 header.header > .container .logo-container {
   width: 100%;
   min-width: 250px;
-  padding: 15px;
+  padding: 15px 15px 15px 0;
 }
 
 @media (min-width: 768px) {
@@ -254,6 +500,121 @@ header.header > .container .navbar ul {
 @media (min-width: 768px) {
   header.header > .container .navbar ul a {
     font-size: 1.25rem;
+  }
+}
+
+footer.footer .footer-top {
+  background-color: #252525;
+}
+
+footer.footer .footer-top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  footer.footer .footer-top .container {
+    max-width: 1430px;
+    margin: 0 auto;
+  }
+}
+
+footer.footer .footer-top .social-icons {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer.footer .footer-top .social-icons li {
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+footer.footer .footer-top .social-icons a {
+  color: #bbbbbd;
+}
+
+footer.footer .footer-top .footer-contact {
+  color: #bbbbbd;
+  padding: 1rem 0;
+}
+
+footer.footer .footer-top .footer-contact p {
+  margin-bottom: 0.125rem;
+}
+
+.color-swatches {
+  display: grid;
+  grid-gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .color-swatches {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.color-swatch {
+  height: 100px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 15px;
+  border: 5px solid #FFF;
+  color: #FFF;
+  background-color: #eee;
+}
+
+.color-swatch.swatch1 {
+  background-color: #4cb848;
+}
+
+.color-swatch.swatch2 {
+  background-color: #82cd7f;
+}
+
+.color-swatch.swatch3 {
+  background-color: #358132;
+}
+
+.color-swatch.swatch4 {
+  background-color: #4759a7;
+}
+
+.color-swatch.swatch5 {
+  background-color: #7685c5;
+}
+
+.color-swatch.swatch6 {
+  background-color: #303c71;
+}
+
+.details {
+  color: #bbbbbd;
+}
+
+body.home-style .page > .container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-gap: 30px;
+}
+
+@media (min-width: 768px) {
+  body.home-style .page > .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  body.home-style .page > .container > div:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1 / 3;
   }
 }
 

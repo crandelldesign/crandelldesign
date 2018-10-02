@@ -17,4 +17,25 @@ body.home-style {
             }
         }
     }
+    .dark-background {
+        background: url(/img/contact-container-bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+        padding: 1rem;
+        h1, label {
+            color: #FFF;
+        }
+    }
+    .grid-2 {
+        display: grid;
+        grid-gap: 0 30px;
+        @media (min-width: $grid-md) {
+            grid-template-columns: repeat(2, 1fr);
+            > div {
+                width: 100%;
+                grid-column: span 1;
+            }
+        }
+        
+    }
+    
 }

@@ -14,24 +14,7 @@
     border: 5px solid #FFF;
     color: #FFF;
     background-color: #eee;
-    &.swatch1 {
-        background-color: $apple;
-    }
-    &.swatch2 {
-        background-color: $deyork;
-    }
-    &.swatch3 {
-        background-color: $goblin;
-    }
-    &.swatch4 {
-        background-color: $sanmarino;
-    }
-    &.swatch5 {
-        background-color: $shipcove;
-    }
-    &.swatch6 {
-        background-color: $rhino;
-    }
+    @include swatch($apple, $deyork, $goblin, $sanmarino, $shipcove, $rhino, $red, $french-gray, $middle-gray);
 }
 .details {
     color: $french-gray;

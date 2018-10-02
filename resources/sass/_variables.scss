@@ -10,14 +10,17 @@ $goblin: darken($apple,15%); //#358132
 $sanmarino: #4759a7;
 $shipcove: lighten($sanmarino,15%); //#7685c5
 $rhino: darken($sanmarino,15%); //#303c71
-// Black
+// Blacks
 $black: #252525;
-// Gray
+// Grays
 $french-gray: #bbbbbd;
+$middle-gray: mix($black, $french-gray, 50%); // #707071
+// Red / Danger
+$red: #f86c6b;
 
 // Typography
 $font-family-base: 'Aileron', sans-serif;
-$font-size-base: 1rem;
+$font-size-base: 1.125rem; // 18px
 $font-weight-base: 300;
 $line-height-base: 1.5;
 $body-color: $black;

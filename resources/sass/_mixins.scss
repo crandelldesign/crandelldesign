@@ -29,3 +29,13 @@
         transition: none;
     }
 }
+
+// Color Swatches
+@mixin swatch($swatches...) {
+    @each $swatch in $swatches {
+        $i: index($swatches, $swatch);
+        &.swatch#{$i} { 
+            background-color: $swatch;
+        }
+    }
+}

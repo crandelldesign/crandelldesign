@@ -31,6 +31,18 @@
                     Rhino<br>
                     #303c71
                 </div>
+                <div class="color-swatch swatch7">
+                    Red<br>
+                    #f86c6b
+                </div>
+                <div class="color-swatch swatch8">
+                    French Gray<br>
+                    #bbbbbd
+                </div>
+                <div class="color-swatch swatch9">
+                    Middle Gray<br>
+                    #707071
+                </div>
             </div>
         </div>
         
@@ -63,12 +75,114 @@
         <div>
             <h1>Buttons</h1>
 
-            <button class="btn btn-lg btn-apple">Apple</button>
+            <p>
+                <button class="btn btn-lg btn-apple">Apple</button>
 
-            <button class="btn btn-sanmarino">San Marino</button>
+                <button class="btn btn-sanmarino">San Marino</button>
 
-            <button class="btn btn-outline-white">Clear</button>
+                <button class="btn btn-outline-white">Clear</button>
 
+                <button class="btn btn-red">Red</button>
+            </p>
+
+            <div class="dark-background">
+                <p>
+                    <button class="btn btn-lg btn-apple">Apple</button>
+
+                    <button class="btn btn-sanmarino">San Marino</button>
+
+                    <button class="btn btn-outline-white">Clear</button>
+
+                    <button class="btn btn-red">Red</button>
+                </p>
+            </div>
+
+        </div>
+        <div>
+            <h1>Form Elements</h1>
+            <form>
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>First name</label>
+                        <input type="text" class="form-control" placeholder="First name" value="Mark" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last name</label>
+                        <input type="text" class="form-control is-valid" placeholder="Last name" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control is-invalid" placeholder="City" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>State</label>
+                        <input type="text" class="form-control is-invalid" placeholder="State" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Zip</label>
+                        <input type="text" class="form-control is-invalid" placeholder="Zip" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-apple" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="dark-background">
+                <h1>Form Elements (Dark)</h1>
+                <form>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label>First name</label>
+                            <input type="text" class="form-control" placeholder="First name" value="Mark" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last name</label>
+                            <input type="text" class="form-control is-valid" placeholder="Last name" value="Otto" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" class="form-control is-invalid" placeholder="City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>State</label>
+                            <input type="text" class="form-control is-invalid" placeholder="State" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Zip</label>
+                            <input type="text" class="form-control is-invalid" placeholder="Zip" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-apple" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

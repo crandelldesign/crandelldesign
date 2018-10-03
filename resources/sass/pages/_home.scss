@@ -1,2 +1,30 @@
 // Home
-
+#home {
+    padding-top: $heading-height-lg;
+    // background: $rhino url(/img/home-container-bg-mobile.jpg) no-repeat center center;
+    background: $rhino no-repeat center center fixed;
+    background-size: cover;
+    background-image: url(/img/intro-wallpaper.jpg);
+    background-image:
+        image-set(
+            url(/img/intro-wallpaper.jpg) 1x,
+            url(/img/intro-wallpaper@2x.jpg) 2x
+        );
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .content {
+        //padding-top: 15px;
+        text-align: center;
+    }
+    h1.slogan {
+        color: #FFF;
+        font-size: 1.875rem; // 30px
+        line-height: normal;
+        //margin-top: 100px;
+        margin-bottom: 1.875rem; // 30px
+        @media (min-width: $grid-sm) {
+            font-size: 3.125rem; // 50px
+        }
+    }
+}

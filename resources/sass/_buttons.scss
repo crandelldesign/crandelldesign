@@ -28,7 +28,7 @@
     //@include shadow-1();
     &:hover, &:focus {
         background-color: $goblin;
-        //color: #FFF;
+        color: #FFF;
     }
 }
 .btn-sanmarino {
@@ -38,7 +38,7 @@
     //@include shadow-1();
     &:hover, &:focus {
         background-color: $rhino;
-       // color: #FFF;
+        color: #FFF;
     }
 }
 .btn-red {
@@ -47,8 +47,8 @@
     //border-color: #FFF;
     //@include shadow-1();
     &:hover, &:focus {
-        background-color: darken($red, 7.5%)
-       // color: #FFF;
+        background-color: darken($red, 7.5%);
+        color: #FFF;
     }
 }
 .btn-translucent-apple {

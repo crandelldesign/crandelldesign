@@ -954,6 +954,68 @@ section.page .section-description {
           transform: scale(1.05);
 }
 
+section#services {
+  color: #FFF;
+  background: url(/img/services-container-bg.jpg) #303c71 no-repeat center center fixed;
+  background-size: cover;
+}
+
+section#services h2 {
+  color: #FFF;
+}
+
+.services-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -1rem;
+}
+
+.services-grid > a {
+  color: #FFF;
+  display: block;
+  margin: 0 1rem 2rem 1rem;
+  max-width: 41%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+  white-space: normal;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid > a {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .services-grid > a {
+    max-width: 16%;
+  }
+}
+
+.services-grid > a svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  fill: #FFF;
+  margin-bottom: 1rem;
+}
+
+.services-grid > a h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
 body.home-style .page > .container {
   max-width: 1430px;
   margin: 0 auto;

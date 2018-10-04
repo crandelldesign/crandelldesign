@@ -1,0 +1,45 @@
+// Servies
+section#services {
+    color: #FFF;
+    background: url(/img/services-container-bg.jpg) $rhino no-repeat center center fixed;
+    background-size: cover;
+    h2 {
+        color: #FFF;
+    }
+}
+.services-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 -1rem;
+    @media (min-width: $grid-md) {
+        //grid-template-columns: repeat(3, 1fr);
+    }
+    > a {
+        color: #FFF;
+        display: block;
+        margin: 0 1rem 2rem 1rem;
+        max-width: 41%;
+        flex: 1 1 auto;
+        text-align: center;
+        white-space: normal;
+        padding: 1rem;
+        @media (min-width: $grid-md) {
+            max-width: 30%;
+        }
+        @media (min-width: $grid-lg) {
+            max-width: 16%;
+        }
+        svg {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            fill: #FFF;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+}

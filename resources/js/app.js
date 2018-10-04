@@ -40,7 +40,7 @@ const app = new Vue({
         wScrollDiff = 0;
 
     window.addEventListener('scroll', function() {
-        elHeight = element.offsetHeight;
+        elHeight = element.offsetHeight + 20;
         dHeight = document.body.offsetHeight;
         wHeight = window.innerHeight;
         wScrollCurrent = window.pageYOffset;

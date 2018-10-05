@@ -8,7 +8,7 @@
     @include box_shadow(1);
     &:focus {
         outline: 0;
-        @include box_shadow(2);
+        @include box_shadow(3);
         @include transition(box-shadow .3s ease-in-out);
     }
     // Placeholder
@@ -22,7 +22,7 @@ label {
     font-size: 0.875rem; // 14px
 }
 .form-group {
-    margin-bottom: $paragraph-margin-bottom;
+    margin-bottom: $paragraph-margin-bottom / 2;
 }
 
 // Validation

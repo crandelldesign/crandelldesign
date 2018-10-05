@@ -1,0 +1,34 @@
+section#contact {
+    color: #FFF;
+    background: url(/img/contact-container-bg.jpg) $rhino no-repeat center center fixed;
+    background-size: cover;
+    h2 {
+        color: #FFF;
+    }
+    .contact-grid {
+        display: grid;
+        grid-gap: 2rem;
+        @media (min-width: $grid-sm) {
+            grid-template-columns: 60% 1fr;
+        }
+    }
+    .form-group-submit {
+        margin-top: $paragraph-margin-bottom;
+    }
+    .contact-info {
+        padding-top: 29px;
+        p {
+            font-size: 1.5625rem; // 25px
+            margin-bottom: $paragraph-margin-bottom / 2;
+            a:not(.btn) {
+                display: inline-block;
+                padding: 0 .5rem;
+                color: #FFF;
+                font-weight: $font-weight-normal;
+                &:hover {
+                    color: $link-hover-color;
+                }
+            }
+        }
+    }
+}

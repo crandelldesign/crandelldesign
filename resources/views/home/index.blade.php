@@ -84,4 +84,66 @@
     </div>
 </section>
 
+<section id="about" class="page">
+    <div class="content">
+        <h2>About</h2>
+        <div class="about-grid">
+            <div>
+                <img srcset="{{url('/')}}/img/matt-crandell-2014@2x.jpg 2x" src="{{url('/')}}/img/matt-crandell-2014.jpg" class="img-fluid me-pic" alt="Picture of Matt Crandell">
+            </div>
+            <div class="about-content">
+                <h3>Hi, I'm Matt Crandell.</h3>
+                <p>I launched my first website in 2001 and have had a great passion for web design ever since. Currently, I am also a full-time employee for a marketing company where I handle various projects to satisfy their web development and design needs. I hold degrees in Graphic Design and Computer Information Systems from Ferris State University.</p>
+                <h3>A little about Crandell Design</h3>
+                <p>In 2009, I established Crandell Design to give people a personal touch for their web and graphic design needs. I believe that all businesses deserve a website that is unique to their brand, as well as access to all online business needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="page">
+    <div class="content">
+        <h2>Contact</h2>
+        <p class="section-description">Interested in getting your next project off to a great start? Contact me using the form below.</p>
+        <div class="contact-grid">
+            <form id="contact-form" class="form" action="{{url('/')}}/contact" method="post">
+                <div class="form-group {{($errors->has('name'))?'has-error':''}}">
+                    <label for="contact-name">Name</label>
+                    <input type="text" class="form-control" id="contact-name" name="name" placeholder="Name">
+                    @foreach ($errors->get('name') as $error)
+                        <div class="alert alert-danger">{{ $error }}</div>
+                    @endforeach
+                </div>
+                <div class="form-group {{($errors->has('email'))?'has-error':''}}">
+                    <label for="contact-email" class="sr-only">Email</label>
+                    <input type="email" class="form-control" id="contact-email" name="email" placeholder="Email">
+                    @foreach ($errors->get('email') as $error)
+                        <div class="alert alert-danger">{{ $error }}</div>
+                    @endforeach
+                </div>
+                <div class="form-group {{($errors->has('message_text'))?'has-error':''}}">
+                    <label for="contact-message" class="sr-only">Message</label>
+                    <textarea class="form-control" rows="5" id="contact-message" name="message_text" placeholder="Message"></textarea>
+                    @foreach ($errors->get('message_text') as $error)
+                        <div class="alert alert-danger">{{ $error }}</div>
+                    @endforeach
+                </div>
+                {{ csrf_field() }}
+                {!! Honeypot::generate('my_name', 'my_time') !!}
+                <div class="form-group form-group-submit">
+                    <button type="submit" class="btn btn-submit btn-apple">Send</button>
+                </div>
+            </form>
+            <div class="contact-info">
+                <p>Phone <a href="tel:+12483835376">248-383-5376</a></p>
+                <p>Email <a href="mailto:matt@crandelldesign.com">matt@crandelldesign.com</a></p>
+                <h3>Matt Crandell's R&eacute;sum&eacute;</h3>
+                <p>
+                    <a href="{{url('/')}}/resume.pdf" target="_blank" class="btn btn-apple" title="Download Matt Crandell's R&eacute;sum&eacute; as PDF">Download My R&eacute;sum&eacute;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection

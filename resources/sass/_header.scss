@@ -11,7 +11,10 @@ header.header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0 30px;
+        padding: 0 15px;
+        @media (min-width: $grid-sm) {
+            padding: 0 30px;
+        }
         @media (min-width: $grid-md) {
             //grid-template-columns: 50% 50%;
             max-width: $max-width;
@@ -44,7 +47,7 @@ header.header {
                 align-items: center;
                 a {
                     display: block;
-                    padding: .5rem 0;
+                    padding: .5rem 0.0625rem;
                     @media (min-width: $grid-md) {
                         font-size: 1.25rem; // 20px
                     }

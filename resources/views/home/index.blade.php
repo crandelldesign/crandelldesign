@@ -106,26 +106,29 @@
         <h2>Contact</h2>
         <p class="section-description">Interested in getting your next project off to a great start? Contact me using the form below.</p>
         <div class="contact-grid">
-            <form id="contact-form" class="form" action="{{url('/')}}/contact" method="post">
-                <div class="form-group {{($errors->has('name'))?'has-error':''}}">
+            <form id="contact-form" class="form" action="{{url('/')}}/contact" method="post" v-on:submit.prevent="submitForm">
+                <div class="form-group">
                     <label for="contact-name">Name</label>
-                    <input type="text" class="form-control" id="contact-name" name="name" placeholder="Name">
+                    <input type="text" class="form-control {{($errors->has('name'))?'is-invalid':''}}" id="contact-name" name="name" placeholder="Name" v-validate="'required'" :class="{'is-invalid': errors.has('name') }">
+                    <div class="invalid-feedback">@{{ errors.first('name') }}</div>
                     @foreach ($errors->get('name') as $error)
-                        <div class="alert alert-danger">{{ $error }}</div>
+                        <div class="invalid-feedback">{{ $error }}</div>
                     @endforeach
                 </div>
-                <div class="form-group {{($errors->has('email'))?'has-error':''}}">
+                <div class="form-group">
                     <label for="contact-email" class="sr-only">Email</label>
-                    <input type="email" class="form-control" id="contact-email" name="email" placeholder="Email">
+                    <input type="email" class="form-control {{($errors->has('email'))?'is-invalid':''}}"  id="contact-email" name="email" placeholder="Email" v-validate="'required|email'" :class="{'is-invalid': errors.has('email') }">
+                    <div class="invalid-feedback">@{{ errors.first('email') }}</div>
                     @foreach ($errors->get('email') as $error)
-                        <div class="alert alert-danger">{{ $error }}</div>
+                        <div class="invalid-feedback">{{ $error }}</div>
                     @endforeach
                 </div>
-                <div class="form-group {{($errors->has('message_text'))?'has-error':''}}">
+                <div class="form-group">
                     <label for="contact-message" class="sr-only">Message</label>
-                    <textarea class="form-control" rows="5" id="contact-message" name="message_text" placeholder="Message"></textarea>
+                    <textarea class="form-control {{($errors->has('message_text'))?'is-invalid':''}}" rows="5" id="contact-message" name="message_text" placeholder="Message" v-validate="'required'" :class="{'is-invalid': errors.has('message_text') }"></textarea>
+                    <div class="invalid-feedback">@{{ errors.first('message_text') }}</div>
                     @foreach ($errors->get('message_text') as $error)
-                        <div class="alert alert-danger">{{ $error }}</div>
+                        <div class="invalid-feedback">{{ $error }}</div>
                     @endforeach
                 </div>
                 {{ csrf_field() }}
@@ -146,4 +149,7 @@
     </div>
 </section>
 
+@endsection
+@section('scripts')
+<script type="text/javascript" src="{{ mix('js/contact.js') }}"></script>
 @endsection

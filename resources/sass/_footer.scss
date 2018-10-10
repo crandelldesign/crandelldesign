@@ -18,6 +18,12 @@ footer.footer {
             padding-left: 0;
             list-style: none;
             margin-bottom: 0;
+            width: 100%;
+            text-align: center;
+            @media (min-width: $grid-md) {
+                width: auto;
+                text-align: left;
+            }
             li {
                 display: inline-block;
                 padding: 1rem 0;
@@ -35,6 +41,10 @@ footer.footer {
             color: $french-gray;
             padding: 1rem 0;
             font-size: 1rem;
+            width: 100%;
+            @media (min-width: $grid-md) {
+                width: auto;
+            }
             p {
                 margin-bottom: 0.125rem; // 2px
                 text-align: center;

@@ -1,0 +1,15 @@
+// Alerts
+.alert {
+    @include box_shadow(3);
+    padding: .5rem 1rem;
+    border: 5px solid #FFF;
+    color: #FFF;
+    margin-bottom: $paragraph-margin-bottom / 2;
+    line-height: 1.3;
+}
+.alert-success {
+    background-color: $apple;
+}
+.alert-error {
+    background-color: $red;
+}

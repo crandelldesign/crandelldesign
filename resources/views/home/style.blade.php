@@ -184,6 +184,11 @@
                 </form>
             </div>
         </div>
+        <div>
+            <h1>Alerts</h1>
+            <div class="alert alert-success">Success message goes here.</div>
+            <div class="alert alert-error">Error message goes here.</div>
+        </div>
     </div>
 </div>
 

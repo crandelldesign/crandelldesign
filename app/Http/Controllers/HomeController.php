@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use StdClass;
+use Validator;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Contact;
+use App\Mail\ContactThankYou;
 
 class HomeController extends Controller
 {
@@ -20,6 +24,75 @@ class HomeController extends Controller
         $view->active_page = 'home';
 
         return $view;
+    }
+
+    public function submitForm(Request $request)
+    {
+        
+        $validator = Validator::make($request->all(), [
+                'name' => 'required',
+                'email' => 'required|email',
+                'message_text' => 'required',
+                'my_name' => 'honeypot',
+                'my_time' => 'required|honeytime:5'
+            ],
+            [
+                'name.required' => 'Please enter your name.',
+                'emails.required' => 'Please enter your email address.',
+                'emails.email' => 'Please enter a valid email address.',
+                'message_text.required' => 'Please enter a message.'
+            ]
+        );
+        //\Log::Debug(print_r($validator->validate()));
+        if ($validator->fails()) {
+            if ($request->wantsJson()) { // Checks if sent over JS
+                \Log::Debug($validator->messages());
+                $validator->validate(); // Automatically sends back error data via javascript
+            } else {
+                return redirect('/#contact')
+                    ->withErrors($validator)
+                    ->withInput();
+            }
+        }
+
+        Mail::to('matt@crandelldesign.com')->send(new Contact($request));
+        Mail::to($request->get('email'))->send(new ContactThankYou($request));
+
+        if ($request->wantsJson()) {
+            return response()->json([
+                'success_message' => 'Thank you for contacting us, we will get back to you as soon as possible.'
+            ]);
+        } else {
+            return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
+        }
+        
+        
+        /*$captcha = $this->verifyCaptcha($request->get('g-recaptcha-response'));
+        $request->request->add(['captcha' => $captcha]);
+        $validator = Validator::make($request->all(), [
+                'name' => 'required',
+                'email' => 'required|email',
+                'message_text' => 'required',
+                'g-recaptcha-response' => 'required',
+                'captcha' => 'required|min:1'
+            ],
+            [
+                'name.required' => 'Please enter your name.',
+                'email.required' => 'Please enter your email address.',
+                'email.email' => 'Please enter a valid email address.',
+                'message_text.required' => 'What? You Don\'t Want to Say Something?',
+                'g-recaptcha-response.required' => 'Captcha is required',
+                'captcha.min' => 'Wrong captcha, please try again.'
+            ]
+        );
+        if ($validator->fails()) {
+            return redirect('/#contact')
+                ->withErrors($validator)
+                ->withInput();
+        }
+        Mail::to('matt@crandelldesign.com')->send(new Contact($request));
+        Mail::to($request->get('email'))->send(new ContactThankYou($request));
+        return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');*/
     }
 
     public function style()

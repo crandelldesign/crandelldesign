@@ -89,7 +89,7 @@
         <h2>About</h2>
         <div class="about-grid">
             <div>
-                <img srcset="{{url('/')}}/img/matt-crandell-2014@2x.jpg 2x" src="{{url('/')}}/img/matt-crandell-2014.jpg" class="img-fluid me-pic" alt="Picture of Matt Crandell">
+                <img srcset="{{url('/')}}/img/matt-crandell-2018@2x.jpg 2x" src="{{url('/')}}/img/matt-crandell-2018.jpg" class="img-fluid me-pic" alt="Picture of Matt Crandell">
             </div>
             <div class="about-content">
                 <h3>Hi, I'm Matt Crandell.</h3>
@@ -106,27 +106,34 @@
         <h2>Contact</h2>
         <p class="section-description">Interested in getting your next project off to a great start? Contact me using the form below.</p>
         <div class="contact-grid">
-            <form id="contact-form" class="form" action="{{url('/')}}/contact" method="post" v-on:submit.prevent="submitForm">
+            <form id="contact-form" name="contact_form" class="form" action="{{url('/')}}/contact" method="post" v-on:submit.prevent="submitForm">
+                <div class="alert alert-error" v-cloak v-if="error_message">@{{ error_message }}</div>
+                <div class="alert alert-success" v-cloak v-if="success_message">@{{ success_message }}</div>
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
                 <div class="form-group">
                     <label for="contact-name">Name</label>
-                    <input type="text" class="form-control {{($errors->has('name'))?'is-invalid':''}}" id="contact-name" name="name" placeholder="Name" v-validate="'required'" :class="{'is-invalid': errors.has('name') }">
-                    <div class="invalid-feedback">@{{ errors.first('name') }}</div>
+                    <input type="text" class="form-control {{($errors->has('name'))?'is-invalid':''}}" id="contact-name" name="name" placeholder="Name" v-validate="'required'" :class="{'is-invalid': errors.has('name') }" value="{{old('name')}}" v-model="contact.name">
+                    <div v-cloak class="invalid-feedback">@{{ errors.first('name') }}</div>
                     @foreach ($errors->get('name') as $error)
                         <div class="invalid-feedback">{{ $error }}</div>
                     @endforeach
                 </div>
                 <div class="form-group">
                     <label for="contact-email" class="sr-only">Email</label>
-                    <input type="email" class="form-control {{($errors->has('email'))?'is-invalid':''}}"  id="contact-email" name="email" placeholder="Email" v-validate="'required|email'" :class="{'is-invalid': errors.has('email') }">
-                    <div class="invalid-feedback">@{{ errors.first('email') }}</div>
+                    <input type="email" class="form-control {{($errors->has('email'))?'is-invalid':''}}"  id="contact-email" name="email" placeholder="Email" v-validate="'required|email'" :class="{'is-invalid': errors.has('email') }" value="{{old('email')}}" v-model="contact.email">
+                    <div v-cloak class="invalid-feedback">@{{ errors.first('email') }}</div>
                     @foreach ($errors->get('email') as $error)
                         <div class="invalid-feedback">{{ $error }}</div>
                     @endforeach
                 </div>
                 <div class="form-group">
                     <label for="contact-message" class="sr-only">Message</label>
-                    <textarea class="form-control {{($errors->has('message_text'))?'is-invalid':''}}" rows="5" id="contact-message" name="message_text" placeholder="Message" v-validate="'required'" :class="{'is-invalid': errors.has('message_text') }"></textarea>
-                    <div class="invalid-feedback">@{{ errors.first('message_text') }}</div>
+                    <textarea class="form-control {{($errors->has('message_text'))?'is-invalid':''}}" rows="5" id="contact-message" name="message_text" placeholder="Message" v-validate="'required'" :class="{'is-invalid': errors.has('message_text') }" v-model="contact.message_text">{{old('message_text')}}</textarea>
+                    <div v-cloak class="invalid-feedback">@{{ errors.first('message_text') }}</div>
                     @foreach ($errors->get('message_text') as $error)
                         <div class="invalid-feedback">{{ $error }}</div>
                     @endforeach
@@ -134,7 +141,17 @@
                 {{ csrf_field() }}
                 {!! Honeypot::generate('my_name', 'my_time') !!}
                 <div class="form-group form-group-submit">
+                    <button type="submit" class="btn btn-submit btn-apple" :disabled="loading" v-cloak>
+                        <transition name="slide-fade" mode="out-in">
+                            <span :key="submitText">@{{submitText}}</span>
+                        </transition>
+                        <!--<transition name="fade" mode="out-in">
+                            <span v-if="loading" class="transition-delay">Sending...</span>
+                        </transition>-->
+                    </button>
+                    <noscript>
                     <button type="submit" class="btn btn-submit btn-apple">Send</button>
+                    </noscript>
                 </div>
             </form>
             <div class="contact-info">

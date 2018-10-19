@@ -1007,7 +1007,15 @@ var dict = {
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#contact-form',
     data: {
-        message: 'Hello Vue!'
+        loading: false,
+        submitText: 'Send',
+        error_message: '',
+        success_message: '',
+        contact: {
+            name: '',
+            email: '',
+            message_text: ''
+        }
     },
     created: function created() {
         this.$validator.localize('en', dict);
@@ -1015,18 +1023,47 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
     methods: {
         submitForm: function submitForm() {
+            var _this = this;
+
+            //console.log(this.loading);
+            this.error_message = '';
+            //this.wait(7000);
+            //console.log(this.loading);
             this.$validator.validate().then(function (result) {
                 if (result) {
-                    console.log(result);
-                    var contactForm = document.querySelector('contact-form');
-                    var data = new FormData(contactForm);
-                    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('/contact', data).then(function (response) {
+                    _this.loading = true;
+                    _this.submitText = 'Sending...';
+                    var that = _this;
+                    var my_name = document.querySelector("input[name='my_name']");
+                    var my_time = document.querySelector("input[name='my_time']");
+                    _this.contact.my_name = my_name.value;
+                    _this.contact.my_time = my_time.value;
+                    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('/contact', _this.contact).then(function (response) {
                         console.log(response);
+                        that.success_message = response.data['success_message'];
+                        that.loading = false;
+                        that.submitText = 'Send';
+                        that.clearForm();
                     }).catch(function (error) {
                         console.log(error);
+                        if (error.response) {
+                            that.error_message = error.response.data['message'];
+                        }
+                        that.loading = false;
+                        that.submitText = 'Send';
                     });
+                } else {
+                    //this.loading = false;
                 }
             });
+        },
+        clearForm: function clearForm() {
+            this.contact = {
+                name: '',
+                email: '',
+                message_text: ''
+            };
+            this.$validator.reset();
         }
     }
 });

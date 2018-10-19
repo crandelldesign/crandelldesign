@@ -12,4 +12,5 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::post('/contact', 'HomeController@submitForm');
 Route::get('/style', 'HomeController@style');

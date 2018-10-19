@@ -5,6 +5,9 @@ section#contact {
     h2 {
         color: #FFF;
     }
+    [v-cloak] {
+        display: none;
+    }
     .contact-grid {
         display: grid;
         grid-gap: 2rem;

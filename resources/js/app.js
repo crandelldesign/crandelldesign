@@ -21,6 +21,18 @@ const app = new Vue({
     el: '#app'
 });*/
 
+// Page Scrolling
+let scrollBtns = document.getElementsByClassName('page-scroll');
+for ( let btn of scrollBtns ) {
+    btn.onclick = function(event) {
+        event.preventDefault();
+        let destination = this.getAttribute('href').split('#')[1];
+        document.getElementById(destination).scrollIntoView({
+            behavior: 'smooth' 
+        });
+    }
+}
+
 // Auto Hide Navbar on Scroll
 // https://codepen.io/pirrera/pen/rayoLW
 ;(function(document, window, index) {

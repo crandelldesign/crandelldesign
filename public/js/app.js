@@ -91,8 +91,42 @@ const app = new Vue({
     el: '#app'
 });*/
 
-// Auto Hide Navbar on Scroll
-// https://codepen.io/pirrera/pen/rayoLW
+// Page Scrolling
+var scrollBtns = document.getElementsByClassName('page-scroll');
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
+
+try {
+    for (var _iterator = scrollBtns[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var btn = _step.value;
+
+        btn.onclick = function (event) {
+            event.preventDefault();
+            var destination = this.getAttribute('href').split('#')[1];
+            document.getElementById(destination).scrollIntoView({
+                behavior: 'smooth'
+            });
+        };
+    }
+
+    // Auto Hide Navbar on Scroll
+    // https://codepen.io/pirrera/pen/rayoLW
+} catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+} finally {
+    try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+            _iterator.return();
+        }
+    } finally {
+        if (_didIteratorError) {
+            throw _iteratorError;
+        }
+    }
+}
+
 ;(function (document, window, index) {
     'use strict';
 

@@ -1,7 +1,17 @@
 import Vue from 'vue';
-import VeeValidate from 'vee-validate';
-import axios from 'axios'
+//import VeeValidate from 'vee-validate';
+import { Validator, install as VeeValidate } from 'vee-validate/dist/vee-validate.minimal.esm.js';
+import { required, email } from 'vee-validate/dist/rules.esm.js';
+import veeEn from 'vee-validate/dist/locale/en';
+import axios from 'axios';
 
+// Add the rules you need.
+Validator.extend('required', required);
+Validator.extend('email', email);
+// Merge the messages.
+Validator.localize('en', veeEn);
+
+// install the plugin
 Vue.use(VeeValidate, axios);
 
 const dict = {
@@ -38,10 +48,7 @@ var app = new Vue({
     },
     methods: {
         submitForm: function () {
-            //console.log(this.loading);
             this.error_message = '';
-            //this.wait(7000);
-            //console.log(this.loading);
             this.$validator.validate().then(result => {
                 if (result) {
                     this.loading = true;
@@ -53,22 +60,18 @@ var app = new Vue({
                     this.contact.my_time = my_time.value;
                     axios.post('/contact', this.contact)
                         .then(function (response) {
-                            console.log(response);
                             that.success_message = response.data['success_message'];
                             that.loading = false;
                             that.submitText = 'Send';
                             that.clearForm();
                         })
                         .catch(function (error) {
-                            console.log(error);
                             if (error.response) {
                                 that.error_message = error.response.data['message'];
                             }
                             that.loading = false;
                             that.submitText = 'Send';
                         });
-                } else {
-                    //this.loading = false;
                 }
             });
         },

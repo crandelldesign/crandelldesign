@@ -810,6 +810,11 @@ footer.footer .footer-bottom p {
   margin-bottom: 0.125rem;
 }
 
+.site-container {
+  position: relative;
+  z-index: 10;
+}
+
 section.page {
   padding: 0 30px;
 }

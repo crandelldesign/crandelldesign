@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use StdClass;
 use Validator;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\View;
 use App\Mail\Contact;
 use App\Mail\ContactThankYou;
 
@@ -24,6 +25,63 @@ class HomeController extends Controller
         $view->active_page = 'home';
 
         return $view;
+    }
+
+    public function portfolio($client = null)
+    {
+        if ($client && !View::exists('portfolio.'.$client)) // If the portfolio item doesn't exists but is called, send to 404
+            abort(404);
+        if ($client) {
+            $client = $this->portfolio()->where('slug',$client)->first();
+
+        }
+        $view = view('portfolio.index');
+        $view->title = "Portfolio | Crandell Design";
+        $view->description = "See the portfolio of Matt Crandell, web design in Metro Detroit, MI.";
+        $view->portfolio = $this->portfolioData();
+        $view->active_page = 'portfolio';
+
+        return $view;
+    }
+
+    public function services($service = null)
+    {
+        if (!$service) {
+            $view = view('services.index');
+            $view->title = "Services | Crandell Design by Matt Crandell";
+            $view->description = "Crandell Design provides web design and development services to small business in Metro Detroit, Michigan.";
+            return $view;
+        } else {
+            if (View::exists('services.'.$service)) {
+                $view = view('services.'.$service);
+                switch ($service) {
+                    case 'web-design':
+                        $view->title = "Web Design and Development Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design provides web design and development services to small business in Metro Detroit, Michigan.";
+                        break;
+                    case 'web-hosting':
+                        $view->title = "Web Design and Development Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design can host your new website for you.";
+                        break;
+                    case 'social-media':
+                        $view->title = "Social Media Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design will help you and your small business become social media masters.";
+                        break;
+                    case 'logo-design':
+                        $view->title = "Logo Design Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design can design or restore a logo for your company.";
+                        break;
+                    case 'seo':
+                        $view->title = "Logo Design Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design can design or restore a logo for your company.";
+                        break;
+                }
+
+                return $view;
+            } else {
+                return abort(404); // If the service page doesn't exists but is called, send to 404
+            }
+        }
     }
 
     public function submitForm(Request $request)

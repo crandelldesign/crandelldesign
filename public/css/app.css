@@ -164,6 +164,7 @@ body {
   color: #252525;
   text-align: left;
   background-color: #FFF;
+  padding-top: 45px;
 }
 
 hr {
@@ -822,7 +823,7 @@ section.page {
 section.page .content {
   max-width: 1430px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 section.page h2 {
@@ -896,7 +897,8 @@ section.page .section-description {
   color: #bbbbbd;
 }
 
-#home {
+#home,
+#portfolio-home {
   padding-top: 95px;
   background: #303c71 no-repeat center center fixed;
   background-size: cover;
@@ -912,11 +914,13 @@ section.page .section-description {
           align-items: center;
 }
 
-#home .content {
+#home .content,
+#portfolio-home .content {
   text-align: center;
 }
 
-#home h1.slogan {
+#home h1.slogan,
+#portfolio-home h1.slogan {
   color: #FFF;
   font-size: 1.875rem;
   line-height: normal;
@@ -924,9 +928,14 @@ section.page .section-description {
 }
 
 @media (min-width: 576px) {
-  #home h1.slogan {
+  #home h1.slogan,
+  #portfolio-home h1.slogan {
     font-size: 3.125rem;
   }
+}
+
+#portfolio-home {
+  min-height: 300px;
 }
 
 .portfolio-grid {
@@ -1103,6 +1112,35 @@ section#services h2 {
 .services-grid > a h3 {
   font-size: 1rem;
   margin: 0;
+}
+
+.service-page .service-grid {
+  display: grid;
+  grid-gap: 30px;
+}
+
+@media (min-width: 992px) {
+  .service-page .service-grid {
+    grid-template-columns: 70% 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-page .service-grid > div:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.service-page svg {
+  display: block;
+  margin: 0 auto 1rem auto;
+  height: auto;
+  fill: #4cb848;
+  max-width: 300px;
 }
 
 section#about .about-grid {

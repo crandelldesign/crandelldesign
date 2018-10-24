@@ -105,7 +105,8 @@ try {
             event.preventDefault();
             var destination = this.getAttribute('href').split('#')[1];
             document.getElementById(destination).scrollIntoView({
-                behavior: 'smooth'
+                behavior: 'smooth',
+                block: 'start'
             });
         };
     }

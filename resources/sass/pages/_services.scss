@@ -46,3 +46,32 @@ section#services {
         }
     }
 }
+
+// Services Stand Alone Pages
+.service-page {
+    .service-grid {
+        display: grid;
+        grid-gap: 30px;
+        @media (min-width: $grid-lg) {
+            grid-template-columns: 70% 1fr;
+        }
+        > div {
+            &:nth-child(2) {
+                @media (min-width: $grid-lg) {
+                    order: 1;
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+            }
+        }
+    }
+    svg {
+        //@extend .img-responsive;
+        //@extend .center-block;
+        display: block;
+        margin: 0 auto $paragraph-margin-bottom auto;
+        height: auto;
+        fill: $apple;
+        max-width: 300px;
+    }
+}

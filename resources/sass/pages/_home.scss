@@ -1,5 +1,5 @@
 // Home
-#home {
+#home, #portfolio-home {
     padding-top: $heading-height-lg;
     // background: $rhino url(/img/home-container-bg-mobile.jpg) no-repeat center center;
     background: $rhino no-repeat center center fixed;
@@ -27,4 +27,7 @@
             font-size: 3.125rem; // 50px
         }
     }
+}
+#portfolio-home {
+    min-height: 300px;
 }

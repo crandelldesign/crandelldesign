@@ -16,9 +16,9 @@
           bottom: 0;
           left: 0;
           right: 0;
-          transition: all .25s ease-in-out;
-          -moz-transition: all .25s ease-in-out;
-          -webkit-transition: all .25s ease-in-out;
+          transition: all .3s ease-in-out;
+          -moz-transition: all .3s ease-in-out;
+          -webkit-transition: all .3s ease-in-out;
       }
       #site-overlay.loaded {
           opacity: 0;

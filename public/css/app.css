@@ -1162,6 +1162,15 @@ section.page .section-description {
   display: grid;
   grid-gap: 2rem;
   margin-bottom: 2rem;
+  /*// Last odd child
+        > div:last-child:nth-child(odd) {
+            //background-color: rgba(red, 0.3);
+            //width: 100%;
+            @media (min-width: $grid-md) {
+                position: relative;
+                left: 26%;
+            }
+        }*/
 }
 
 @media (min-width: 768px) {
@@ -1174,13 +1183,6 @@ section.page .section-description {
   .portfolio-item-page .portfolio-item-grid .testimonial-container {
     grid-column: span 2;
     max-width: 800px;
-  }
-}
-
-@media (min-width: 768px) {
-  .portfolio-item-page .portfolio-item-grid > div:last-child:nth-child(odd) {
-    position: relative;
-    left: 26%;
   }
 }
 

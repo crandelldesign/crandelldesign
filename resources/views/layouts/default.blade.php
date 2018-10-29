@@ -54,7 +54,8 @@
       }
       function showSiteOverlay(e) {
           var e = window.e || e;
-          if ((e.target.tagName !== 'A') || e.target.classList.contains('page-scroll'))
+          console.log(e.target.target);
+          if ((e.target.tagName !== 'A') || e.target.classList.contains('page-scroll') || e.target.target == '_blank')
               return;
 
           var element = document.getElementById('site-overlay');
@@ -79,7 +80,7 @@
 
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
-    <title>Crandell Design</title>
+    <title>{{isset($title) ? $title:''}}</title>
   </head>
   <body class="{{$view_name}}">
     <div id="site-overlay">@include('layouts.logo-circle')</div>

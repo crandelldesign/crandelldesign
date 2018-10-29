@@ -356,6 +356,27 @@ hr {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.testimonial {
+  margin-bottom: 0;
+}
+
+.testimonial strong {
+  font-size: 1.5rem;
+  display: inline-block;
+  position: relative;
+  line-height: 1.5rem;
+  padding: 0 2px;
+  color: #4cb848;
+}
+
+.testimonial + .testimonial-author {
+  margin-bottom: 2rem;
+}
+
 .btn {
   display: inline-block;
   text-align: center;
@@ -393,24 +414,33 @@ hr {
   cursor: pointer;
 }
 
-.btn-apple {
+.btn-apple,
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
   background-color: #4cb848;
   color: #FFF;
 }
 
 .btn-apple:hover,
-.btn-apple:focus {
+.page-item:first-child .page-link:hover,
+.page-item:last-child .page-link:hover,
+.btn-apple:focus,
+.page-item:first-child .page-link:focus,
+.page-item:last-child .page-link:focus {
   background-color: #358132;
   color: #FFF;
 }
 
-.btn-sanmarino {
+.btn-sanmarino,
+.page-link {
   background-color: #4759a7;
   color: #FFF;
 }
 
 .btn-sanmarino:hover,
-.btn-sanmarino:focus {
+.page-link:hover,
+.btn-sanmarino:focus,
+.page-link:focus {
   background-color: #303c71;
   color: #FFF;
 }
@@ -505,6 +535,76 @@ hr {
 .transition-delay {
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin: 2rem auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 400px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  margin-left: -1px;
+  border: 1px solid transparent;
+  text-align: center;
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  font-size: 0.9375rem;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .page-link {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-link {
+    font-size: 1.125rem;
+  }
+}
+
+.page-link > svg {
+  height: 10px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .page-link > svg {
+    height: 12px;
+  }
+}
+
+.page-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+}
+
+.page-item.disabled .page-link {
+  color: #e2e2e3;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #bbbbbd;
 }
 
 .alert {
@@ -848,9 +948,10 @@ section.page .section-description {
 }
 
 .color-swatch {
-  height: 100px;
+  min-height: 100px;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  font-size: 1rem;
   padding: 15px;
   border: 5px solid #FFF;
   color: #FFF;
@@ -899,7 +1000,6 @@ section.page .section-description {
 
 #home,
 #portfolio-home {
-  padding-top: 95px;
   background: #303c71 no-repeat center center fixed;
   background-size: cover;
   background-image: url(/img/intro-wallpaper.jpg);
@@ -1047,6 +1147,239 @@ section.page .section-description {
   visibility: visible;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.portfolio-item-page .header-img {
+  margin-bottom: 2rem;
+}
+
+.portfolio-item-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-item-page .portfolio-item-grid {
+  display: grid;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-item-page .portfolio-item-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.portfolio-item-page .portfolio-item-grid .testimonial-container {
+  grid-column: span 2;
+  max-width: 800px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-item-page .portfolio-item-grid > div:last-child:nth-child(odd) {
+    position: relative;
+    left: 26%;
+  }
+}
+
+.portfolio-item-page .portfolio-testimonial-grid {
+  display: grid;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  /*> div:first-child {
+            grid-column: span 2;
+        }*/
+}
+
+@media (min-width: 768px) {
+  .portfolio-item-page .portfolio-testimonial-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.portfolio-item-page .portfolio-img {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.portfolio-item-page .portfolio-img.portfolio-browser {
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-item-page .color-swatches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-item-page .color-swatches {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+body.portfolio-vicksburg-family-dentistry .color-swatch.swatch1 {
+  background-color: #555555;
+}
+
+body.portfolio-vicksburg-family-dentistry .color-swatch.swatch2 {
+  background-color: #006DB0;
+}
+
+body.portfolio-vicksburg-family-dentistry .color-swatch.swatch3 {
+  background-color: #000E16;
+}
+
+body.portfolio-vicksburg-family-dentistry .color-swatch.swatch4 {
+  background-color: #009EFF;
+}
+
+body.portfolio-vicksburg-family-dentistry .color-swatch.swatch4 {
+  background-color: #009EFF;
+}
+
+body.portfolio-vicksburg-family-dentistry .color-swatch.swatch6 {
+  background-color: #0AB1C7;
+}
+
+body.portfolio-nuview-nutrition .color-swatch.swatch1 {
+  background-color: #ed1c24;
+}
+
+body.portfolio-nuview-nutrition .color-swatch.swatch2 {
+  background-color: #f36368;
+}
+
+body.portfolio-nuview-nutrition .color-swatch.swatch3 {
+  background-color: #af0e14;
+}
+
+body.portfolio-nuview-nutrition .color-swatch.swatch4 {
+  background-color: #0bb957;
+}
+
+body.portfolio-nuview-nutrition .color-swatch.swatch5 {
+  background-color: #1ff27b;
+}
+
+body.portfolio-nuview-nutrition .color-swatch.swatch6 {
+  background-color: #077135;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch1 {
+  background-color: #005a2c;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch2 {
+  background-color: #00a651;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch3 {
+  background-color: #000e07;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch4 {
+  background-color: #ffcb05;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch5 {
+  background-color: #ffdb52;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch6 {
+  background-color: #b89100;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch7 {
+  background-color: #647b97;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch8 {
+  background-color: #91a2b6;
+}
+
+body.portfolio-four-green-fields-farm .color-swatch.swatch9 {
+  background-color: #465669;
+}
+
+body.portfolio-habitat-for-humanity-of-oakland-county .color-swatch.swatch1 {
+  background-color: #005596;
+}
+
+body.portfolio-habitat-for-humanity-of-oakland-county .color-swatch.swatch2 {
+  background-color: #51b948;
+}
+
+body.portfolio-habitat-for-humanity-of-oakland-county .color-swatch.swatch3 {
+  background-color: #8b8c84;
+}
+
+body.portfolio-habitat-for-humanity-of-oakland-county .color-swatch.swatch4 {
+  background-color: #8fc3e9;
+}
+
+body.portfolio-habitat-for-humanity-of-oakland-county .color-swatch.swatch5 {
+  background-color: #007cb1;
+}
+
+body.portfolio-christ-lutheran-church-of-waterford .color-swatch.swatch1 {
+  background-color: #003366;
+}
+
+body.portfolio-christ-lutheran-church-of-waterford .color-swatch.swatch2 {
+  background-color: #00a99d;
+}
+
+body.portfolio-christ-lutheran-church-of-waterford .color-swatch.swatch3 {
+  background-color: #8b8c84;
+}
+
+body.portfolio-christ-lutheran-church-of-waterford .color-swatch.swatch4 {
+  background-color: #00746b;
+}
+
+body.portfolio-christ-lutheran-church-of-waterford .color-swatch.swatch5 {
+  background-color: #1cbbb4;
+}
+
+body.portfolio-christ-lutheran-church-of-waterford .color-swatch.swatch6 {
+  background-color: #252525;
+}
+
+body.portfolio-clarkston-area-chamber-of-commerce .color-swatch.swatch1 {
+  background-color: #00529e;
+}
+
+body.portfolio-clarkston-area-chamber-of-commerce .color-swatch.swatch2 {
+  background-color: #d46e2f;
+}
+
+body.portfolio-clarkston-area-chamber-of-commerce .color-swatch.swatch3 {
+  background-color: #111111;
+}
+
+body.portfolio-facials-by-jude .color-swatch.swatch1 {
+  background-color: #8a175a;
+}
+
+body.portfolio-facials-by-jude .color-swatch.swatch2 {
+  background-color: #ffccff;
+}
+
+body.portfolio-facials-by-jude .color-swatch.swatch3 {
+  background-color: #4f7e12;
+}
+
+body.portfolio-facials-by-jude .color-swatch.swatch4 {
+  background-color: #990033;
+}
+
+body.portfolio-facials-by-jude .color-swatch.swatch5 {
+  background-color: #5e3e4a;
+}
+
+body.portfolio-facials-by-jude .color-swatch.swatch6 {
+  background-color: #252525;
 }
 
 section#services {
@@ -1218,7 +1551,7 @@ section#contact .contact-info p a:not(.btn):hover {
   color: #82cd7f;
 }
 
-body.home-style .page > .container {
+body.home-style .page > .content > .container {
   max-width: 1430px;
   margin: 0 auto;
   padding: 30px;
@@ -1227,13 +1560,13 @@ body.home-style .page > .container {
 }
 
 @media (min-width: 768px) {
-  body.home-style .page > .container {
+  body.home-style .page > .content > .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 768px) {
-  body.home-style .page > .container > div:nth-child(2) {
+  body.home-style .page > .content > .container > div:nth-child(2) {
     grid-column: 2;
     grid-row: 1 / 3;
   }

@@ -8,7 +8,7 @@
         <div class="button-holder">
             <a href="#portfolio" class="btn btn-outline-white page-scroll">
                 See For Yourself
-                <svg class="i-chevron-bottom" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <svg class="i-chevron-bottom" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                     <path d="M30 12 L16 24 2 12"></path>
                 </svg>
             </a>
@@ -45,7 +45,7 @@
             <p>
                 <a href="{{url('/#contact')}}" class="btn btn-apple">
                     Contact Me
-                    <svg id="i-chevron-right" viewBox="0 0 32 32" width="15" height="15" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <svg id="i-chevron-right" viewBox="0 0 32 32" width="12" height="12" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                         <path d="M12 30 L24 16 12 2" />
                     </svg>
                 </a>

@@ -35,3 +35,22 @@ hr {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
+
+// Testimonials
+.testimonial {
+  margin-bottom: 0;
+  strong {
+    font-size: 1.5rem; // 24px
+    display: inline-block;
+    position: relative;
+    line-height: 1.5rem;
+    padding: 0 2px;
+    color: $apple;
+  }
+  + .testimonial-author {
+    margin-bottom: 2rem;
+  }
+}

@@ -27,13 +27,29 @@ class HomeController extends Controller
         return $view;
     }
 
-    public function portfolio($client = null)
+    public function portfolio($clientSlug = null)
     {
-        if ($client && !View::exists('portfolio.'.$client)) // If the portfolio item doesn't exists but is called, send to 404
+        if ($clientSlug && !View::exists('portfolio.'.$clientSlug)) // If the portfolio item doesn't exists but is called, send to 404
             abort(404);
-        if ($client) {
-            $client = $this->portfolio()->where('slug',$client)->first();
+        if ($clientSlug) {
+            $client = $this->portfolioData()->where('slug',$clientSlug)->first();
+            $view = view('portfolio.'.$clientSlug);
+            $view->title = $client->name." | Crandell Design by Matt Crandell";
+            $view->description = (isset($client->meta_description)?$client->meta_description:$client->name);
+            $view->client = $client;
 
+            // get previous client id
+            $previousID = $this->portfolioData()->where('id', '<', $client->id)->max('id');
+            $previous = $this->portfolioData()->where('id', '=', $previousID)->first();
+
+            // get next client id
+            $nextID = $this->portfolioData()->where('id', '>', $client->id)->min('id');
+            $next = $this->portfolioData()->where('id', '=', $nextID)->first();
+
+            $view->previous = $previous;
+            $view->next = $next;
+
+            return $view;
         }
         $view = view('portfolio.index');
         $view->title = "Portfolio | Crandell Design";
@@ -386,7 +402,7 @@ class HomeController extends Controller
 
         $portfolio = collect($clients);
         foreach ($portfolio as $key => $client) {
-            $client->id = $key+1;
+            $client->id = $key + 1;
         }
 
         return $portfolio;

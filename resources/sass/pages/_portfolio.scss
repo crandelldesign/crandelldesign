@@ -68,3 +68,105 @@
         }
     }
 }
+
+// Specific Portfolio Pages
+.portfolio-item-page {
+    .header-img {
+        margin-bottom: 2rem;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .portfolio-item-grid {
+        display: grid;
+        grid-gap: 2rem;
+        margin-bottom: 2rem;
+        //grid-template-columns: repeat(2, 1fr);
+        //margin-bottom: 2rem;
+        @media (min-width: $grid-md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .testimonial-container {
+            grid-column: span 2;
+            max-width: 800px;
+        }
+        // Last odd child
+        > div:last-child:nth-child(odd) {
+            //background-color: rgba(red, 0.3);
+            //width: 100%;
+            @media (min-width: $grid-md) {
+                position: relative;
+                left: 26%;
+            }
+        }
+    }
+    .portfolio-testimonial-grid {
+        display: grid;
+        grid-gap: 2rem;
+        margin-bottom: 2rem;
+        @media (min-width: $grid-md) {
+            grid-template-columns: 2fr 1fr;
+        }
+        /*> div:first-child {
+            grid-column: span 2;
+        }*/
+    }
+    .portfolio-img {
+        @include box-shadow(3);
+        &.portfolio-browser {
+            border-radius: 5px;
+        }
+    }
+    .color-swatches {
+        @media (min-width: $grid-md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: $grid-lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+// Vicksburg Family Dentistry
+body.portfolio-vicksburg-family-dentistry {
+    .color-swatch {
+        @include swatch(#555555, #006DB0, #000E16, #009EFF, #009EFF, #0AB1C7);
+    }
+}
+// Nuview Nutrition
+body.portfolio-nuview-nutrition {
+    .color-swatch {
+        @include swatch(#ed1c24, #f36368, #af0e14, #0bb957, #1ff27b, #077135);
+    }
+}
+// Nuview Nutrition
+body.portfolio-four-green-fields-farm {
+    .color-swatch {
+        @include swatch(#005a2c, #00a651, #000e07, #ffcb05, #ffdb52, #b89100, #647b97, #91a2b6, #465669);
+    }
+}
+// Habitat For Humanity
+body.portfolio-habitat-for-humanity-of-oakland-county {
+    .color-swatch {
+        @include swatch(#005596, #51b948, #8b8c84, #8fc3e9, #007cb1);
+    }
+}
+// Christ Waterford
+body.portfolio-christ-lutheran-church-of-waterford {
+    .color-swatch {
+        @include swatch(#003366, #00a99d, #8b8c84, #00746b, #1cbbb4, #252525);
+    }
+}
+// Clarkston Chamber of Commerce
+body.portfolio-clarkston-area-chamber-of-commerce {
+    .color-swatch {
+        @include swatch(#00529e, #d46e2f, #111111);
+    }
+}
+// Facials By Jude
+body.portfolio-facials-by-jude {
+    .color-swatch {
+        @include swatch(#8a175a, #ffccff, #4f7e12, #990033, #5e3e4a, #252525);
+    }
+}

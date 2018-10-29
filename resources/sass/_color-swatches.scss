@@ -7,9 +7,9 @@
 }
 
 .color-swatch {
-    height: 100px;
+    min-height: 100px;
     @include box_shadow(3);
-    //margin-bottom: 15px;
+    font-size: 1rem;
     padding: 15px;
     border: 5px solid #FFF;
     color: #FFF;

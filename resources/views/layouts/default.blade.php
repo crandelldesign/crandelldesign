@@ -54,8 +54,7 @@
       }
       function showSiteOverlay(e) {
           var e = window.e || e;
-          console.log(e.target.target);
-          if ((e.target.tagName !== 'A') || e.target.classList.contains('page-scroll') || e.target.target == '_blank')
+          if ((e.target.tagName !== 'A') || e.target.classList.contains('page-scroll') || e.target.target == '_blank' || e.target.href.includes('mailto:') || e.target.href.includes('tel:'))
               return;
 
           var element = document.getElementById('site-overlay');

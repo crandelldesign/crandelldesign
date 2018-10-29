@@ -1170,9 +1170,11 @@ section.page .section-description {
   }
 }
 
-.portfolio-item-page .portfolio-item-grid .testimonial-container {
-  grid-column: span 2;
-  max-width: 800px;
+@media (min-width: 768px) {
+  .portfolio-item-page .portfolio-item-grid .testimonial-container {
+    grid-column: span 2;
+    max-width: 800px;
+  }
 }
 
 @media (min-width: 768px) {

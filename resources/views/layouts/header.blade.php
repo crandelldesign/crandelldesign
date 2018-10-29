@@ -21,7 +21,7 @@
                 <li class="{{(isset($active_page) && $active_page == 'services')?'active':''}}"><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':''}}" href="{{url('/#services')}}">Services</a></li>
                 <li class="{{(isset($active_page) && $active_page == 'about')?'active':''}}"><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':''}}" href="{{url('/#about')}}">About</a></li>
                 <li class="{{(isset($active_page) && $active_page == 'contact')?'active':''}}"><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':''}}" href="{{url('/#contact')}}">Contact</a></li>
-                <li class="{{(isset($active_page) && $active_page == 'blog')?'active':''}}"><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':''}}" href="{{url('/#blog')}}">Blog</a></li>
+                <!--<li class="{{(isset($active_page) && $active_page == 'blog')?'active':''}}"><a class="{{(isset($active_page) && $active_page == 'home')?'page-scroll':''}}" href="{{url('/#blog')}}">Blog</a></li>-->
             </ul>
         </nav>
     </div>

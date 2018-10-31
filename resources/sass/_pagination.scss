@@ -18,6 +18,9 @@
     text-align: center;
     @include transition(color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out);
     @extend .btn-sanmarino;
+    height: 100%;
+    display: flex;
+    align-items: center;
     font-size: 0.9375rem; // 15px
     @media (min-width: $grid-md) {
         font-size: $font-size-base; // 18px

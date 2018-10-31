@@ -33,7 +33,7 @@ header.header {
             width: 100%;
             @media (min-width: $grid-lg) {
                 width: auto;
-                flex: 1;
+                flex: 1 0 auto;
                 max-width: 500px;
             }
             ul {

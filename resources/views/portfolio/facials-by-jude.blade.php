@@ -5,7 +5,7 @@
     <div class="content">
 
         <h1>Facials By Jude</h1>
-        <p class="city-view-more">Oxford, MI | <a href="http://www.facialsbyjude.com" target="_blank">View Website</a></p>
+        <p class="city-view-more">Oxford, MI | <a href="http://www.facialsbyjude.com" target="_blank" rel="noreferrer noopener">View Website</a></p>
 
         <hr>
 

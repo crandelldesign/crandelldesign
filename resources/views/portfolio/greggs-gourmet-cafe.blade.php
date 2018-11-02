@@ -5,7 +5,7 @@
     <div class="content">
         <h1>Gregg's Gourmet Cafe</h1>
 
-        <p class="city-view-more">Clarkston, MI | <a href="https://www.greggsgourmetcafe.com" target="_blank">View Website</a></p>
+        <p class="city-view-more">Clarkston, MI | <a href="https://www.greggsgourmetcafe.com" target="_blank" rel="noreferrer noopener">View Website</a></p>
 
         <hr>
 

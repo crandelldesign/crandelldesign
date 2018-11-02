@@ -4,7 +4,7 @@
 <section class="page portfolio-item-page">
     <div class="content">
         <h1>Alchin's Disposal</h1>
-        <p class="city-view-more">Fowlerville, MI | <a href="https://www.alchinsdisposal.com" target="_blank">View Website</a></p>
+        <p class="city-view-more">Fowlerville, MI | <a href="https://www.alchinsdisposal.com" target="_blank" rel="noreferrer noopener">View Website</a></p>
 
         <hr>
 

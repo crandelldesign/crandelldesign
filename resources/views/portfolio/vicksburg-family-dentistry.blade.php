@@ -5,7 +5,7 @@
 <section class="page portfolio-item-page">
     <div class="content">
         <h1>Vicksburg Family Dentistry</h1>
-        <p class="city-view-more">Vicksburg, MI | <a href="https://www.vicksburgfamilydentistry.com" target="_blank">View Website</a></p>
+        <p class="city-view-more">Vicksburg, MI | <a href="https://www.vicksburgfamilydentistry.com" target="_blank" rel="noreferrer noopener">View Website</a></p>
 
         <hr>
 

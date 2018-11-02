@@ -7,6 +7,10 @@
     @media (min-width: $grid-lg) {
         grid-template-columns: repeat(4, 1fr);
     }
+    > div {
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 .portfolio-thumbnail {
     //display: block;
@@ -86,6 +90,10 @@
         //margin-bottom: 2rem;
         @media (min-width: $grid-md) {
             grid-template-columns: repeat(2, 1fr);
+        }
+        > div {
+            max-width: 400px;
+            margin: 0 auto;
         }
         .testimonial-container {
             @media (min-width: $grid-md) {

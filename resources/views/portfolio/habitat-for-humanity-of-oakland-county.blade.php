@@ -5,7 +5,7 @@
     <div class="content">
 
         <h1>Habitat for Humanity of Oakland County</h1>
-        <p class="city-view-more">Pontiac, MI | <a href="https://www.habitatoakland.org" target="_blank">View Website</a></p>
+        <p class="city-view-more">Pontiac, MI | <a href="https://www.habitatoakland.org" target="_blank" rel="noreferrer noopener">View Website</a></p>
 
         <hr>
 

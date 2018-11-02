@@ -5,7 +5,7 @@
     <div class="content">
 
         <h1>Christ Lutheran Church of Waterford</h1>
-        <p class="city-view-more">Waterford, MI | <a href="http://www.christwaterford.org" target="_blank">View Website</a></p>
+        <p class="city-view-more">Waterford, MI | <a href="http://www.christwaterford.org" target="_blank" rel="noreferrer noopener">View Website</a></p>
 
         <hr>
 

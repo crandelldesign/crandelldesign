@@ -5,7 +5,7 @@
     <div class="content">
 
         <h1>Four Green Fields Farm</h1>
-        <p class="city-view-more">Rodney, MI | <a href="http://www.fourgreenfieldsfarm.com" target="_blank">View Website</a></p>
+        <p class="city-view-more">Rodney, MI | <a href="http://www.fourgreenfieldsfarm.com" target="_blank" rel="noreferrer noopener">View Website</a></p>
 
         <hr>
 

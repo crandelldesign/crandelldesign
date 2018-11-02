@@ -6,7 +6,7 @@
 
         <h1>Rifle River Campground</h1>
 
-        <p class="city-view-more">Sterling, MI | <a href="https://www.riflerivercampground.com" target="_blank">View Website</a></p>
+        <p class="city-view-more">Sterling, MI | <a href="https://www.riflerivercampground.com" target="_blank" rel="noreferrer noopener">View Website</a></p>
 
         <hr>
 

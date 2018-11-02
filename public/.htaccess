@@ -1,28 +1,33 @@
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
-        Options -MultiViews
+        Options -MultiViews -Indexes
     </IfModule>
 
     RewriteEngine On
 
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)/$ /$1 [L,R=301]
-
-    # Handle Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+    RewriteCond %{HTTPS} off
+    # First rewrite to HTTPS:
+    # Don't put www. here. If it is already there it will be included, if not
+    # the subsequent rule will catch it.
+    RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # Now, rewrite any request to the wrong domain to use www.
+    # [NC] is a case-insensitive match
+    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+) [NC]
+    RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    RewriteCond %{HTTP_HOST} !^(.+)\.(.+)\.(.+)
-    RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
 
-    RewriteCond %{HTTPS} !on
-    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
 
     # Note: It’s also recommended to enable HTTP Strict Transport Security (HSTS)
     # on your HTTPS website to help prevent man-in-the-middle attacks.

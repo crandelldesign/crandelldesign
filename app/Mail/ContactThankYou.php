@@ -1,6 +1,6 @@
 <?php
 
-namespace CrandellDesign\Mail;
+namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -16,11 +16,9 @@ class ContactThankYou extends Mailable
      *
      * @return void
      */
-    public $request;
-
-    public function __construct($request)
+    public function __construct()
     {
-        $this->request = $request;
+        //
     }
 
     /**
@@ -30,6 +28,6 @@ class ContactThankYou extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.contact-thank-you')->subject('Thank You for Contacting Crandell Design')->from('matt@crandelldesign.com');
+        return $this->markdown('emails.contact-thank-you');
     }
 }

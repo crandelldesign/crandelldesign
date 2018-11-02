@@ -1,11 +1,12 @@
 <?php
 
-namespace CrandellDesign\Mail;
+namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Http\Request;
 
 class Contact extends Mailable
 {
@@ -16,6 +17,7 @@ class Contact extends Mailable
      *
      * @return void
      */
+
     public $request;
 
     public function __construct($request)
@@ -30,6 +32,6 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.contact')->subject('You\'ve Been Contacted from Crandell Design by '. $this->request->name)->replyTo($this->request->email, $this->request->name);
+        return $this->markdown('emails.contact')->subject('You\'ve Been Contacted from Crandell Design by '. $this->request->name)->replyTo($this->request->email, $this->request->name);
     }
 }

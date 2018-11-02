@@ -1,0 +1,58 @@
+// Pagination
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin: 2rem auto;
+    justify-content: center;
+    max-width: 400px;
+    @include box_shadow(1);
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem 1rem;
+    margin-left: -1px;
+    border: 1px solid transparent;
+    text-align: center;
+    @include transition(color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out);
+    @extend .btn-sanmarino;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.9375rem; // 15px
+    @media (min-width: $grid-md) {
+        font-size: $font-size-base; // 18px
+    }
+    > svg {
+        height: 10px;
+        width: auto;
+        @media (min-width: $grid-md) {
+            height: 12px;
+        }
+    }
+}
+
+.page-item {
+    flex: 1;
+    &:first-child {
+        .page-link {
+            margin-left: 0;
+            @extend .btn-apple;
+        }
+    }
+    &:last-child {
+        .page-link {
+            @extend .btn-apple;
+        }
+    }
+    &.disabled .page-link {
+        color: lighten($french-gray,15%);
+        pointer-events: none;
+        // Opinionated: remove the "hand" cursor set previously for .page-link
+        cursor: auto;
+        background-color: $french-gray;
+        //border-color: $pagination-disabled-border-color;
+    }
+}

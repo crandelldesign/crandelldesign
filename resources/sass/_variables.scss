@@ -1,0 +1,70 @@
+// General
+$spacer: 1rem;
+
+// Colors
+// Greens
+$apple: #4cb848;
+$deyork: lighten($apple,15%); //#82cd7f
+$goblin: darken($apple,15%); //#358132
+// Blues
+$sanmarino: #4759a7;
+$shipcove: lighten($sanmarino,15%); //#7685c5
+$rhino: darken($sanmarino,15%); //#303c71
+// Blacks
+$black: #252525;
+// Grays
+$french-gray: #bbbbbd;
+$middle-gray: mix($black, $french-gray, 50%); // #707071
+// Red / Danger
+$red: #f86c6b;
+
+// Typography
+$font-family-base: 'Aileron', sans-serif;
+$font-size-base: 1.125rem; // 18px
+$font-weight-base: 300;
+$line-height-base: 1.5;
+$body-color: $black;
+$body-bg: #FFF;
+$link-color: $apple;
+$link-decoration: none;
+$link-hover-color: $deyork;
+$link-hover-decoration: none;
+// Headings
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+$headings-margin-bottom:      ($spacer / 2);
+$headings-font-family:        inherit;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              inherit;
+
+$paragraph-margin-bottom:   1rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+
+$headings-margin-bottom: ($spacer / 2);
+
+$grid-xs: 0;
+$grid-sm: 576px;
+$grid-md: 768px;
+$grid-lg: 992px;
+$grid-xl: 1200px;
+
+$max-width: 1430px;
+
+// Forms
+$label-margin-bottom: .5rem;
+
+// Transitins
+$transition-base: all .2s ease-in-out;
+$transition-fade: opacity .15s linear;
+$transition-collapse: height .35s ease;
+
+// Heading
+$heading-height-lg: 95px;

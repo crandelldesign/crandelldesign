@@ -1,115 +1,147 @@
 <?php
 
-namespace CrandellDesign\Http\Controllers;
+namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
-
-use CrandellDesign\Http\Controllers\Controller;
-use CrandellDesign\Mail\Contact;
-use CrandellDesign\Mail\ContactThankYou;
 use StdClass;
-use Twitter;
 use Validator;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\View;
+use App\Mail\Contact;
+use App\Mail\ContactThankYou;
 
 class HomeController extends Controller
 {
-    public function getIndex()
+    public function index()
     {
         $view = view('home.index');
         $view->title = "Crandell Design by Matt Crandell | Web Design and Development";
         $view->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
 
-        $portfolio = $this->portfolio();
+        $portfolio = $this->portfolioData();
         $view->portfolio = $portfolio->take(8);
 
         $view->active_page = 'home';
 
-        try
-        {
-            $view->blog_entries = Twitter::getUserTimeline(['screen_name' => 'crandelldesign', 'count' => 10, 'include_rts' => false, 'exclude_replies' => true]);
-        }
-        catch (Exception $e)
-        {
-
-        }
-
         return $view;
     }
 
-    public function getPortfolio($client = null)
+    public function portfolio($clientSlug = null)
     {
-        if ($client) {
-            $client = $this->portfolio()->where('slug',$client)->first();
-            if(!empty($client)) {
-                $view = view('home.portfolio-item');
-                $view->title = $client->name." | Crandell Design by Matt Crandell";
-                $view->description = (isset($client->meta_description)?$client->meta_description:$client->name);
-                $view->client = $client;
+        if ($clientSlug && !View::exists('portfolio.'.$clientSlug)) // If the portfolio item doesn't exists but is called, send to 404
+            abort(404);
+        if ($clientSlug) {
+            $client = $this->portfolioData()->where('slug',$clientSlug)->first();
+            $view = view('portfolio.'.$clientSlug);
+            $view->title = $client->name." | Crandell Design by Matt Crandell";
+            $view->description = (isset($client->meta_description)?$client->meta_description:$client->name);
+            $view->client = $client;
 
-                // get previous client id
-                $previousID = $this->portfolio()->where('id', '<', $client->id)->max('id');
-                $previous = $this->portfolio()->where('id', '=', $previousID)->first();
+            // get previous client id
+            $previousID = $this->portfolioData()->where('id', '<', $client->id)->max('id');
+            $previous = $this->portfolioData()->where('id', '=', $previousID)->first();
 
-                // get next client id
-                $nextID = $this->portfolio()->where('id', '>', $client->id)->min('id');
-                $next = $this->portfolio()->where('id', '=', $nextID)->first();
+            // get next client id
+            $nextID = $this->portfolioData()->where('id', '>', $client->id)->min('id');
+            $next = $this->portfolioData()->where('id', '=', $nextID)->first();
 
-                $view->previous = $previous;
-                $view->next = $next;
-
-                return $view;
-            } else {
-                return redirect('/portfolio', 301);
-            }
-        }
-
-        $view = view('home.portfolio');
-        $view->title = "Portfolio | Web Design and Development";
-        $view->description = "See the portfolio of Matt Crandell, web design in Metro Detroit, MI.";
-
-        $portfolio = $this->portfolio();
-        $view->portfolio = $portfolio;
-
-        return $view;
-    }
-
-    public function getServices($service = null)
-    {
-        if (!$service) {
-            return redirect('/#services', 301);
-        } else {
-            $view = view('home.services-'.$service);
-            switch ($service) {
-                case 'web-design':
-                    $view->title = "Web Design and Development Services | Crandell Design by Matt Crandell";
-                    $view->description = "Crandell Design provides web design and development services to small business in Metro Detroit, Michigan.";
-                    break;
-                case 'web-hosting':
-                    $view->title = "Web Design and Development Services | Crandell Design by Matt Crandell";
-                    $view->description = "Crandell Design can host your new website for you.";
-                    break;
-                case 'social-media':
-                    $view->title = "Social Media Services | Crandell Design by Matt Crandell";
-                    $view->description = "Crandell Design will help you and your small business become social media masters.";
-                    break;
-                case 'logo-design':
-                    $view->title = "Logo Design Services | Crandell Design by Matt Crandell";
-                    $view->description = "Crandell Design can design or restore a logo for your company.";
-                    break;
-                case 'seo':
-                    $view->title = "Logo Design Services | Crandell Design by Matt Crandell";
-                    $view->description = "Crandell Design can design or restore a logo for your company.";
-                    break;
-            }
+            $view->previous = $previous;
+            $view->next = $next;
 
             return $view;
         }
+        $view = view('portfolio.index');
+        $view->title = "Portfolio | Crandell Design";
+        $view->description = "See the portfolio of Matt Crandell, web design in Metro Detroit, MI.";
+        $view->portfolio = $this->portfolioData();
+        $view->active_page = 'portfolio';
+
+        return $view;
     }
 
-    public function postContact(Request $request)
+    public function services($service = null)
     {
-        $captcha = $this->verifyCaptcha($request->get('g-recaptcha-response'));
+        if (!$service) {
+            $view = view('services.index');
+            $view->title = "Services | Crandell Design by Matt Crandell";
+            $view->description = "Crandell Design provides web design and development services to small business in Metro Detroit, Michigan.";
+            return $view;
+        } else {
+            if (View::exists('services.'.$service)) {
+                $view = view('services.'.$service);
+                switch ($service) {
+                    case 'web-design':
+                        $view->title = "Web Design and Development Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design provides web design and development services to small business in Metro Detroit, Michigan.";
+                        break;
+                    case 'web-hosting':
+                        $view->title = "Web Design and Development Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design can host your new website for you.";
+                        break;
+                    case 'social-media':
+                        $view->title = "Social Media Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design will help you and your small business become social media masters.";
+                        break;
+                    case 'logo-design':
+                        $view->title = "Logo Design Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design can design or restore a logo for your company.";
+                        break;
+                    case 'seo':
+                        $view->title = "Logo Design Services | Crandell Design by Matt Crandell";
+                        $view->description = "Crandell Design can design or restore a logo for your company.";
+                        break;
+                }
+
+                return $view;
+            } else {
+                return abort(404); // If the service page doesn't exists but is called, send to 404
+            }
+        }
+    }
+
+    public function submitForm(Request $request)
+    {
+        
+        $validator = Validator::make($request->all(), [
+                'name' => 'required',
+                'email' => 'required|email',
+                'message_text' => 'required',
+                'my_name' => 'honeypot',
+                'my_time' => 'required|honeytime:5'
+            ],
+            [
+                'name.required' => 'Please enter your name.',
+                'emails.required' => 'Please enter your email address.',
+                'emails.email' => 'Please enter a valid email address.',
+                'message_text.required' => 'Please enter a message.'
+            ]
+        );
+        //\Log::Debug(print_r($validator->validate()));
+        if ($validator->fails()) {
+            if ($request->wantsJson()) { // Checks if sent over JS
+                \Log::Debug($validator->messages());
+                $validator->validate(); // Automatically sends back error data via javascript
+            } else {
+                return redirect('/#contact')
+                    ->withErrors($validator)
+                    ->withInput();
+            }
+        }
+
+        Mail::to('matt@crandelldesign.com')->send(new Contact($request));
+        Mail::to($request->get('email'))->send(new ContactThankYou($request));
+
+        if ($request->wantsJson()) {
+            return response()->json([
+                'success_message' => 'Thank you for contacting us, we will get back to you as soon as possible.'
+            ]);
+        } else {
+            return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
+        }
+        
+        
+        /*$captcha = $this->verifyCaptcha($request->get('g-recaptcha-response'));
         $request->request->add(['captcha' => $captcha]);
         $validator = Validator::make($request->all(), [
                 'name' => 'required',
@@ -134,30 +166,24 @@ class HomeController extends Controller
         }
         Mail::to('matt@crandelldesign.com')->send(new Contact($request));
         Mail::to($request->get('email'))->send(new ContactThankYou($request));
-        return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
+        return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');*/
     }
 
-    private function verifyCaptcha($response)
+    public function style()
     {
-        $url = 'https://www.google.com/recaptcha/api/siteverify?secret='.env('RE_CAP_SECRET').
-               "&response=".$response;
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($curl, CURLOPT_TIMEOUT, 15);
-        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, TRUE);
-        $curlData = curl_exec($curl);
+        $view = view('home.style');
+        $view->title = "Crandell Design by Matt Crandell | Web Design and Development";
+        $view->description = "Web Design, web development, search engine optimization, and logo design by Matt Crandell servicing all of Metro Detroit.";
 
-        curl_close($curl);
+        //$portfolio = $this->portfolio();
+        //$view->portfolio = $portfolio->take(8);
 
-        $res = json_decode($curlData, TRUE);
-        if($res['success'] == 'true')
-            return 1;
-        else
-            return 0;
+        $view->active_page = 'style';
+
+        return $view;
     }
 
-    private function portfolio()
+    private function portfolioData()
     {
         $clients = [];
             $client = new StdClass;
@@ -376,7 +402,7 @@ class HomeController extends Controller
 
         $portfolio = collect($clients);
         foreach ($portfolio as $key => $client) {
-            $client->id = $key+1;
+            $client->id = $key + 1;
         }
 
         return $portfolio;

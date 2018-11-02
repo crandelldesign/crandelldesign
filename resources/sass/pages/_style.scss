@@ -1,0 +1,41 @@
+body.home-style {
+    .page > .content > .container {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 30px;
+        display: grid;
+        grid-gap: 30px;
+        @media (min-width: $grid-md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        > div {
+            &:nth-child(2) {
+                @media (min-width: $grid-md) {
+                    grid-column: 2;
+                    grid-row: 1 / 3;
+                }
+            }
+        }
+    }
+    .dark-background {
+        background: url(/img/contact-container-bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+        padding: 1rem;
+        h1, label {
+            color: #FFF;
+        }
+    }
+    .grid-2 {
+        display: grid;
+        grid-gap: 0 30px;
+        @media (min-width: $grid-md) {
+            grid-template-columns: repeat(2, 1fr);
+            > div {
+                width: 100%;
+                grid-column: span 1;
+            }
+        }
+        
+    }
+    
+}

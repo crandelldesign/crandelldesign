@@ -1,0 +1,77 @@
+// Servies
+section#services {
+    color: #FFF;
+    background: url(/img/services-container-bg.jpg) $rhino no-repeat center center fixed;
+    background-size: cover;
+    h2 {
+        color: #FFF;
+    }
+}
+.services-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 -1rem;
+    @media (min-width: $grid-md) {
+        //grid-template-columns: repeat(3, 1fr);
+    }
+    > a {
+        color: #FFF;
+        display: block;
+        margin: 0 1rem 2rem 1rem;
+        width: 41%;
+        max-width: 41%;
+        flex: 1 1 auto;
+        text-align: center;
+        white-space: normal;
+        padding: 1rem;
+        @media (min-width: $grid-md) {
+            width: 30%;
+            max-width: 30%;
+        }
+        @media (min-width: $grid-lg) {
+            max-width: 16%;
+            max-width: 16%;
+        }
+        svg {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            fill: #FFF;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+}
+
+// Services Stand Alone Pages
+.service-page {
+    .service-grid {
+        display: grid;
+        grid-gap: 30px;
+        @media (min-width: $grid-lg) {
+            grid-template-columns: 70% 1fr;
+        }
+        > div {
+            &:nth-child(2) {
+                @media (min-width: $grid-lg) {
+                    order: 1;
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+            }
+        }
+    }
+    svg {
+        //@extend .img-responsive;
+        //@extend .center-block;
+        display: block;
+        margin: 0 auto $paragraph-margin-bottom auto;
+        height: auto;
+        fill: $apple;
+        max-width: 300px;
+    }
+}

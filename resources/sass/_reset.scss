@@ -1,0 +1,108 @@
+// Resets
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Body
+body {
+    margin: 0; // 1
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    color: $body-color;
+    text-align: left; // 3
+    background-color: $body-bg; // 2
+    padding-top: 45px;
+}
+// HR
+hr {
+    box-sizing: content-box; // 1
+    height: 0; // 1
+    overflow: visible; // 2
+}
+// Headers
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: $headings-margin-bottom;
+}
+// Paragraphs and Lists
+p {
+    margin-top: 0;
+    margin-bottom: $paragraph-margin-bottom;
+}
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+// Links
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    background-color: transparent; // Remove the gray background on active links in IE 10.
+    @include transition(color .3s ease-in-out);
+    &:hover, &.hover {
+      color: $link-hover-color;
+      text-decoration: $link-hover-decoration;
+    }
+}
+// Forms
+label {
+    // Allow labels to use `margin` for spacing.
+    display: inline-block;
+    margin-bottom: $label-margin-bottom;
+}
+// Remove the default `border-radius` that macOS Chrome adds.
+button {
+    border-radius: 0;
+}
+// Work around a Firefox/IE bug where the transparent `button` background
+// results in a loss of the default `button` focus styles.
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0; // Remove the margin in Firefox and Safari
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button,
+input {
+    overflow: visible; // Show the overflow in Edge
+}
+button,
+select {
+    text-transform: none; // Remove the inheritance of text transform in Firefox
+}
+// 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4.
+// 2. Correct the inability to style clickable types in iOS and Safari.
+button,
+html [type="button"], // 1
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; // 2
+}
+// Remove inner border and padding from Firefox, but don't restore the outline like Normalize.
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}

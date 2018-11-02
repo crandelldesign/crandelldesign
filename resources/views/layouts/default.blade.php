@@ -110,6 +110,18 @@
     </script>
 
     <title>{{isset($title) ? $title:''}}</title>
+    <meta name="description" content="{{isset($description) ? $description : ''}}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68370021-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-68370021-1');
+    </script>
+
   </head>
   <body class="{{$view_name}}">
     <div id="site-overlay">@include('layouts.logo-circle')</div>

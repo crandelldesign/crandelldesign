@@ -11,11 +11,11 @@
 
 .page-link {
     position: relative;
-    display: block;
     padding: .5rem 1rem;
     margin-left: -1px;
     border: 1px solid transparent;
     text-align: center;
+    justify-content:center;
     @include transition(color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out);
     @extend .btn-sanmarino;
     height: 100%;

@@ -107,14 +107,15 @@ class HomeController extends Controller
                 'name' => 'required',
                 'email' => 'required|email',
                 'message_text' => 'required',
-                'my_name' => 'honeypot',
-                'my_time' => 'required|honeytime:5'
+                'recaptcha_token' => 'required|captcha'
             ],
             [
                 'name.required' => 'Please enter your name.',
                 'emails.required' => 'Please enter your email address.',
                 'emails.email' => 'Please enter a valid email address.',
-                'message_text.required' => 'Please enter a message.'
+                'message_text.required' => 'Please enter a message.',
+                'recaptcha_token.required' => 'Please enable javascript to submit the form.',
+                'recaptcha_token.captcha' => 'No spam please.'
             ]
         );
         //\Log::Debug(print_r($validator->validate()));

@@ -24,6 +24,13 @@ label {
 .form-group {
     margin-bottom: $paragraph-margin-bottom / 2;
 }
+.form-text {
+    display: block;
+    margin-top: ($spacer / 4);
+    a {
+        white-space: nowrap;
+    }
+}
 
 // Validation
 .invalid-feedback, .valid-feedback {

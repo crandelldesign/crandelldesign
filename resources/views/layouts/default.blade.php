@@ -46,6 +46,13 @@
           }
       }
     </style>
+    <noscript>
+      <style>
+        #site-overlay {
+          display: none;
+        }
+      </style>
+    </noscript>
     <script>
       // Page Transitions
       function hideSiteOverlay() {
@@ -121,7 +128,7 @@
 
     gtag('config', 'UA-68370021-1');
     </script>
-
+    @yield('head')
   </head>
   <body class="{{$view_name}}">
     <div id="site-overlay">@include('layouts.logo-circle')</div>

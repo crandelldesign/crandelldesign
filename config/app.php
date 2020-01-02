@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Crandell Design'),
 
     /*
     |--------------------------------------------------------------------------
@@ -151,6 +151,7 @@ return [
          * Package Service Providers...
          */
         Msurguy\Honeypot\HoneypotServiceProvider::class,
+        App\Providers\RecaptchaValidatorServiceProvider::class,
 
         /*
          * Application Service Providers...

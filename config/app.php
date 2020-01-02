@@ -150,7 +150,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Msurguy\Honeypot\HoneypotServiceProvider::class,
         App\Providers\RecaptchaValidatorServiceProvider::class,
 
         /*
@@ -211,7 +210,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'Honeypot' => Msurguy\Honeypot\HoneypotFacade::class,
+        '' => Msurguy\Honeypot\HoneypotFacade::class,
     ],
 
 ];

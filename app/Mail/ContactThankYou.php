@@ -28,6 +28,6 @@ class ContactThankYou extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contact-thank-you');
+        return $this->markdown('emails.contact-thank-you')->subject('Thank You for Contacting Crandell Design')->replyTo('matt@crandelldesign.com', 'Matt Crandell');
     }
 }

@@ -1,0 +1,11 @@
+// Global
+body {
+    padding-top: 65px;
+}
+
+hr {
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+    border: 0;
+    border-top: 1px solid $sanmarino;
+}

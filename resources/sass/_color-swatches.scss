@@ -1,21 +1,18 @@
-.color-swatches {
-    display: grid;
-    grid-gap: 30px;
-    @media (min-width: $grid-md) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
+// Color Swatches
 .color-swatch {
     min-height: 100px;
     @include box_shadow(3);
     font-size: 1rem;
     padding: 15px;
-    border: 5px solid #FFF;
-    color: #FFF;
+    margin-bottom: 15px;
+    border: 5px solid #fff;
+    color: #fff;
     background-color: #eee;
-    @include swatch($apple, $deyork, $goblin, $sanmarino, $shipcove, $rhino, $red, $french-gray, $middle-gray);
-}
-.details {
-    color: $french-gray;
+    @each $color, $value in $colors {
+        $i: index(($colors), ($color $value));
+        &.swatch#{$i} {
+            color: color-yiq($value);
+            background-color: $value;
+        }
+    }
 }

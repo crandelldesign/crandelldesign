@@ -1,0 +1,18 @@
+// Blog Post
+body.blog-post .article-container {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 30px;
+    header {
+        margin: 2rem 0; // 32px 0
+    }
+    .entry-meta {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.875rem; // 14px
+        > time,
+        > div {
+            margin-right: 0.875rem; // 14px
+        }
+    }
+}

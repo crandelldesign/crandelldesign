@@ -23,7 +23,7 @@ Route::get('/style-guide', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('/blog/{topic}/{year}/{month}/{slug}', 'BlogController@show')->middleware('Canvas\Http\Middleware\Session');
 

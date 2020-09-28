@@ -15,7 +15,7 @@
         <time class="updated" datetime="{{ $post['published_at'] }}">
           {{ date("F j, Y", strtotime($post['published_at'])) }}
         </time>
-        <div class="text-secondary">{{ $post['read_time'] }}</duv>
+        <div class="text-secondary">{{ $post['read_time'] }}</div>
       </div>
     </header>
     <div class="entry-content">

@@ -1,3 +1,60 @@
+// Blog List
+/* Style similar to portfolio. Max at 2 wide and then single for slimmer
+devices. Image and title go to article. Category is its own link.
+Hover with slight zoom of image (similier to portfolio). */
+body.blog-index {
+    .blog-grid {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 0 30px;
+        @media (min-width: $grid-lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+.blog-tile {
+    border: 1px solid $sanmarino;
+    @include box-shadow(1);
+    @include transition(box-shadow 0.3s ease-in-out);
+    a.featured-img {
+        display: block;
+        overflow: hidden;
+        img {
+            width: 100%;
+            @include transition(all 0.3s ease-in-out);
+        }
+    }
+    .blog-tile-content {
+        padding: 10px;
+    }
+    .entry-title {
+        font-size: $h2-font-size;
+        color: $black;
+        margin-bottom: 0.5rem;
+        flex: 1;
+    }
+    .entry-meta {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.875rem; // 14px
+        > time,
+        > div,
+        > a {
+            margin-right: 0.875rem; // 14px
+        }
+    }
+    &:hover {
+        @include box-shadow(2);
+        a.featured-img {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
 // Blog Post
 body.blog-post .article-container {
     max-width: $max-width;

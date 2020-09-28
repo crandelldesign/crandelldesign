@@ -395,6 +395,23 @@ hr {
   border-top: 1px solid #4759a7;
 }
 
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo .color-apple {
+  fill: #4cb848;
+}
+
+.logo .color-sanmarino {
+  fill: #4759a7;
+}
+
+.logo .color-none {
+  fill: none;
+}
+
 h1,
 h2,
 h3,
@@ -888,7 +905,7 @@ header.header > .container .navbar ul a {
 }
 
 article code {
-  display: block;
+  display: inline-block;
   background-color: #252525;
   color: #f8f8f2;
   padding: 6px 10px;
@@ -929,6 +946,84 @@ body.style-guide .page-content > .row > div {
   .color-swatch-container {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* Style similar to portfolio. Max at 2 wide and then single for slimmer
+devices. Image and title go to article. Category is its own link.
+Hover with slight zoom of image (similier to portfolio). */
+
+body.blog-index .blog-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: 992px) {
+  body.blog-index .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.blog-tile {
+  border: 1px solid #4759a7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .blog-tile {
+    transition: none;
+  }
+}
+
+.blog-tile a.featured-img {
+  display: block;
+  overflow: hidden;
+}
+
+.blog-tile a.featured-img img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .blog-tile a.featured-img img {
+    transition: none;
+  }
+}
+
+.blog-tile .blog-tile-content {
+  padding: 10px;
+}
+
+.blog-tile .entry-title {
+  font-size: 2.25rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+  flex: 1;
+}
+
+.blog-tile .entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+}
+
+.blog-tile .entry-meta > time,
+.blog-tile .entry-meta > div,
+.blog-tile .entry-meta > a {
+  margin-right: 0.875rem;
+}
+
+.blog-tile:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.blog-tile:hover a.featured-img img {
+  transform: scale(1.05);
 }
 
 body.blog-post .article-container {

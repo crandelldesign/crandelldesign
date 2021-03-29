@@ -14,5 +14,5 @@
 Route::get('/', 'HomeController@index');
 Route::get('/portfolio/{client?}', 'HomeController@portfolio');
 Route::get('/services/{service?}', 'HomeController@services');
-Route::post('/contact', 'HomeController@submitForm');
+Route::post('/contact', array('middleware' => 'cors', 'uses' => 'HomeController@submitForm'));
 Route::get('/style', 'HomeController@style');

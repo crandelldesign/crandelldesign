@@ -102,8 +102,31 @@ class HomeController extends Controller
 
     public function submitForm(Request $request)
     {
-        
-        $validator = Validator::make($request->all(), [
+        // \Log::Debug('Submit');
+        Validator::make($request->all(),
+            [
+                'name' => 'required',
+                'email' => 'required|email',
+                'message_text' => 'required',
+                'recaptcha_token' => 'required|captcha'
+            ], [
+                'name.required' => 'Please enter your name.',
+                'emails.required' => 'Please enter your email address.',
+                'emails.email' => 'Please enter a valid email address.',
+                'message_text.required' => 'Please enter a message.',
+                'recaptcha_token.required' => 'Please enable javascript to submit the form.',
+                'recaptcha_token.captcha' => 'No spam please.'
+            ]
+        )->validate();  
+
+        Mail::to('matt@crandelldesign.com')->send(new Contact($request));
+        Mail::to($request->get('email'))->send(new ContactThankYou($request));
+
+        return response()->json([
+            'success_message' => 'Thank you for contacting us, we will get back to you as soon as possible.'
+        ]);
+
+        /* $validator = Validator::make($request->all(), [
                 'name' => 'required',
                 'email' => 'required|email',
                 'message_text' => 'required',
@@ -121,25 +144,27 @@ class HomeController extends Controller
         //\Log::Debug(print_r($validator->validate()));
         if ($validator->fails()) {
             if ($request->wantsJson()) { // Checks if sent over JS
-                \Log::Debug($validator->messages());
+                // \Log::Debug($validator->messages());
                 $validator->validate(); // Automatically sends back error data via javascript
             } else {
                 return redirect('/#contact')
                     ->withErrors($validator)
                     ->withInput();
             }
-        }
-
-        Mail::to('matt@crandelldesign.com')->send(new Contact($request));
-        Mail::to($request->get('email'))->send(new ContactThankYou($request));
-
-        if ($request->wantsJson()) {
-            return response()->json([
-                'success_message' => 'Thank you for contacting us, we will get back to you as soon as possible.'
-            ]);
         } else {
-            return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
-        }
+            Mail::to('matt@crandelldesign.com')->send(new Contact($request));
+            Mail::to($request->get('email'))->send(new ContactThankYou($request));
+
+            if ($request->wantsJson()) {
+                return response()->json([
+                    'success_message' => 'Thank you for contacting us, we will get back to you as soon as possible.'
+                ]);
+            } else {
+                return redirect('/#contact')->with('status', 'Thank you for contacting us, we will get back to you as soon as possible.');
+            }
+        } */
+
+        
         
         
         /*$captcha = $this->verifyCaptcha($request->get('g-recaptcha-response'));

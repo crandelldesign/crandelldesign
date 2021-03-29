@@ -17,6 +17,7 @@ class RecaptchaValidatorServiceProvider extends ServiceProvider
             $ip = request()->getClientIp();
             $recaptcha = new ReCaptcha(env('INVISIBLE_RECAPTCHA_SECRETKEY'));
             $resp = $recaptcha->verify($value, $ip);
+            // \Log::Debug(json_encode($resp->isSuccess()));
 
             return $resp->isSuccess();
         });
